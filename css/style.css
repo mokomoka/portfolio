@@ -1,8 +1,8 @@
-/* 
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
@@ -15,218 +15,286 @@ b, i, a,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video, address {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-    text-decoration: none;
-    font-style: normal;
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+  font-style: normal;
 }
 
 body {
-    line-height:1;
+  line-height:1;
 }
 
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
+footer,header,hgroup,menu,nav,section {
+  display:block;
 }
 
 nav ul {
-    list-style:none;
+  list-style:none;
 }
 
 blockquote, q {
-    quotes:none;
+  quotes:none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
-    content:none;
+  content:'';
+  content:none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+  border-bottom:1px dotted;
+  cursor:help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse:collapse;
+  border-spacing:0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
 }
 
 input, select {
-    vertical-align:middle;
+  vertical-align:middle;
 }
+
+
+
 
 
 /*all*/
 html{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body{
-    width:100%;
-    height: 100%;
-    font-family:'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
-     'Hiragino Kaku Gothic ProN','メイリオ','Meiryo', sans-serif;
+  width:100%;
+  height: 100%;
+  font-family:'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
+  'Hiragino Kaku Gothic ProN','メイリオ','Meiryo', sans-serif;
 }
 
 div{
-    background-color: #fff;
+  background-color: #fff;
 }
+
 
 
 /*nav*/
 nav{
-    width: 100%;
-    overflow: hidden;
-    background-color: #f5b8b5;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f5b8b5;
+  position:fixed;
+  z-index: 999;
 }
 
 nav ul{
-    width: 100%;
+  width: 100%;
 }
 
 nav li{
-    width: calc(25% - 2px);
-    float:left;
-    border: 1px solid #f5b8b5;
-    border-right:none;
-    background-color: #f5b8b5;
-    color: #fffef3;
-    text-align: center;
+  width: calc(25% - 2px);
+  float:left;
+
+  border: 1px solid #f5b8b5;
+  border-right:none;
+  background-color: #f5b8b5;
+  color: #fffef3;
+  text-align: center;
 }
 
 nav li:last-child{
-    border-right: 1px solid #f5b8b5;
+  border-right: 1px solid #f5b8b5;
 }
 
 nav a{
-    display:block;
-    font-kerning: none;
-    font-feature-settings: "liga" 0;
-    letter-spacing: 3px;
-    line-height: 40px;
-    background-color: #f5b8b5;
-    color: #775435;
-    transition: 0.5s ease-out;
+  display:block;
+  font-kerning: none;
+  font-feature-settings: "liga" 0;
+  letter-spacing: 3px;
+  line-height: 60px;
+  background-color: #f5b8b5;
+  color: #775435;
+  transition: 0.5s ease-out;
 }
 
 nav a:hover{
-    background-color: #e2e28a;
-    transition: 0.5s ease-out;
+  background-color: #e2e28a;
+  transition: 0.5s ease-out;
 }
+
 
 
 /*main*/
 #main{
-    width:100%;
-    height:calc(100vh - 40px);
-    text-align: center;
-    background-position: center, center;
-    background-image: url("../image/main1.jpg");
+  width:100%;
+  height:100%;
+  text-align: center;
+  background-position: center, center;
+  background: url("../image/main1.jpg") center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #main h1{
-    color: #775435;
-    font-family: 'Nanum Gothic';
-    font-size: 400%;
-    letter-spacing: 10px;
-    font-weight: 100;
-    line-height: calc(100vh - 40px);
+  color: #775435;
+  text-shadow: 2px 2px 5px #aaa;
+  font-family: 'Nanum Gothic';
+  font-size: 400%;
+  letter-spacing: 10px;
+  font-weight: 100;
 }
 
+
+
+/*contents*/
+.contents{
+  width:100%;
+  padding: 80px 0;
+  border-bottom: medium dashed #e2e28a;
+}
+
+.contents:after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+.contents a {
+  color: #775435;
+  transition: 0.5s ease-out;
+}
+
+.contents a:hover {
+  color: #e2e28a;
+  border-bottom: thin solid #e2e28a;
+  transition: 0.5s ease-out;
+}
+
+.contents h1 {
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  color: #f5b8b5;
+  font-family: 'Nanum Gothic';
+  font-size: 200%;
+  letter-spacing: 10px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+.contents p {
+  color: #775435;
+  margin: 40px 5%;
+}
+
+.contents img{
+  border-radius: 50%;
+  border:5px solid #f5b8b5;
+}
 
 /*profile*/
-#profile{
-    width:100%;
-    height:100%;
-}
-
-#profile h1{
-    width: 100%;
-    text-align: center;
-    line-height: 2;
-    color: #f5b8b5;
-    font-family: 'Nanum Gothic';
-    font-size: 200%;
-    letter-spacing: 10px;
-    font-weight: 100;
-}
-
 #profile img{
-    width:20%;
-    border-radius: 50%;
-    float:left;
-    margin-left:5%;
+  width: calc(20% - 10px);
+  float:left;
+  margin-left:5%;
 }
 
 #profile table{
-    width: 65%;
-    float:left;
-    line-height:1.5;
-    margin:0 5%;
-    text-align: left;
+  width: 65%;
+  float: left;
+  line-height:1.5;
+  text-align: left;
+  margin: 0 5%;
 }
 
 #profile td {
-    padding: 5px;
+  padding: 5px;
+  color:#775435;
+  border-bottom: thin dashed #775435;
 }
 
 
 
+/*works*/
+#works img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-left: 5%;
+  transition: 0.5s ease-out;
+
+}
+
+#works img:hover {
+  opacity: 0.6;
+  transition: 0.5s ease-out;
+}
+
+.mwin {
+  position: fixed;
+  display: none;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
 /*footer*/
 footer{
-    text-align: center;
-    background-color: #f5b8b5;
-    color: #775435;
-    line-height:2;
-    letter-spacing: 3px;
-    font-size: 80%;
+  text-align: center;
+  background-color: #f5b8b5;
+  color: #775435;
+  line-height:2;
+  letter-spacing: 3px;
+  font-size: 80%;
 }
