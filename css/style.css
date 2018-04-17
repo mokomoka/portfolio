@@ -271,7 +271,6 @@ nav a:hover{
   float: left;
   margin-left: 5%;
   transition: 0.5s ease-out;
-
 }
 
 #works img:hover {
@@ -294,11 +293,23 @@ nav a:hover{
 
 .mwin {
   position: fixed;
+  top: 10%;
+  left: 10%;
   display: none;
   background-color: #fff;
   z-index: 4;
-  width:800px;
-  margin:auto;
+  width:80%;
+}
+
+#works h2 {
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  color: #f5b8b5;
+  font-size: 180%;
+  letter-spacing: 10px;
+  font-weight: 100;
+  margin: 40px auto;
 }
 
 /*footer*/

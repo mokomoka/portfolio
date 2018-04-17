@@ -1,9 +1,18 @@
-var elm = document.querySelectorAll('#works > img');
-for(var i = 0; i < elm.length; i++){
-  elm[i].addEventListener('click', function(){
-    console.log(i);
-  }, false);
+function addEventListenerList(list, event, fn){
+	for(var i = 0, len = list.length; i < len; i++){
+		list[i].addEventListener(event, fn, false);
+	}
 }
+
+var elm = document.querySelectorAll('#works > img');
+addEventListenerList(elm, 'click', function(){
+  this.nextElementSibling.style.display = "block";
+  this.nextElementSibling.firstElementChild.style.display = "block";
+  this.nextElementSibling.addEventListener('click', function(){
+  	this.style.display = "none";
+  	this.firstElementChild.style.display = "none";
+  });
+});
 
 /*
 imgを全て取り出して、一つずつfor文でイベントを検知（？）して、
@@ -12,23 +21,15 @@ imgを全て取り出して、一つずつfor文でイベントを検知（？�
 わけわからん
 */
 
-
+/*
 var obj = document.querySelector('#works > img');
 obj.addEventListener('click', function(){
   obj.nextElementSibling.style.display = "block";
   obj.nextElementSibling.firstElementChild.style.display = "block";
-  obj.nextElementSibling.firstElementChild.style.margin = "auto";
 });
 
 obj.nextElementSibling.addEventListener('click', function(){
   obj.nextElementSibling.style.display = "none";
   obj.nextElementSibling.firstElementChild.style.display = "none";
-})
-
-/*
-とりあえずひとつめだけに実装してみようとした
-display:none;になっているからなのか、margin:auto;が効いていないっぽい？
-→じゃあblockにしたあとにmarginもautoにすればいいのでは！？
-と思ったら上手くいかない
-もう無理…
+});
 */
