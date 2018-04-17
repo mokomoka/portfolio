@@ -278,29 +278,6 @@ nav a:hover{
   transition: 0.5s ease-out;
 }
 
-.overlay {
-  position: fixed;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 3;
-}
-
-.mwin {
-  position: fixed;
-  top: 10%;
-  left: 10%;
-  display: none;
-  background-color: #fff;
-  z-index: 4;
-  width:80%;
-}
-
 #works h2 {
   width: 100%;
   text-align: center;
@@ -311,6 +288,185 @@ nav a:hover{
   font-weight: 100;
   margin: 40px auto;
 }
+
+
+.cp_modal01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cp_modal01 .cp_content p {
+  margin: 0;
+  line-height: 1.5;
+  text-indent: 1em;
+}
+.cp_modal01 p.citation {
+  text-align: right;
+}
+.cp_modal01 p.citation::before {
+  content: '\2500'
+}
+.cp_modal01 p:not(.citation) {
+  margin-bottom: 1.5rem;
+}
+.cp_modal01 a {
+  text-decoration: none;
+}
+.cp_modal01 label {
+  cursor: pointer;
+}
+.cp_modal01 .cp_modal_btn {
+  position: relative;
+  display: table-cell;
+  background: url("../image/works1.jpg");
+  background-size:200px 200px;
+  width: 200px;
+  height: 200px;
+  margin-left: 5%;
+  border-radius: 50%;
+  text-align: center;
+  transition: box-shadow 250ms ease;
+  color: #ffffff;
+}
+.cp_modal01 .cp_modal_btn::before {
+  position: absolute;
+  top:50%;
+  left: 20%;
+  content: '';
+
+  font-size: 1em;
+  line-height: 0;
+  display: inline-block;
+  width: 4em;
+  color: #ffffff;
+}
+.cp_modal01 .cp_modal_btn:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.cp_modal01 .cp_modal_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: background-color 250ms linear;
+}
+.cp_modal01 .cp_modal_cont {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  overflow-y: scroll;
+  margin-top: -18%;
+  margin-left: -25%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: transform 250ms ease;
+  visibility: hidden;
+  z-index: 20;
+}
+.cp_modal01 .cp_modal_cont .cp_close {
+  position: relative;
+  float: right;
+  font-size: 18px;
+  transition: transform 500ms ease;
+  z-index: 11;
+}
+.cp_modal01 .cp_modal_cont .cp_close:hover {
+  color: #da3c41;
+  transform: rotate(180deg);
+}
+.cp_modal01 .cp_modal_cont header {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #00bcd4;
+  margin-bottom: 1.5em;
+}
+.cp_modal01 .cp_modal_cont header h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 28px;
+}
+.cp_modal01 .cp_modal_cont article {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.cp_modal01 .cp_modal_cont footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0;
+}
+.cp_modal01 .cp_modal_cont footer .cp_btn {
+  position: relative;
+  padding: 10px 30px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.cp_modal01 .cp_modal_cont footer .cp_btn:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(88, 24, 26, 0.3);
+  transition: width 250ms ease;
+  z-index: 0;
+}
+.cp_modal01 .cp_modal_cont footer .cp_btn:hover:before {
+  width: 100%;
+}
+.cp_modal01 .cp_modal_cont footer .cp_btn.cp_cl {
+  background-color: #da3c41;
+}
+.cp_modal01 #cp_modal {
+  display: none;
+}
+.cp_modal01 #cp_modal:checked ~ .cp_modal_bg {
+  visibility: visible;
+  background-color: #000000;
+  opacity: 0.7;
+  transition: background-color 250ms linear;
+}
+.cp_modal01 #cp_modal:checked ~ .cp_modal_cont {
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 250ms ease;
+  z-index: 111;
+}
+@media only screen and (max-width: 480px) {
+  .cp_modal01 .cp_modal_cont{
+    top: 30%;
+    left: 30%;
+    width: 90%;
+  }
+}
+
+
+
 
 /*footer*/
 footer{
