@@ -8,9 +8,11 @@ var elm = document.querySelectorAll('#works > img');
 addEventListenerList(elm, 'click', function(){
   this.nextElementSibling.style.display = "block";
   this.nextElementSibling.firstElementChild.style.display = "block";
+	document.body.style.overflow = "hidden";
   this.nextElementSibling.addEventListener('click', function(){
   	this.style.display = "none";
   	this.firstElementChild.style.display = "none";
+		document.body.style.overflow = "visible";
   });
 });
 

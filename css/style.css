@@ -289,7 +289,32 @@ nav a:hover{
   margin: 40px auto;
 }
 
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+}
 
+.mwin {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  display: none;
+  background-color: #fff;
+  z-index: 4;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+/*
 .cp_modal01 {
   position: relative;
   display: flex;
@@ -464,7 +489,7 @@ nav a:hover{
     width: 90%;
   }
 }
-
+*/
 
 
 
