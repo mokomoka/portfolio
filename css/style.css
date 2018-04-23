@@ -233,6 +233,7 @@ nav a:hover{
 .contents p {
   color: #775435;
   margin: 40px 5%;
+  line-height: 1.5;
 }
 
 .contents img{
@@ -264,7 +265,7 @@ nav a:hover{
 
 
 /*works*/
-#works img {
+#works>img {
   width: 200px;
   height: 200px;
   float: left;
@@ -272,7 +273,7 @@ nav a:hover{
   transition: 0.5s ease-out;
 }
 
-#works img:hover {
+#works>img:hover {
   opacity: 0.6;
   transition: 0.5s ease-out;
 }
@@ -316,6 +317,8 @@ nav a:hover{
 .mwin video, .mwin img {
   width: 80%;
   margin: 40px auto;
+  border-radius: 0%;
+  border:none;
 }
 
 /*
