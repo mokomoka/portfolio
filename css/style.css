@@ -269,7 +269,7 @@ nav a:hover{
   width: 200px;
   height: 200px;
   float: left;
-  margin-left: 5%;
+  margin: 0 0 5% 5%;
   transition: 0.5s ease-out;
 }
 
@@ -315,6 +315,7 @@ nav a:hover{
 }
 
 .mwin video, .mwin img {
+  display: block;
   width: 80%;
   margin: 40px auto;
   border-radius: 0%;

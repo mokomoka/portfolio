@@ -1,6 +1,6 @@
 var v = document.getElementsByTagName('video');
 for(var i=0; i < v.length; i++){
-	v[i].volume = 0.5;
+	v[i].volume = 0.3;
 }
 
 function addEventListenerList(list, event, fn){
