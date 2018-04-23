@@ -142,7 +142,6 @@ nav ul{
 nav li{
   width: calc(25% - 2px);
   float:left;
-
   border: 1px solid #f5b8b5;
   border-right:none;
   background-color: #f5b8b5;
@@ -312,6 +311,11 @@ nav a:hover{
   width: 80%;
   height: 80%;
   overflow-y: scroll;
+}
+
+.mwin video{
+  width: 80%;
+  margin: 40px auto;
 }
 
 /*

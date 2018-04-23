@@ -5,6 +5,7 @@ function addEventListenerList(list, event, fn){
 }
 
 var elm = document.querySelectorAll('#works > img');
+var v = document.getElementsByTagName('video');
 addEventListenerList(elm, 'click', function(){
   this.nextElementSibling.style.display = "block";
   this.nextElementSibling.firstElementChild.style.display = "block";
@@ -12,26 +13,8 @@ addEventListenerList(elm, 'click', function(){
   this.nextElementSibling.addEventListener('click', function(){
   	this.style.display = "none";
   	this.firstElementChild.style.display = "none";
+		this.firstElementChild.querySelector('video').pause();
+		this.firstElementChild.querySelector('video').currentTime = 0;
 		document.body.style.overflow = "visible";
   });
 });
-
-/*
-imgを全て取り出して、一つずつfor文でイベントを検知（？）して、
-その検知した時のimgの次の.overlayをdisplay = "block"にして…
-みたいなことをやりたかったけど、iが2になってしまうので、elm[i]がundefinedになる
-わけわからん
-*/
-
-/*
-var obj = document.querySelector('#works > img');
-obj.addEventListener('click', function(){
-  obj.nextElementSibling.style.display = "block";
-  obj.nextElementSibling.firstElementChild.style.display = "block";
-});
-
-obj.nextElementSibling.addEventListener('click', function(){
-  obj.nextElementSibling.style.display = "none";
-  obj.nextElementSibling.firstElementChild.style.display = "none";
-});
-*/
