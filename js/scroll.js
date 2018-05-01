@@ -1,3 +1,9 @@
+var v = document.getElementsByTagName('video');
+for(var i=0; i < v.length; i++){
+	v[i].volume = 0.3;
+  v[i].currentTime = 0;
+}
+
 var scrollElm = (function() {
   if('scrollingElement' in document) return document.scrollingElement;
   if(navigator.userAgent.indexOf('WebKit') != -1) return document.body;
