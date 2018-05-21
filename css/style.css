@@ -351,9 +351,9 @@ nav a:hover{
   width: 200px;
   height: 200px;
   display: inline-block;
-
-  margin: 5%;
+  margin: 0 0 5% 5%;
   transition: 0.5s ease-out;
+  text-decoration: none;
 }
 
 #works>a>img:hover {
