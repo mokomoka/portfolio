@@ -270,7 +270,7 @@ nav a:hover{
 
 .contents a:hover {
   color: #e2e28a;
-  border-bottom: thin solid #e2e28a;
+  text-decoration: underline;
   transition: 0.5s ease-out;
 }
 
@@ -356,10 +356,13 @@ nav a:hover{
   text-decoration: none;
 }
 
+#works>a:hover {
+  text-decoration: none;
+}
+
 #works>a>img:hover {
   opacity: 0.6;
   transition: 0.5s ease-out;
-  text-decoration: none;
 }
 
 #works h2 {
