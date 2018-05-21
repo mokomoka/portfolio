@@ -338,17 +338,28 @@ nav a:hover{
 
 
 /*works*/
+@media screen and (max-width:767px) {
+  #works {
+    text-align: center;
+  }
+  #works p {
+    text-align: left;
+  }
+}
+
 #works>a>img {
   width: 200px;
   height: 200px;
-  float: left;
-  margin: 0 0 5% 5%;
+  display: inline-block;
+
+  margin: 5%;
   transition: 0.5s ease-out;
 }
 
 #works>a>img:hover {
   opacity: 0.6;
   transition: 0.5s ease-out;
+  text-decoration: none;
 }
 
 #works h2 {
