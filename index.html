@@ -4,53 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Tomoka's portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+  window.addEventListener('load', function(){
+    var month = new Date().getMonth() + 1;
+    var seasons = document.getElementsByClassName('season');
+    if(month >= 3 && month <= 5){
+      seasons.classList.add('spring');
+    }else if(month >= 6 && month <= 8){
+      seasons.classList.add('summer');
+    }else if(month >= 9 && month <= 11){
+      seasons.classList.add('fall');
+    }else{
+      seasons.classList.add('winter');
+    }
+  })
+  </script>
 </head>
 
 <body>
-  <nav>
+  <nav class="season">
     <ul>
-      <li><a href="#main">Tomoka's portfolio</a></li>
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#works">Works</a></li>
-      <li><a href="#link">Link</a></li>
-      <li><a href="#extra">Extra</a></li>
+      <li class="season"><a href="#main" class="season">Tomoka's portfolio</a></li>
+      <li class="season"><a href="#profile" class="season">Profile</a></li>
+      <li class="season"><a href="#works" class="season">Works</a></li>
+      <li class="season"><a href="#link" class="season">Link</a></li>
+      <li class="season"><a href="#extra" class="season">Extra</a></li>
     </ul>
   </nav>
 
-  <div id="main">
+  <div id="main" class="season">
     <h1>Tomoka's portfolio</h1>
   </div>
 
-  <div id="profile" class="contents">
+  <div id="profile" class="contents season">
     <h1>Profile</h1>
     <img src="image/me.jpg" alt="自撮り" oncontextmenu="return false;">
     <table border="1">
       <tr>
-        <td>名前</td><td>はやしともか</td>
+        <td class="season">名前</td><td class="season">はやしともか</td>
       </tr>
       <tr>
-        <td>誕生日</td><td>11月4日</td>
+        <td class="season">誕生日</td><td class="season">11月4日</td>
       </tr>
       <tr>
-        <td>趣味</td><td>お絵かきと動画編集</td>
+        <td class="season">趣味</td><td class="season">お絵かきと動画編集</td>
       </tr>
       <tr>
-        <td>マイブーム</td><td><a href="https://www.youtube.com/channel/UCzciBmqDXPE47nOPRrjmo9A" target="_blank">M.S.S Project</a></td>
+        <td class="season">マイブーム</td><td class="season"><a href="https://www.youtube.com/channel/UCzciBmqDXPE47nOPRrjmo9A" target="_blank">M.S.S Project</a></td>
       </tr>
       <tr>
-        <td>情報系に興味を<br>持ったきっかけ</td><td>昔ゲームが好きだったことと、<br>MSSPの動画で動画投稿サイトに興味をもったこと</td>
+        <td class="season">情報系に興味を<br>持ったきっかけ</td><td class="season">昔ゲームが好きだったことと、<br>MSSPの動画で動画投稿サイトに興味をもったこと</td>
       </tr>
     </table>
   </div>
 
-  <hr class="border-style"></div>
+  <hr class="border-style season"></div>
 
-  <div id="works" class="contents">
+  <div id="works" class="contents season">
     <h1>Works</h1>
     <p>つくったものです。作成日もジャンルもバラバラ。</p>
     <a href="#works1" class="noscroll">
@@ -58,7 +70,7 @@
     </a>
     <div class="overlay" id="works1">
       <div class="mwin">
-        <h2>未来祭2016</h2>
+        <h2 class="season">未来祭2016</h2>
         <p>2016年度の未来祭では、新設された広報セクションのメンバーとして、告知動画を作成しました。<br>
           ロゴのイメージを基に、曲を選んだり動きを決めたり…<br>
           また、サークルの動画である以上、自分だけで決めるわけにはいかないので、
@@ -68,14 +80,14 @@
           <video src="image/video1.mp4" preload="metadata" controls poster="image/video1.png"></video>
         </p>
       </div>
-      <a href="#!" class="close noscroll">&times;</a>
+      <a href="#!" class="close noscroll season">&times;</a>
     </div>
     <a href="#works2" class="noscroll">
       <img src="image/works2.jpg" oncontextmenu="return false;">
     </a>
     <div class="overlay" id="works2">
       <div class="mwin">
-        <h2>未来祭2017</h2>
+        <h2 class="season">未来祭2017</h2>
         <p>2017年度の未来祭では、広報セクションのリーダーとして、いろいろな活動に関わりました。<br>
           主に制作したものは、告知動画と、公式サイトなどです。<br>
           サイト制作は0からのスタートで、さらに時間がなかったこともあり、大変苦労しました。<br>
@@ -87,14 +99,14 @@
           <video src="image/video2.mp4" preload="metadata" controls poster="image/video2.png"></video>
         </p>
       </div>
-      <a href="#!" class="close noscroll">&times;</a>
+      <a href="#!" class="close noscroll season">&times;</a>
     </div>
     <a href="#works3" class="noscroll">
       <img src="image/works3.jpg" oncontextmenu="return false;">
     </a>
     <div class="overlay" id="works3">
       <div class="mwin">
-        <h2>Miku Miku Dance</h2>
+        <h2 class="season">Miku Miku Dance</h2>
         <p>趣味でMikuMikuDance（MMD）というフリーソフトを使った動画・静止画制作をしています。<br>
           現状は配布されたモデルやモーションを使用することが多く、
           エフェクトの使い方やカメラアングル、動画編集で他の動画と差別化を図っています。<br>
@@ -104,14 +116,14 @@
           <video src="image/video5.mp4" preload="metadata" controls poster="image/video5.png"></video>
         </p>
       </div>
-      <a href="#!" class="close noscroll">&times;</a>
+      <a href="#!" class="close noscroll season">&times;</a>
     </div>
     <a href="#works4" class="noscroll">
       <img src="image/works4.jpg" oncontextmenu="return false;">
     </a>
     <div class="overlay" id="works4">
       <div class="mwin">
-        <h2>その他の動画</h2>
+        <h2 class="season">その他の動画</h2>
         <p>MMD以外では、モーショングラフィックスやストップモーション、タイムラプスの動画も作ることがあります。<br>
           ストップモーションはサークルや部活で共同制作したものが多く公開が難しいので、
           個人で作成したモーショングラフィックスを公開します。<br>
@@ -123,7 +135,7 @@
           <video src="image/video7.mp4" preload="metadata" controls poster="image/video7.png" oncontextmenu="return false;"></video>
         </p>
       </div>
-      <a href="#!" class="close noscroll">&times;</a>
+      <a href="#!" class="close noscroll season">&times;</a>
     </div>
   </div>
 
@@ -141,7 +153,7 @@
 
   <div id="extra" class="contents">
     <h1>Extra</h1>
-    <h2>自分語り！</h2>
+    <h2 class="season">自分語り！</h2>
     <p>幼稚園くらいからずっと絵を描いたり工作したり手芸したり…かなりのインドア派生活を送る。<br>
       そして小学生のときにゲームを始め、「ゲームクリエイターになりたい！」といいつつ何もせずに過ぎる。<br>
       中学生のときになんとなくパソコン部に入り、
@@ -155,10 +167,9 @@
       結果、周りがすごい人ばかりになり、周りに負けてはいられない！と日々頑張っているつもりです！
     </p>
   </div>
-  <footer>
+  <footer class="season">
     <address>Copyright(C)2018  Tomoka Hayashi</address>
   </footer>
-  <script src="js/smoothscroll.js"></script>
   <script src="js/scroll.js"></script>
 </body>
 </html>

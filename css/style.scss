@@ -122,15 +122,19 @@ body{
 
 }
 
-
+$color_base: #ffffff;
+$color_main: #f5b8b5;
+$color_accent: #e2e28a;
+$color_text: #775435;
 
 
 /*nav*/
 nav{
   width: 100%;
-  background-color: #f5b8b5;
+  background-color: $color_main;
   position:fixed;
   z-index: 2;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
 }
 
 nav ul{
@@ -138,37 +142,33 @@ nav ul{
 }
 
 nav li{
-  float: left;
-  border: 1px solid #f5b8b5;
-  background-color: #f5b8b5;
-  color: #fffef3;
+  border: 1px solid $color_main;
+  background-color: $color_main;
   text-align: center;
 }
 
-@media screen and (min-width:480px){
-  nav li{
-    width: 25%;
-    border-right: none;
-  }
+@media screen and (max-width:767px){
   nav li:first-child {
-    width: 100%;
-    border-right: 1px solid #f5b8b5;
-    font-size: 120%;
+    width: calc(100% - 2px);
+    font-size: 130%;
+    border-bottom: 1px dashed $color_text;
   }
-  nav li:last-child {
-    border-right: 1px solid #f5b8b5;
+  nav li{
+    width: calc(25% - 2px);
+    float: left;
   }
 }
 
 @media screen and (min-width:768px){
   nav li{
     width: calc(50% / 4 - 1px);
-    border: 1px solid #f5b8b5;
+    border: 1px solid $color_main;
     border-left: none;
+    float: left;
   }
   nav li:first-child{
     width: calc(50% - 2px);
-    border-left: 1px solid #f5b8b5;
+    border-left: 1px solid $color_main;
     font-size: 150%;
   }
 }
@@ -179,13 +179,12 @@ nav a{
   font-feature-settings: "liga" 0;
   letter-spacing: 3px;
   line-height: 60px;
-  background-color: #f5b8b5;
-  color: #775435;
+  color: $color_text;
   transition: 0.5s ease-out;
 }
 
 nav a:hover{
-  background-color: #e2e28a;
+  background-color: $color_accent;
   transition: 0.5s ease-out;
 }
 
@@ -201,24 +200,62 @@ nav a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $color_text;
 }
 
 #main h1{
-  color: #775435;
-  text-shadow: 2px 2px 5px #aaa;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
   font-family: 'Nanum Gothic';
-  font-size: 400%;
-  letter-spacing: 10px;
   font-weight: 100;
+  line-height: 1.2;
 }
 
-
+@media screen and (max-width:767px) {
+  #main h1{
+    font-size: 300%;
+    letter-spacing: 8px;
+  }
+}
+@media screen and (min-width:768px) {
+  #main h1{
+    font-size: 400%;
+    letter-spacing: 10px;
+  }
+}
 
 /*contents*/
 .contents{
   width:100%;
-  padding: 80px 0;
-  border-bottom: medium dashed #e2e28a;
+}
+
+.border-style {
+  border-top: 4px double $color_accent;
+}
+
+.border-style:after {
+  content: '\002665';
+  display: block;
+  position: absolute;
+  width: 18px;
+  left: calc(50% - 19px);
+  right: calc(50% - 19px);
+  margin-top: -10px;
+  padding: 0 10px;
+	background: #fff;
+	color: $color_accent;
+	font-size: 18px;
+}
+
+@media screen and (max-width:767px) {
+  .contents {
+    padding: 140px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .contents {
+    padding: 80px 0;
+  }
 }
 
 .contents:after {
@@ -228,13 +265,13 @@ nav a:hover{
 }
 
 .contents a {
-  color: #775435;
+  color: $color_text;
   transition: 0.5s ease-out;
 }
 
 .contents a:hover {
-  color: #e2e28a;
-  border-bottom: thin solid #e2e28a;
+  color: $color_accent;
+  text-decoration: underline;
   transition: 0.5s ease-out;
 }
 
@@ -242,7 +279,7 @@ nav a:hover{
   width: 100%;
   text-align: center;
   line-height: 2;
-  color: #f5b8b5;
+  color: $color_main;
   font-family: 'Nanum Gothic';
   font-size: 200%;
   letter-spacing: 10px;
@@ -251,46 +288,77 @@ nav a:hover{
 }
 
 .contents p {
-  color: #775435;
+  color: $color_text;
   margin: 40px 5%;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .contents img{
   border-radius: 50%;
-  border:5px solid #f5b8b5;
+  border:5px solid $color_main;
 }
 
 /*profile*/
-#profile img{
-  width: calc(20% - 10px);
-  float:left;
-  margin-left:5%;
+@media screen and (max-width:767px) {
+  #profile {
+    text-align: center;
+  }
+  #profile img{
+    width: 30%;
+    margin-bottom: 40px;
+  }
+  #profile table{
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+    text-align: left;
+  }
 }
 
-#profile table{
-  width: 65%;
-  float: left;
-  line-height:1.5;
-  text-align: left;
-  margin: 0 5%;
+@media screen and (min-width: 768px) {
+  #profile img{
+    width: calc(20% - 10px);
+    float:left;
+    margin-left:5%;
+  }
+  #profile table{
+    width: 60%;
+    float: left;
+    line-height:1.5;
+    text-align: left;
+    margin: 0 5%;
+  }
 }
 
 #profile td {
   padding: 5px;
-  color:#775435;
-  border-bottom: thin dashed #775435;
+  color:$color_text;
+  border-bottom: thin dashed $color_text;
 }
 
 
 
 /*works*/
+@media screen and (max-width:767px) {
+  #works {
+    text-align: center;
+  }
+  #works p {
+    text-align: left;
+  }
+}
+
 #works>a>img {
   width: 200px;
   height: 200px;
-  float: left;
+  display: inline-block;
   margin: 0 0 5% 5%;
   transition: 0.5s ease-out;
+  text-decoration: none;
+}
+
+#works>a:hover {
+  text-decoration: none;
 }
 
 #works>a>img:hover {
@@ -302,7 +370,7 @@ nav a:hover{
   width: 100%;
   text-align: center;
   line-height: 2;
-  color: #f5b8b5;
+  color: $color_main;
   font-size: 180%;
   letter-spacing: 10px;
   font-weight: 100;
@@ -396,7 +464,7 @@ a.close:hover {
   width: 80%;
   padding: 10px 0;
   z-index: 20;
-  background: #f5b8b5;
+  background: $color_main;
   font-size: 120%;
   text-decoration: none;
   text-indent: 0;
@@ -411,13 +479,24 @@ a.close:hover {
 
 
 
+/*extra*/
+#extra h2 {
+  display: inline-block;
+  color: $color_text;
+  margin: 0px 5%;
+  font-size: 130%;
+  font-weight: normal;
+  border-bottom: 2px solid $color_accent;
+  background: linear-gradient(transparent 70%, $color_accent 70%);
+}
+
 
 /*footer*/
 footer{
   text-align: center;
-  background-color: #f5b8b5;
-  color: #775435;
-  line-height:2;
+  background-color: $color_main;
+  color: $color_text;
+  line-height: 3;
   letter-spacing: 3px;
   font-size: 80%;
 }
