@@ -11,13 +11,21 @@
     var month = new Date().getMonth() + 1;
     var seasons = document.getElementsByClassName('season');
     if(month >= 3 && month <= 5){
-      seasons.classList.add('spring');
+      [].forEach.call(seasons, function(season){
+        season.classList.add('spring');
+      });
     }else if(month >= 6 && month <= 8){
-      seasons.classList.add('summer');
+      [].forEach.call(seasons, function(season){
+        season.classList.add('summer');
+      });
     }else if(month >= 9 && month <= 11){
-      seasons.classList.add('fall');
+      [].forEach.call(seasons, function(season){
+        season.classList.add('fall');
+      });
     }else{
-      seasons.classList.add('winter');
+      [].forEach.call(seasons, function(season){
+        season.classList.add('winter');
+      });
     }
   })
   </script>

@@ -122,19 +122,45 @@ body{
 
 }
 
-$color_base: #ffffff;
-$color_main: #f5b8b5;
-$color_accent: #e2e28a;
-$color_text: #775435;
+$color_base_spring: #ffffff;
+$color_main_spring: #f5b8b5;
+$color_accent_spring: #e2e28a;
+$color_text_spring: #775435;
+
+$color_base_summer: #ffffff;
+$color_main_summer: #0080ae;
+$color_accent_summer: #94d0c9;
+$color_text_summer: #65473c;
+
+$color_base_fall: #ffffff;
+$color_main_fall: #a43121;
+$color_accent_fall: #f0a050;
+$color_text_fall: #491a00;
+
+$color_base_winter: #ffffff;
+$color_main_winter: #f7deaf;
+$color_accent_winter: #a1b1ca;
+$color_text_winter: #525457;
 
 
 /*nav*/
 nav{
   width: 100%;
-  background-color: $color_main;
   position:fixed;
   z-index: 2;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+  .spring {
+    background-color: $color_main_spring;
+  }
+  .summer {
+    background-color: $color_main_summer;
+  }
+  .fall {
+    background-color: $color_main_fall;
+  }
+  .winter {
+    background-color: $color_main_winter;
+  }
 }
 
 nav ul{
@@ -142,16 +168,41 @@ nav ul{
 }
 
 nav li{
-  border: 1px solid $color_main;
-  background-color: $color_main;
   text-align: center;
+  .spring {
+    border: 1px solid $color_main_spring;
+    background-color: $color_main_spring;
+  }
+  .summer {
+    border: 1px solid $color_main_summer;
+    background-color: $color_main_summer;
+  }
+  .fall {
+    border: 1px solid $color_main_fall;
+    background-color: $color_main_fall;
+  }
+  .winter {
+    border: 1px solid $color_main_winter;
+    background-color: $color_main_winter;
+  }
 }
 
 @media screen and (max-width:767px){
   nav li:first-child {
     width: calc(100% - 2px);
     font-size: 130%;
-    border-bottom: 1px dashed $color_text;
+    .spring {
+      border-bottom: 1px dashed $color_text_spring;
+    }
+    .summer {
+      border-bottom: 1px dashed $color_text_summer;
+    }
+    .fall {
+      border-bottom: 1px dashed $color_text_fall;
+    }
+    .winter {
+      border-bottom: 1px dashed $color_text_winter;
+    }
   }
   nav li{
     width: calc(25% - 2px);
@@ -162,14 +213,36 @@ nav li{
 @media screen and (min-width:768px){
   nav li{
     width: calc(50% / 4 - 1px);
-    border: 1px solid $color_main;
     border-left: none;
     float: left;
+    .spring {
+      border-bottom: 1px dashed $color_main_spring;
+    }
+    .summer {
+      border-bottom: 1px dashed $color_main_summer;
+    }
+    .fall {
+      border-bottom: 1px dashed $color_main_fall;
+    }
+    .winter {
+      border-bottom: 1px dashed $color_main_winter;
+    }
   }
   nav li:first-child{
     width: calc(50% - 2px);
-    border-left: 1px solid $color_main;
     font-size: 150%;
+    .spring {
+      border-left: 1px solid $color_main_spring;
+    }
+    .summer {
+      border-left: 1px solid $color_main_summer;
+    }
+    .fall {
+      border-left: 1px solid $color_main__fall;
+    }
+    .winter {
+      border-left: 1px solid $color_main_winter;
+    }
   }
 }
 
@@ -179,13 +252,35 @@ nav a{
   font-feature-settings: "liga" 0;
   letter-spacing: 3px;
   line-height: 60px;
-  color: $color_text;
   transition: 0.5s ease-out;
+  .spring {
+    color: $color_text_spring;
+  }
+  .summer {
+    color: $color_text_summer;
+  }
+  .fall {
+    color: $color_text_fall;
+  }
+  .winter {
+    color: $color_text_winter;
+  }
 }
 
 nav a:hover{
-  background-color: $color_accent;
   transition: 0.5s ease-out;
+  .spring {
+    background-color: $color_accent_spring;
+  }
+  .summer {
+    background-color: $color_accent_summer;
+  }
+  .fall {
+    background-color: $color_accent_fall;
+  }
+  .winter {
+    background-color: $color_accent_winter;
+  }
 }
 
 
@@ -196,11 +291,25 @@ nav a:hover{
   height:100%;
   text-align: center;
   background-position: center, center;
-  background: url("../image/main1.jpg") center no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color_text;
+  .spring {
+    color: $color_text_spring;
+    background: url("../image/main_spring.jpg") center no-repeat;
+  }
+  .summer {
+    color: $color_text_summer;
+    background: url("../image/main_summer.jpg") center no-repeat;
+  }
+  .fall {
+    color: $color_text_fall;
+    background: url("../image/main_fall.jpg") center no-repeat;
+  }
+  .winter {
+    color: $color_text_winter;
+    background: url("../image/main_winter.jpg") center no-repeat;
+  }
 }
 
 #main h1{
@@ -229,7 +338,18 @@ nav a:hover{
 }
 
 .border-style {
-  border-top: 4px double $color_accent;
+  .spring {
+    border-top: 4px double $color_accent_spring;
+  }
+  .summer {
+    border-top: 4px double $color_accent_summer;
+  }
+  .fall {
+    border-top: 4px double $color_accent_fall;
+  }
+  .winter {
+    border-top: 4px double $color_accent_winter;
+  }
 }
 
 .border-style:after {
@@ -241,9 +361,20 @@ nav a:hover{
   right: calc(50% - 19px);
   margin-top: -10px;
   padding: 0 10px;
-	background: #fff;
-	color: $color_accent;
+	background: $color_base_spring;
 	font-size: 18px;
+  .spring {
+    color: $color_accent_spring;
+  }
+  .summer {
+    color: $color_accent_summer;
+  }
+  .fall {
+    color: $color_accent_fall;
+  }
+  .winter {
+    color: $color_accent_winter;
+  }
 }
 
 @media screen and (max-width:767px) {
@@ -265,37 +396,92 @@ nav a:hover{
 }
 
 .contents a {
-  color: $color_text;
   transition: 0.5s ease-out;
+  .spring {
+    color: $color_text_spring;
+  }
+  .summer {
+    color: $color_text_summer;
+  }
+  .fall {
+    color: $color_text_fall;
+  }
+  .winter {
+    color: $color_text_winter;
+  }
 }
 
 .contents a:hover {
-  color: $color_accent;
   text-decoration: underline;
   transition: 0.5s ease-out;
+  .spring {
+    color: $color_accent_spring;
+  }
+  .summer {
+    color: $color_accent_summer;
+  }
+  .fall {
+    color: $color_accent_fall;
+  }
+  .winter {
+    color: $color_accent_winter;
+  }
 }
 
 .contents h1 {
   width: 100%;
   text-align: center;
   line-height: 2;
-  color: $color_main;
   font-family: 'Nanum Gothic';
   font-size: 200%;
   letter-spacing: 10px;
   font-weight: 100;
   margin-bottom: 40px;
+  .spring {
+    color: $color_main_spring;
+  }
+  .summer {
+    color: $color_main_summer;
+  }
+  .fall {
+    color: $color_main_fall;
+  }
+  .winter {
+    color: $color_main_winter;
+  }
 }
 
 .contents p {
-  color: $color_text;
   margin: 40px 5%;
   line-height: 1.7;
+  .spring {
+    color: $color_text_spring;
+  }
+  .summer {
+    color: $color_text_summer;
+  }
+  .fall {
+    color: $color_text_fall;
+  }
+  .winter {
+    color: $color_text_winter;
+  }
 }
 
 .contents img{
   border-radius: 50%;
-  border:5px solid $color_main;
+  .spring {
+    border:5px solid $color_main_spring;
+  }
+  .summer {
+    border:5px solid $color_main_summer;
+  }
+  .fall {
+    border:5px solid $color_main_fall;
+  }
+  .winter {
+    border:5px solid $color_main_winter;
+  }
 }
 
 /*profile*/
@@ -332,8 +518,22 @@ nav a:hover{
 
 #profile td {
   padding: 5px;
-  color:$color_text;
-  border-bottom: thin dashed $color_text;
+  .spring {
+    color:$color_text_spring;
+    border-bottom: thin dashed $color_text_spring;
+  }
+  .summer {
+    color:$color_text_summer;
+    border-bottom: thin dashed $color_text_summer;
+  }
+  .fall {
+    color:$color_text_fall;
+    border-bottom: thin dashed $color_text_fall;
+  }
+  .winter {
+    color:$color_text_winter;
+    border-bottom: thin dashed $color_text_winter;
+  }
 }
 
 
@@ -370,11 +570,22 @@ nav a:hover{
   width: 100%;
   text-align: center;
   line-height: 2;
-  color: $color_main;
   font-size: 180%;
   letter-spacing: 10px;
   font-weight: 100;
   margin: 40px auto;
+  .spring {
+    color: $color_main_spring;
+  }
+  .summer {
+    color: $color_main_summer;
+  }
+  .fall {
+    color: $color_main_fall;
+  }
+  .winter {
+    color: $color_main_winter;
+  }
 }
 
 .overlay {
@@ -422,7 +633,7 @@ nav a:hover{
   height: calc(80% - 10px);
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: $color_base_spring;
   opacity: 1;
 }
 
@@ -464,11 +675,22 @@ a.close:hover {
   width: 80%;
   padding: 10px 0;
   z-index: 20;
-  background: $color_main;
   font-size: 120%;
   text-decoration: none;
   text-indent: 0;
   text-align: center;
+  .spring {
+    background-color: $color_main_spring;
+  }
+  .summer {
+    background-color: $color_main_summer;
+  }
+  .fall {
+    background-color: $color_main_fall;
+  }
+  .winter {
+    background-color: $color_main_winter;
+  }
 }
 
 .overlay {
@@ -482,21 +704,52 @@ a.close:hover {
 /*extra*/
 #extra h2 {
   display: inline-block;
-  color: $color_text;
   margin: 0px 5%;
   font-size: 130%;
   font-weight: normal;
-  border-bottom: 2px solid $color_accent;
-  background: linear-gradient(transparent 70%, $color_accent 70%);
+  .spring {
+    color: $color_text_spring;
+    border-bottom: 2px solid $color_accent_spring;
+    background: linear-gradient(transparent 70%, $color_accent_spring 70%);
+  }
+  .summer {
+    color: $color_text_summer;
+    border-bottom: 2px solid $color_accent_summer;
+    background: linear-gradient(transparent 70%, $color_accent_summer 70%);
+  }
+  .fall {
+    color: $color_text_fall;
+    border-bottom: 2px solid $color_accent_fall;
+    background: linear-gradient(transparent 70%, $color_accent_fall 70%);
+  }
+  .winter {
+    color: $color_text_winter;
+    border-bottom: 2px solid $color_accent_winter;
+    background: linear-gradient(transparent 70%, $color_accent_winter 70%);
+  }
 }
 
 
 /*footer*/
 footer{
   text-align: center;
-  background-color: $color_main;
-  color: $color_text;
   line-height: 3;
   letter-spacing: 3px;
   font-size: 80%;
+  .spring {
+    background-color: $color_main_spring;
+    color: $color_text_spring;
+  }
+  .summer {
+    background-color: $color_main_summer;
+    color: $color_text_summer;
+  }
+  .fall {
+    background-color: $color_main_fall;
+    color: $color_text_fall;
+  }
+  .winter {
+    background-color: $color_main_winter;
+    color: $color_text_winter;
+  }
 }
