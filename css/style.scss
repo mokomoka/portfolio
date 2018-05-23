@@ -169,40 +169,41 @@ nav ul{
 
 nav li{
   text-align: center;
-  .spring {
-    border: 1px solid $color_main_spring;
-    background-color: $color_main_spring;
-  }
-  .summer {
-    border: 1px solid $color_main_summer;
-    background-color: $color_main_summer;
-  }
-  .fall {
-    border: 1px solid $color_main_fall;
-    background-color: $color_main_fall;
-  }
-  .winter {
-    border: 1px solid $color_main_winter;
-    background-color: $color_main_winter;
-  }
+}
+
+nav li.spring {
+  border: 1px solid $color_main_spring;
+  background-color: $color_main_spring;
+}
+nav li.summer {
+  border: 1px solid $color_main_summer;
+  background-color: $color_main_summer;
+}
+nav li.fall {
+  border: 1px solid $color_main_fall;
+  background-color: $color_main_fall;
+}
+nav li.winter {
+  border: 1px solid $color_main_winter;
+  background-color: $color_main_winter;
 }
 
 @media screen and (max-width:767px){
   nav li:first-child {
     width: calc(100% - 2px);
     font-size: 130%;
-    .spring {
-      border-bottom: 1px dashed $color_text_spring;
-    }
-    .summer {
-      border-bottom: 1px dashed $color_text_summer;
-    }
-    .fall {
-      border-bottom: 1px dashed $color_text_fall;
-    }
-    .winter {
-      border-bottom: 1px dashed $color_text_winter;
-    }
+  }
+  nav li:first-child.spring {
+    border-bottom: 1px dashed $color_text_spring;
+  }
+  nav li:first-child.summer {
+    border-bottom: 1px dashed $color_text_summer;
+  }
+  nav li:first-child.fall {
+    border-bottom: 1px dashed $color_text_fall;
+  }
+  nav li:first-child.winter {
+    border-bottom: 1px dashed $color_text_winter;
   }
   nav li{
     width: calc(25% - 2px);
@@ -211,38 +212,41 @@ nav li{
 }
 
 @media screen and (min-width:768px){
+  nav li.spring {
+    border: 1px dashed $color_main_spring;
+    border-left: none;
+  }
+  nav li.summer {
+    border: 1px dashed $color_main_summer;
+    border-left: none;
+  }
+  nav li.fall {
+    border: 1px dashed $color_main_fall;
+    border-left: none;
+  }
+  nav li.winter {
+    border: 1px dashed $color_main_winter;
+    border-left: none;
+  }
   nav li{
     width: calc(50% / 4 - 1px);
-    border-left: none;
     float: left;
-    .spring {
-      border-bottom: 1px dashed $color_main_spring;
-    }
-    .summer {
-      border-bottom: 1px dashed $color_main_summer;
-    }
-    .fall {
-      border-bottom: 1px dashed $color_main_fall;
-    }
-    .winter {
-      border-bottom: 1px dashed $color_main_winter;
-    }
   }
   nav li:first-child{
     width: calc(50% - 2px);
     font-size: 150%;
-    .spring {
-      border-left: 1px solid $color_main_spring;
-    }
-    .summer {
-      border-left: 1px solid $color_main_summer;
-    }
-    .fall {
-      border-left: 1px solid $color_main__fall;
-    }
-    .winter {
-      border-left: 1px solid $color_main_winter;
-    }
+  }
+  nav li:first-child.spring {
+    border-left: 1px solid $color_main_spring;
+  }
+  nav li:first-child.summer {
+    border-left: 1px solid $color_main_summer;
+  }
+  nav li:first-child.fall {
+    border-left: 1px solid $color_main_fall;
+  }
+  nav li:first-child.winter {
+    border-left: 1px solid $color_main_winter;
   }
 }
 
@@ -253,36 +257,35 @@ nav a{
   letter-spacing: 3px;
   line-height: 60px;
   transition: 0.5s ease-out;
-  .spring {
-    color: $color_text_spring;
-  }
-  .summer {
-    color: $color_text_summer;
-  }
-  .fall {
-    color: $color_text_fall;
-  }
-  .winter {
-    color: $color_text_winter;
-  }
+}
+nav a.spring {
+  color: $color_text_spring;
+}
+nav a.summer {
+  color: $color_text_summer;
+}
+nav a.fall {
+  color: $color_text_fall;
+}
+nav a.winter {
+  color: $color_text_winter;
 }
 
 nav a:hover{
   transition: 0.5s ease-out;
-  .spring {
-    background-color: $color_accent_spring;
-  }
-  .summer {
-    background-color: $color_accent_summer;
-  }
-  .fall {
-    background-color: $color_accent_fall;
-  }
-  .winter {
-    background-color: $color_accent_winter;
-  }
 }
-
+nav a:hover.spring {
+  background-color: $color_accent_spring;
+}
+nav a:hover.summer {
+  background-color: $color_accent_summer;
+}
+nav a:hover.fall {
+  background-color: $color_accent_fall;
+}
+nav a:hover.winter {
+  background-color: $color_accent_winter;
+}
 
 
 /*main*/
@@ -294,22 +297,22 @@ nav a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  .spring {
-    color: $color_text_spring;
-    background: url("../image/main_spring.jpg") center no-repeat;
-  }
-  .summer {
-    color: $color_text_summer;
-    background: url("../image/main_summer.jpg") center no-repeat;
-  }
-  .fall {
-    color: $color_text_fall;
-    background: url("../image/main_fall.jpg") center no-repeat;
-  }
-  .winter {
-    color: $color_text_winter;
-    background: url("../image/main_winter.jpg") center no-repeat;
-  }
+}
+#main.spring {
+  color: $color_text_spring;
+  background: url("../image/main_spring.jpg") center no-repeat;
+}
+#main.summer {
+  color: $color_text_summer;
+  background: url("../image/main_summer.jpg") center no-repeat;
+}
+#main.fall {
+  color: $color_text_fall;
+  background: url("../image/main_fall.jpg") center no-repeat;
+}
+#main.winter {
+  color: $color_text_winter;
+  background: url("../image/main_winter.jpg") center no-repeat;
 }
 
 #main h1{
@@ -337,19 +340,30 @@ nav a:hover{
   width:100%;
 }
 
-.border-style {
-  .spring {
-    border-top: 4px double $color_accent_spring;
-  }
-  .summer {
-    border-top: 4px double $color_accent_summer;
-  }
-  .fall {
-    border-top: 4px double $color_accent_fall;
-  }
-  .winter {
-    border-top: 4px double $color_accent_winter;
-  }
+.contents.spring p,.contents.spring a,.contents.spring a:visited {
+  color: $color_text_spring;
+}
+.contents.summer p,.contents.summer a,.contents.summer a:visited {
+  color: $color_text_summer;
+}
+.contents.fall p,.contents.fall a,.contents.fall a:visited {
+  color: $color_text_fall;
+}
+.contents.winter p,.contents.winter a,.contents.winter a:visited {
+  color: $color_text_winter;
+}
+
+.border-style.spring {
+  border-top: 4px double $color_accent_spring;
+}
+.border-style.summer {
+  border-top: 4px double $color_accent_summer;
+}
+.border-style.fall {
+  border-top: 4px double $color_accent_fall;
+}
+.border-style.winter {
+  border-top: 4px double $color_accent_winter;
 }
 
 .border-style:after {
@@ -363,18 +377,18 @@ nav a:hover{
   padding: 0 10px;
 	background: $color_base_spring;
 	font-size: 18px;
-  .spring {
-    color: $color_accent_spring;
-  }
-  .summer {
-    color: $color_accent_summer;
-  }
-  .fall {
-    color: $color_accent_fall;
-  }
-  .winter {
-    color: $color_accent_winter;
-  }
+}
+.border-style.spring:after {
+  color: $color_accent_spring;
+}
+.border-style.summer:after {
+  color: $color_accent_summer;
+}
+.border-style.fall:after {
+  color: $color_accent_fall;
+}
+.border-style.winter:after {
+  color: $color_accent_winter;
 }
 
 @media screen and (max-width:767px) {
@@ -397,35 +411,23 @@ nav a:hover{
 
 .contents a {
   transition: 0.5s ease-out;
-  .spring {
-    color: $color_text_spring;
-  }
-  .summer {
-    color: $color_text_summer;
-  }
-  .fall {
-    color: $color_text_fall;
-  }
-  .winter {
-    color: $color_text_winter;
-  }
 }
 
 .contents a:hover {
   text-decoration: underline;
   transition: 0.5s ease-out;
-  .spring {
-    color: $color_accent_spring;
-  }
-  .summer {
-    color: $color_accent_summer;
-  }
-  .fall {
-    color: $color_accent_fall;
-  }
-  .winter {
-    color: $color_accent_winter;
-  }
+}
+.contents a.spring:hover {
+  color: $color_accent_spring;
+}
+.contents a.summer:hover {
+  color: $color_accent_summer;
+}
+.contents a.fall:hover {
+  color: $color_accent_fall;
+}
+.contents a.winter:hover {
+  color: $color_accent_winter;
 }
 
 .contents h1 {
@@ -437,51 +439,51 @@ nav a:hover{
   letter-spacing: 10px;
   font-weight: 100;
   margin-bottom: 40px;
-  .spring {
-    color: $color_main_spring;
-  }
-  .summer {
-    color: $color_main_summer;
-  }
-  .fall {
-    color: $color_main_fall;
-  }
-  .winter {
-    color: $color_main_winter;
-  }
+}
+.contents h1.spring {
+  color: $color_main_spring;
+}
+.contents h1.summer {
+  color: $color_main_summer;
+}
+.contents h1.fall {
+  color: $color_main_fall;
+}
+.contents h1.winter {
+  color: $color_main_winter;
 }
 
 .contents p {
   margin: 40px 5%;
   line-height: 1.7;
-  .spring {
-    color: $color_text_spring;
-  }
-  .summer {
-    color: $color_text_summer;
-  }
-  .fall {
-    color: $color_text_fall;
-  }
-  .winter {
-    color: $color_text_winter;
-  }
+}
+.contents p.spring {
+  color: $color_text_spring;
+}
+.contents p.summer {
+  color: $color_text_summer;
+}
+.contents p.fall {
+  color: $color_text_fall;
+}
+.contents p.winter {
+  color: $color_text_winter;
 }
 
 .contents img{
   border-radius: 50%;
-  .spring {
-    border:5px solid $color_main_spring;
-  }
-  .summer {
-    border:5px solid $color_main_summer;
-  }
-  .fall {
-    border:5px solid $color_main_fall;
-  }
-  .winter {
-    border:5px solid $color_main_winter;
-  }
+}
+.contents.spring img {
+  border:5px solid $color_main_spring;
+}
+.contents.summer img {
+  border:5px solid $color_main_summer;
+}
+.contents.fall img {
+  border:5px solid $color_main_fall;
+}
+.contents.winter img {
+  border:5px solid $color_main_winter;
 }
 
 /*profile*/
@@ -516,24 +518,25 @@ nav a:hover{
   }
 }
 
+#profile td.spring {
+  color:$color_text_spring;
+  border-bottom: thin dashed $color_text_spring;
+}
+#profile td.summer {
+  color:$color_text_summer;
+  border-bottom: thin dashed $color_text_summer;
+}
+#profile td.fall {
+  color:$color_text_fall;
+  border-bottom: thin dashed $color_text_fall;
+}
+#profile td.winter {
+  color:$color_text_winter;
+  border-bottom: thin dashed $color_text_winter;
+}
+
 #profile td {
   padding: 5px;
-  .spring {
-    color:$color_text_spring;
-    border-bottom: thin dashed $color_text_spring;
-  }
-  .summer {
-    color:$color_text_summer;
-    border-bottom: thin dashed $color_text_summer;
-  }
-  .fall {
-    color:$color_text_fall;
-    border-bottom: thin dashed $color_text_fall;
-  }
-  .winter {
-    color:$color_text_winter;
-    border-bottom: thin dashed $color_text_winter;
-  }
 }
 
 
@@ -574,18 +577,18 @@ nav a:hover{
   letter-spacing: 10px;
   font-weight: 100;
   margin: 40px auto;
-  .spring {
-    color: $color_main_spring;
-  }
-  .summer {
-    color: $color_main_summer;
-  }
-  .fall {
-    color: $color_main_fall;
-  }
-  .winter {
-    color: $color_main_winter;
-  }
+}
+#works h2.spring {
+  color: $color_main_spring;
+}
+#works h2.summer {
+  color: $color_main_summer;
+}
+#works h2.fall {
+  color: $color_main_fall;
+}
+#works h2.winter {
+  color: $color_main_winter;
 }
 
 .overlay {
@@ -679,18 +682,18 @@ a.close:hover {
   text-decoration: none;
   text-indent: 0;
   text-align: center;
-  .spring {
-    background-color: $color_main_spring;
-  }
-  .summer {
-    background-color: $color_main_summer;
-  }
-  .fall {
-    background-color: $color_main_fall;
-  }
-  .winter {
-    background-color: $color_main_winter;
-  }
+}
+.overlay .close.spring:after {
+  background-color: $color_main_spring;
+}
+.overlay .close.summer:after {
+  background-color: $color_main_summer;
+}
+.overlay .close.fall:after {
+  background-color: $color_main_fall;
+}
+.overlay .close.winter:after {
+  background-color: $color_main_winter;
 }
 
 .overlay {
@@ -707,26 +710,26 @@ a.close:hover {
   margin: 0px 5%;
   font-size: 130%;
   font-weight: normal;
-  .spring {
-    color: $color_text_spring;
-    border-bottom: 2px solid $color_accent_spring;
-    background: linear-gradient(transparent 70%, $color_accent_spring 70%);
-  }
-  .summer {
-    color: $color_text_summer;
-    border-bottom: 2px solid $color_accent_summer;
-    background: linear-gradient(transparent 70%, $color_accent_summer 70%);
-  }
-  .fall {
-    color: $color_text_fall;
-    border-bottom: 2px solid $color_accent_fall;
-    background: linear-gradient(transparent 70%, $color_accent_fall 70%);
-  }
-  .winter {
-    color: $color_text_winter;
-    border-bottom: 2px solid $color_accent_winter;
-    background: linear-gradient(transparent 70%, $color_accent_winter 70%);
-  }
+}
+#extra h2.spring {
+  color: $color_text_spring;
+  border-bottom: 2px solid $color_accent_spring;
+  background: linear-gradient(transparent 70%, $color_accent_spring 70%);
+}
+#extra h2.summer {
+  color: $color_text_summer;
+  border-bottom: 2px solid $color_accent_summer;
+  background: linear-gradient(transparent 70%, $color_accent_summer 70%);
+}
+#extra h2.fall {
+  color: $color_text_fall;
+  border-bottom: 2px solid $color_accent_fall;
+  background: linear-gradient(transparent 70%, $color_accent_fall 70%);
+}
+#extra h2.winter {
+  color: $color_text_winter;
+  border-bottom: 2px solid $color_accent_winter;
+  background: linear-gradient(transparent 70%, $color_accent_winter 70%);
 }
 
 
@@ -736,20 +739,20 @@ footer{
   line-height: 3;
   letter-spacing: 3px;
   font-size: 80%;
-  .spring {
-    background-color: $color_main_spring;
-    color: $color_text_spring;
-  }
-  .summer {
-    background-color: $color_main_summer;
-    color: $color_text_summer;
-  }
-  .fall {
-    background-color: $color_main_fall;
-    color: $color_text_fall;
-  }
-  .winter {
-    background-color: $color_main_winter;
-    color: $color_text_winter;
-  }
+}
+footer.spring {
+  background-color: $color_main_spring;
+  color: $color_text_spring;
+}
+footer.summer {
+  background-color: $color_main_summer;
+  color: $color_text_summer;
+}
+footer.fall {
+  background-color: $color_main_fall;
+  color: $color_text_fall;
+}
+footer.winter {
+  background-color: $color_main_winter;
+  color: $color_text_winter;
 }
