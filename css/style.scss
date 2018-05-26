@@ -128,9 +128,9 @@ $color_accent_spring: #e2e28a;
 $color_text_spring: #775435;
 
 $color_base_summer: #ffffff;
-$color_main_summer: #97CCA6;
-$color_accent_summer: #F3E879;
-$color_text_summer: #574342;
+$color_main_summer: #00BBE6;
+$color_accent_summer: #F7EC1E;
+$color_text_summer: #2E1103;
 /*
 $color_base_summer: #ffffff;
 $color_main_summer: #FCB623;
@@ -169,16 +169,16 @@ nav{
   z-index: 2;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
   .spring {
-    background-color: $color_main_spring;
+    background-color: rgba($color_main_spring, 0.7);
   }
   .summer {
-    background-color: $color_main_summer;
+    background-color: rgba($color_main_summer, 0.7);
   }
   .fall {
-    background-color: $color_main_fall;
+    background-color: rgba($color_main_fall, 0.7);
   }
   .winter {
-    background-color: $color_main_winter;
+    background-color: rgba($color_main_winter, 0.7);
   }
 }
 
@@ -192,19 +192,15 @@ nav li{
 
 nav li.spring {
   border: 1px solid $color_main_spring;
-  background-color: $color_main_spring;
 }
 nav li.summer {
   border: 1px solid $color_main_summer;
-  background-color: $color_main_summer;
 }
 nav li.fall {
   border: 1px solid $color_main_fall;
-  background-color: $color_main_fall;
 }
 nav li.winter {
   border: 1px solid $color_main_winter;
-  background-color: $color_main_winter;
 }
 
 @media screen and (max-width:767px){
@@ -505,6 +501,28 @@ nav a:hover.winter {
   border:5px solid $color_main_winter;
 }
 
+.contents.spring b {
+  font-weight: normal;
+  background: linear-gradient(transparent 65%, $color_accent_spring 65%, $color_accent_spring 85%, transparent 85%);
+}
+
+.contents.summer b {
+  font-weight: normal;
+  background: linear-gradient(transparent 65%, $color_accent_summer 65%, $color_accent_summer 85%, transparent 85%);
+}
+
+.contents.fall b {
+  font-weight: normal;
+  background: linear-gradient(transparent 65%, $color_accent_fall 65%, $color_accent_fall 85%, transparent 85%);
+}
+
+.contents.winter b {
+  font-weight: normal;
+  background: linear-gradient(transparent 65%, $color_accent_winter 65%, $color_accent_winter 85%, transparent 85%);
+}
+
+
+
 /*profile*/
 @media screen and (max-width:767px) {
   #profile {
@@ -664,7 +682,7 @@ nav a:hover.winter {
   width: 80%;
   margin: 40px auto;
   border-radius: 0%;
-  border:none;
+  border: none !important;
 }
 
 .overlay .close {
