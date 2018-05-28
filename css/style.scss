@@ -228,19 +228,19 @@ nav li.winter {
 
 @media screen and (min-width:768px){
   nav li.spring {
-    border: 1px dashed $color_main_spring;
+    border: 1px solid $color_main_spring;
     border-left: none;
   }
   nav li.summer {
-    border: 1px dashed $color_main_summer;
+    border: 1px solid $color_main_summer;
     border-left: none;
   }
   nav li.fall {
-    border: 1px dashed $color_main_fall;
+    border: 1px solid $color_main_fall;
     border-left: none;
   }
   nav li.winter {
-    border: 1px dashed $color_main_winter;
+    border: 1px solid $color_main_winter;
     border-left: none;
   }
   nav li{
@@ -353,6 +353,8 @@ nav a:hover.winter {
 /*contents*/
 .contents{
   width:100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .contents.spring p,.contents.spring a,.contents.spring a:visited {
@@ -552,6 +554,7 @@ nav a:hover.winter {
     line-height:1.5;
     text-align: left;
     margin: 0 5%;
+    table-layout: fixed;
   }
 }
 
@@ -576,10 +579,33 @@ nav a:hover.winter {
   padding: 5px;
 }
 
+#profile td:first-child {
+  width: 130px;
+  vertical-align: middle;
+}
+
 
 
 /*works*/
 @media screen and (max-width:767px) {
+  #works {
+    text-align: center;
+  }
+  #works p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+  #works {
+    text-align: left;
+  }
+  #works p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width:1201px) {
   #works {
     text-align: center;
   }
@@ -737,6 +763,26 @@ a.close:hover {
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
+}
+
+
+
+/*Link*/
+#link img{
+  width: 100px;
+  margin-right: 50px;
+  border: none !important;
+  display: inline-block;
+  transition: 0.5s ease-out;
+}
+
+#link img:hover {
+  opacity: 0.6;
+  transition: 0.5s ease-out;
+}
+
+#link a:hover {
+  text-decoration: none;
 }
 
 

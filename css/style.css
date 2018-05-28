@@ -207,22 +207,22 @@ nav li.winter {
 }
 @media screen and (min-width: 768px) {
   nav li.spring {
-    border: 1px dashed #f5b8b5;
+    border: 1px solid #f5b8b5;
     border-left: none;
   }
 
   nav li.summer {
-    border: 1px dashed #00BBE6;
+    border: 1px solid #00BBE6;
     border-left: none;
   }
 
   nav li.fall {
-    border: 1px dashed #f3553c;
+    border: 1px solid #f3553c;
     border-left: none;
   }
 
   nav li.winter {
-    border: 1px dashed #84ccc9;
+    border: 1px solid #84ccc9;
     border-left: none;
   }
 
@@ -350,6 +350,8 @@ nav a:hover.winter {
 /*contents*/
 .contents {
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .contents.spring p, .contents.spring a, .contents.spring a:visited {
@@ -573,6 +575,7 @@ nav a:hover.winter {
     line-height: 1.5;
     text-align: left;
     margin: 0 5%;
+    table-layout: fixed;
   }
 }
 #profile td.spring {
@@ -599,8 +602,31 @@ nav a:hover.winter {
   padding: 5px;
 }
 
+#profile td:first-child {
+  width: 130px;
+  vertical-align: middle;
+}
+
 /*works*/
 @media screen and (max-width: 767px) {
+  #works {
+    text-align: center;
+  }
+
+  #works p {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #works {
+    text-align: left;
+  }
+
+  #works p {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1201px) {
   #works {
     text-align: center;
   }
@@ -766,6 +792,24 @@ a.close:hover {
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
+}
+
+/*Link*/
+#link img {
+  width: 100px;
+  margin-right: 50px;
+  border: none !important;
+  display: inline-block;
+  transition: 0.5s ease-out;
+}
+
+#link img:hover {
+  opacity: 0.6;
+  transition: 0.5s ease-out;
+}
+
+#link a:hover {
+  text-decoration: none;
 }
 
 /*extra*/
