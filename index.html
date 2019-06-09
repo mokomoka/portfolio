@@ -1,205 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Tomoka's portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript">
-  window.addEventListener('load', function(){
-    var month = new Date().getMonth() + 1;
-    var seasons = document.getElementsByClassName('season');
-    if(month >= 3 && month <= 5){
-      [].forEach.call(seasons, function(season){
-        season.classList.add('spring');
-      });
-    }else if(month >= 6 && month <= 8){
-      [].forEach.call(seasons, function(season){
-        season.classList.add('summer');
-      });
-    }else if(month >= 9 && month <= 11){
-      [].forEach.call(seasons, function(season){
-        season.classList.add('fall');
-      });
-    }else{
-      [].forEach.call(seasons, function(season){
-        season.classList.add('winter');
-      });
-    }
-  })
-  </script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tomoka's portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic"
+      rel="stylesheet"
+    />
+    <link href="css/ress.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-  <nav class="season">
-    <ul>
-      <li class="season"><a href="#main" class="season">Tomoka's portfolio</a></li>
-      <li class="season"><a href="#profile" class="season">Profile</a></li>
-      <li class="season"><a href="#works" class="season">Works</a></li>
-      <li class="season"><a href="#link" class="season">Link</a></li>
-      <li class="season"><a href="#extra" class="season">Extra</a></li>
-    </ul>
-  </nav>
+  <body>
+    <nav id="nav__drawer">
+      <input id="nav__input" type="checkbox" class="unshown" />
+      <label id="nav__label--open" for="nav__input"><span></span></label>
+      <label id="nav__label--close" class="unshown" for="nav__input"></label>
+      <ul id="nav__content">
+        <li class="nav__li"><a href="#main">Tomoka's portfolio</a></li>
+        <li class="nav__li"><a href="#profile">Profile</a></li>
+        <li class="nav__li"><a href="#works">Works</a></li>
+        <li class="nav__li"><a href="#link">Link</a></li>
+        <li class="nav__li"><a href="#extra">Extra</a></li>
+      </ul>
+    </nav>
 
-  <div id="main" class="season">
-    <h1>Tomoka's portfolio</h1>
-  </div>
-
-  <div id="profile" class="contents season">
-    <h1 class="season">Profile</h1>
-    <img src="image/me.jpg" alt="自撮り" oncontextmenu="return false;">
-    <table border="1">
-      <tr>
-        <td class="season">名前</td><td class="season">はやしともか</td>
-      </tr>
-      <tr>
-        <td class="season">誕生日</td><td class="season">11月4日</td>
-      </tr>
-      <tr>
-        <td class="season">趣味</td><td class="season">お絵かきと動画編集</td>
-      </tr>
-      <tr>
-        <td class="season">マイブーム</td><td class="season"><a href="https://www.youtube.com/channel/UCzciBmqDXPE47nOPRrjmo9A" target="_blank" class="season">M.S.S Project</a></td>
-      </tr>
-      <tr>
-        <td class="season">情報系に興味を<br>持ったきっかけ</td><td class="season">昔ゲームが好きだったことと、<br>MSSPの動画で動画投稿サイトに興味をもったこと</td>
-      </tr>
-      <tr>
-        <td class="season">今やっていること</td><td class="season">Androidアプリ開発（Java）・SASS・JavaScript・Ruby on Railsの 勉強</td>
-      </tr>
-    </table>
-  </div>
-
-  <hr class="border-style season">
-
-  <div id="works" class="contents season">
-    <h1 class="season">Works</h1>
-    <p>つくったものです。作成日もジャンルもバラバラ。<br>
-    ※プログラミング関係の成果物はまだありません。Webサイト・デザイン・動画関係のみ。</p>
-    <a href="#works1" class="noscroll">
-      <img src="image/works1.jpg" oncontextmenu="return false;">
-    </a>
-    <div class="overlay" id="works1">
-      <div class="mwin">
-        <h2 class="season">未来祭2016</h2>
-        <p>2016年度の<b>未来祭</b>（大学祭）では、新設された<b>広報セクション</b>のメンバーとして、<b>告知動画を作成</b>しました。<br>
-          ロゴのイメージを基に、曲を選んだり動きを決めたり…<br>
-          また、サークルの動画である以上、自分だけで決めるわけにはいかないので、
-          動画編集に詳しくない人の意見も聞きました。<br>
-          これまであまりモーショングラフィックスは作ったことがなかったので、悩む場面が多々ありましたが、
-          最終的には自分自身納得いくものができてとても嬉しくなりました。<br>
-          <video src="image/video1.mp4" preload="metadata" controls poster="image/video1.png"></video>
-        </p>
-      </div>
-      <a href="#!" class="close noscroll season">&times;</a>
+    <div id="main" class="season">
+      <h1>Tomoka's portfolio</h1>
     </div>
-    <a href="#works2" class="noscroll">
-      <img src="image/works2.jpg" oncontextmenu="return false;">
-    </a>
-    <div class="overlay" id="works2">
-      <div class="mwin">
-        <h2 class="season">未来祭2017</h2>
-        <p>2017年度の<b>未来祭</b>（大学祭）では、<b>広報セクションのリーダー</b>として、いろいろな活動に関わりました。<br>
-          主に制作したものは、<b>告知動画と、公式サイト</b>などです。<br>
-          サイト制作は0からのスタートで、さらに時間がなかったこともあり、大変苦労しました。<br>
-          未来祭公式サイト→<a href="http://miraisai.net" target="_blank">http://miraisai.net/</a><br>
-          告知動画は2016年度と同じように作成しましたが、ロゴやイメージカラーがシンプルだったので、そこからどう連想して動きをつけるかに苦労した記憶があります。<br>
-          ほかには、<b>新入生勧誘のビラ、NCV（ケーブルテレビ）で表示していただいた広告画像、
-          サイトトップの動画</b>も私が作成しています。<br>
-          <img src="image/works2_1.png" oncontextmenu="return false;">
-          <video src="image/video2.mp4" preload="metadata" controls poster="image/video2.png"></video>
-        </p>
-      </div>
-      <a href="#!" class="close noscroll season">&times;</a>
+
+    <div id="profile" class="contents season">
+      <h1 class="profile__ttl">Profile</h1>
+      <img src="image/me.jpg" alt="自撮り" oncontextmenu="return false;" />
+      <p class="profile__txt">
+        はやしともか<br />
+        基本的にM.S.S Projectを追いかけ、M.S.S Projectに励まされ、M.S.S
+        Projectに貢ぐために生きている。以上。<br />
+        …ちゃんとした自己紹介や個人的な考え方、将来について考えていることなどを見たい方は、「続きを見る」をクリック！
+      </p>
+      <a href="profile.html">続きを見る</a>
     </div>
-    <a href="#works3" class="noscroll">
-      <img src="image/works3.jpg" oncontextmenu="return false;">
-    </a>
-    <div class="overlay" id="works3">
-      <div class="mwin">
-        <h2 class="season">Miku Miku Dance</h2>
-        <p>趣味で<b>MikuMikuDance</b>（MMD）というフリーソフトを使った動画・静止画制作をしています。<br>
-          現状は配布されたモデルやモーションを使用することが多く、
-          エフェクトの使い方やカメラアングル、動画編集で他の動画と差別化を図っています。<br>
-          いずれはモデルやモーション、エフェクトの作成にも挑戦したいと思います。
-          <video src="image/video3.mp4" preload="metadata" controls poster="image/video3.png"></video>
-          <video src="image/video4.mp4" preload="metadata" controls poster="image/video4.png"></video>
-          <video src="image/video5.mp4" preload="metadata" controls poster="image/video5.png"></video>
-        </p>
-      </div>
-      <a href="#!" class="close noscroll season">&times;</a>
+
+    <hr class="border-style season" />
+
+    <div id="works" class="contents season">
+      <h1 class="season">Works</h1>
     </div>
-    <a href="#works4" class="noscroll">
-      <img src="image/works4.jpg" oncontextmenu="return false;">
-    </a>
-    <div class="overlay" id="works4">
-      <div class="mwin">
-        <h2 class="season">その他の動画</h2>
-        <p>MMD以外では、<b>モーショングラフィックスやストップモーション、タイムラプス</b>の動画も作ることがあります。<br>
-          ストップモーションはサークルや部活で共同制作したものが多く公開が難しいので、
-          個人で作成したモーショングラフィックスを公開します。<br>
-          未来祭の告知動画もモーショングラフィックスの類ですが、そちらは題材がはっきり決まっているのでその制約が良い影響にも悪い影響にもなります。
-          趣味で作るモーショングラフィックスの動画は制約がないので、とても自由な反面、目標がなく何を作っていいか迷子になりがちです。<br>
-          そういうわけで、まだあまり作ってはいませんが、自分のペースで作れるところが魅力だと思うので、
-          ぜひこれから作品を増やしていきたいです。
-          <video src="image/video6.mp4" preload="metadata" controls poster="image/video6.png" oncontextmenu="return false;"></video>
-          <video src="image/video7.mp4" preload="metadata" controls poster="image/video7.png" oncontextmenu="return false;"></video>
-        </p>
-      </div>
-      <a href="#!" class="close noscroll season">&times;</a>
+
+    <hr class="border-style season" />
+
+    <div id="link" class="contents season">
+      <h1 class="season">Link</h1>
     </div>
-  </div>
 
-  <hr class="border-style season">
+    <hr class="border-style season" />
 
-  <div id="link" class="contents season">
-    <h1 class="season">Link</h1>
-    <p>いろんなアカウントを持っていますが、とりあえず必要そうなものだけ載せておきます。</p>
-    <p>
-      <a href="https://twitter.com/moko2356789" target="_blank" class="season">
-        <img src="image/Twitter.png">
-      </a>
-      <a href="https://github.com/mokomoka" target="_blank" class="season">
-        <img src="image/GitHub.png">
-      </a>
-    </p>
-  </div>
-
-  <hr class="border-style season">
-
-  <div id="extra" class="contents season">
-    <h1 class="season">Extra</h1>
-    <h2 class="season">自分の人生要約みたいな</h2>
-    <p>幼稚園くらいからずっと絵を描いたり工作したり手芸したり…かなりの<b>インドア派</b>生活を送る。<br>
-      そして小学生のときにゲームを始め、<b>「ゲームクリエイターになりたい！」</b>といいつつ何もせずに過ぎる。<br>
-      中学生のときになんとなく<b>パソコン部</b>に入り、
-      それまでただお遊びだった部で「文化祭に向けてなんか作りましょう！動画とか！」と提案し、動画制作を始める。なんやかんやで<b>部長</b>になる。<br>
-      すっかり動画編集が楽しくなり、高校では<b>放送部</b>でアナウンス担当と動画制作やラジオ制作のディレクターになる。なんやかんやで<b>副部長</b>になる。<br>
-      高2から文理クラスが分かれるというとき、理系科目のほうが好きだったため理系クラスに入るも、その後映像系は文系だということを知り軽くショックを受ける。<br>
-      だがゲームやプログラミングへの興味はあったため、理系クラス続行。<b>（興味はあってもまだコードは書いてない）</b><br>
-      そしてセンター試験の結果で調子に乗り、前期試験の勉強をおろそかにし、結果前期受けた大学に落ちる。<br>
-      後期で<b>公立はこだて未来大学</b>に受かり、1～2年の時はサイト制作以外あまり挑戦せず、ほぼサークルのために生きていた。なんやかんやで<b>セクション（部署）のリーダー</b>になる。<br>
-      2年生の終わりごろ、<b>「このままではまずい」</b>と思い、誘われるまま<b>高度ICTコース</b>に入ってみることにする。<br>
-      今は趣味で<b>HTML、CSS、JavaScript、Illustrator</b>を触り、高度ICT演習のために<b>Androidアプリ開発の勉強（Java）とAdobe XDの練習</b>をしています。<br>
-      結果、周りがすごい人ばかりになり、周りに負けてはいられない！と日々頑張っているつもりです！
-    </p>
-    <h2 class="season">所属みたいな</h2>
-    <p>高校までは以上の通り。<br>
-      大学では、<br>
-      ・<b>未来祭実行委員会</b>（大学祭の運営）<br>
-      ・<b>Studio SUN</b>（映像制作サークル）<br>
-      ・<b>デザイン・カルテット部</b>（デザインコンペに参加など）<br>
-      の3つのサークルに入りました。<br>
-      その後勧誘されて、大学の新入生オリエンテーションなどの補佐をする、
-      <b>Webmaster Jr.（現System Jr.）</b>に参加。<br>
-      また、3年生になってから、誘われるがまま、<b>LOCAL 学生部</b>に加入しました。<br>
-      どれも系統がちがうため、いろいろなタイプの人と関わることができ、とても楽しいです。
-    </p>
-  </div>
-  <footer class="season">
-    <address>Copyright(C)2018  Tomoka Hayashi</address>
-  </footer>
-  <script src="js/scroll.js"></script>
-</body>
+    <div id="extra" class="contents season">
+      <h1 class="season">Extra</h1>
+    </div>
+    <footer class="season">
+      <address>Copyright(C)2018 Tomoka Hayashi</address>
+    </footer>
+  </body>
 </html>
