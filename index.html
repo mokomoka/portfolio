@@ -26,40 +26,65 @@
       </ul>
     </nav>
 
-    <div id="main" class="season">
+    <section id="main" class="main">
       <h1>Tomoka's portfolio</h1>
-    </div>
+    </section>
 
-    <div id="profile" class="contents season">
+    <hr class="border-style season" />
+
+    <section id="profile" class="profile">
       <h1 class="profile__ttl">Profile</h1>
-      <img src="image/me.jpg" alt="自撮り" oncontextmenu="return false;" />
-      <p class="profile__txt">
-        はやしともか<br />
-        基本的にM.S.S Projectを追いかけ、M.S.S Projectに励まされ、M.S.S
-        Projectに貢ぐために生きている。以上。<br />
-        …ちゃんとした自己紹介や個人的な考え方、将来について考えていることなどを見たい方は、「続きを見る」をクリック！
-      </p>
-      <a href="profile.html">続きを見る</a>
-    </div>
+      <div class="section__flexbox">
+        <div class="profile__box--img section__flexbox">
+          <input id="profile__input" type="checkbox" class="unshown" />
+          <label id="profile__label" for="profile__input">
+            <img
+              class="profile__img"
+              src="image/me1.jpg"
+              alt="自撮り"
+              oncontextmenu="return false;"
+            />
+            <img
+              class="profile__img"
+              src="image/me2.jpg"
+              alt="自画像"
+              oncontextmenu="return false;"
+            />
+          </label>
+        </div>
+        <div class="section__flexbox profile__txt">
+          <h3 class="profile__name"><strong>はやしともか</strong></h3>
+          <p>
+            公立はこだて未来大学に通う情報系女子（？）。デザインの興味からフロントエンドへ興味が移り、いつのまにかサーバサイドもやっていました。<br />
+            何が自分に向いているのかを模索しながら、幅広く手を付けています。
+          </p>
+          <p class="profile__button--box">
+            <a class="profile__button--link" href="profile.html" ontouchstart=""
+              >もっと見る</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
     <hr class="border-style season" />
 
-    <div id="works" class="contents season">
+    <section id="works">
       <h1 class="season">Works</h1>
-    </div>
+    </section>
 
     <hr class="border-style season" />
 
-    <div id="link" class="contents season">
+    <section id="link">
       <h1 class="season">Link</h1>
-    </div>
+    </section>
 
     <hr class="border-style season" />
 
-    <div id="extra" class="contents season">
+    <section id="extra">
       <h1 class="season">Extra</h1>
-    </div>
-    <footer class="season">
+    </section>
+    <footer>
       <address>Copyright(C)2018 Tomoka Hayashi</address>
     </footer>
   </body>
