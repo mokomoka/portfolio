@@ -10,15 +10,18 @@ body {
     "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
 }
 
+$breakpoint_max: 767px;
+$breakpoint_min: 768px;
+
 %sectionArea {
   width: 80vw;
   min-height: 100vh;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $breakpoint_max) {
     margin: 0 10%;
-    padding: 40px 0;
+    padding: 64px 0;
   }
-  @media screen and (min-width: 768px) {
-    padding: 60px 0;
+  @media screen and (min-width: $breakpoint_min) {
+    padding: 80px 0;
     max-width: 1120px;
     margin: 0 auto;
   }
@@ -35,6 +38,11 @@ $color_text_spring: #775435;
 
 h1 {
   font-size: 200%;
+  margin-bottom: 32px;
+}
+
+p {
+  line-height: 1.5;
 }
 
 /*nav*/
@@ -65,7 +73,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint_max) {
   #nav__drawer {
     height: 40px;
     line-height: 40px;
@@ -171,7 +179,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpoint_min) {
   #nav__input ~ #nav__label--close {
     display: none;
   }
@@ -208,7 +216,6 @@ section {
 }
 
 .section__flexbox {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -253,7 +260,7 @@ section {
     margin-bottom: 16px;
   }
 
-  &__txt {
+  &__box--txt {
     flex: 2 1 320px;
     flex-flow: column;
     justify-content: center;
@@ -324,5 +331,71 @@ section {
   }
   &:last-child {
     opacity: 1;
+  }
+}
+
+/*works*/
+.works {
+  &__box {
+    justify-content: center;
+  }
+
+  &__card {
+    flex-flow: row wrap;
+    align-content: flex-start;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 32px;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: 640px) {
+      max-width: 240px;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+
+    @media screen and (min-width: 641px) and (max-width: $breakpoint_max) {
+      max-width: 240px;
+      &:nth-of-type(odd) {
+        margin-right: 32px;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint_min) {
+      max-width: 880px;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &__thumbnail {
+    width: 240px;
+    height: 240px;
+  }
+
+  &__txt {
+    flex: 240px;
+    padding: 16px;
+    flex-flow: column;
+  }
+
+  &__ttl {
+    font-size: 140%;
+  }
+
+  &__term {
+    font-size: 80%;
+    margin-bottom: 16px;
+  }
+
+  &__summary {
+    flex: 1;
+  }
+
+  &__link {
+    color: $color_main_spring;
+    text-align: right;
+    margin-top: 8px;
   }
 }
