@@ -1,8 +1,7 @@
 /* node-sass css/style.scss css/style.css -w */
 
 /*all*/
-$breakpoint_max: 767px;
-$breakpoint_min: 768px;
+$breakpoint: 768px;
 
 html {
   scroll-behavior: smooth;
@@ -12,12 +11,9 @@ html {
 body {
   font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴ ProN W3",
     "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+  font-size: 1.4em;
 
-  @media screen and (max-width: $breakpoint_max) {
-    font-size: 1.4em;
-  }
-
-  @media screen and (min-width: $breakpoint_min) {
+  @media (min-width: $breakpoint) {
     font-size: 1.6em;
   }
 }
@@ -25,11 +21,10 @@ body {
 %sectionArea {
   width: 80vw;
   min-height: 100vh;
-  @media screen and (max-width: $breakpoint_max) {
-    margin: 0 10%;
-    padding: 64px 0;
-  }
-  @media screen and (min-width: $breakpoint_min) {
+  margin: 0 10%;
+  padding: 64px 0;
+
+  @media (min-width: $breakpoint) {
     margin: 0 auto;
     padding: 80px 0;
     max-width: 1120px;
@@ -82,126 +77,128 @@ nav {
   }
 }
 
-@media screen and (max-width: $breakpoint_max) {
-  #nav__drawer {
-    height: 40px;
-    line-height: 40px;
-  }
+#nav__drawer {
+  height: 40px;
+  line-height: 40px;
+}
 
-  #nav__label--open {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-    transition: 0.5s ease-in-out;
-    margin: 4px;
-    position: fixed;
+#nav__label--open {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  transition: 0.5s ease-in-out;
+  margin: 4px;
+  position: fixed;
 
-    span,
-    span:before,
-    span:after {
-      position: absolute;
-      width: 24px;
-      height: 2px;
-      margin: auto;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: 3px;
-      background: $color_text_spring;
-      display: block;
-      content: "";
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-
-    span {
-      transform: rotate(0deg);
-      &::before {
-        transform: translateY(-8px);
-      }
-
-      &::after {
-        transform: translateY(8px);
-      }
-    }
-  }
-
-  #nav__label--close {
-    display: none;
-    position: fixed;
-    z-index: 0;
-    top: 40px;
-    width: 100%;
-    height: calc(100% - 40px);
-    background: rgba(0, 0, 0, 1);
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-  }
-
-  #nav__content {
-    overflow: auto;
-    position: fixed;
+  span,
+  span:before,
+  span:after {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    margin: auto;
     top: 0;
     left: 0;
-    z-index: 1;
-    width: 100%;
-    background: #fff;
-    transition: 0.5s ease-in-out;
-    transform: translateY(-105%);
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    background: $color_text_spring;
+    display: block;
+    content: "";
+    cursor: pointer;
+    transition: all 0.3s;
+  }
 
-    li {
-      line-height: 60px;
+  span {
+    transform: rotate(0deg);
+    &::before {
+      transform: translateY(-8px);
+    }
 
-      &:first-child {
-        display: none;
-
-        a {
-          padding-left: 12px;
-        }
-      }
+    &::after {
+      transform: translateY(8px);
     }
   }
+}
 
-  #nav__input:checked ~ #nav__label--close {
-    display: block;
-    opacity: 0.5;
-  }
+#nav__label--close {
+  display: none;
+  position: fixed;
+  z-index: 0;
+  top: 40px;
+  width: 100%;
+  height: calc(100% - 40px);
+  background: rgba(0, 0, 0, 1);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
 
-  #nav__input:checked ~ #nav__content {
-    transform: translateY(40px);
-  }
+#nav__content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background: #fff;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-105%);
 
-  #nav__input:checked ~ #nav__label--open {
-    span {
-      background: $color_main_spring;
+  li {
+    line-height: 60px;
 
-      &::before {
-        transform: rotate(-45deg) translateY(0px);
-      }
+    &:first-child {
+      display: none;
 
-      &::after {
-        transform: rotate(45deg) translateY(0px);
+      a {
+        padding-left: 12px;
       }
     }
   }
 }
 
-@media screen and (min-width: $breakpoint_min) {
-  #nav__input ~ #nav__label--close {
+#nav__input:checked ~ #nav__label--close {
+  display: block;
+  opacity: 0.5;
+}
+
+#nav__input:checked ~ #nav__content {
+  transform: translateY(40px);
+}
+
+#nav__input:checked ~ #nav__label--open {
+  span {
+    background: $color_main_spring;
+
+    &::before {
+      transform: rotate(-45deg) translateY(0px);
+    }
+
+    &::after {
+      transform: rotate(45deg) translateY(0px);
+    }
+  }
+}
+
+@media (min-width: $breakpoint) {
+  #nav__input ~ #nav__label--open,
+  #nav__label--close {
     display: none;
   }
 
-  nav {
+  #nav__drawer {
     height: 60px;
+    line-height: 60px;
 
-    ul {
+    #nav__content {
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
+      flex-flow: row nowrap;
+      transform: initial;
+      background: none;
 
-      li {
+      .nav__li {
+        display: block;
         flex-grow: 1;
 
         &:first-child {
@@ -356,21 +353,24 @@ section {
     margin-bottom: 32px;
     transition: all 0.3s ease;
 
-    @media screen and (max-width: 640px) {
-      max-width: 240px;
-      margin-right: 16px;
-      margin-left: 16px;
+    max-width: 240px;
+    &:nth-of-type(odd) {
+      margin-right: 32px;
     }
 
-    @media screen and (min-width: 641px) and (max-width: $breakpoint_max) {
+    @media (max-width: 640px) {
       max-width: 240px;
-      &:nth-of-type(odd) {
-        margin-right: 32px;
+      &:nth-of-type(n) {
+        margin-right: 16px;
+        margin-left: 16px;
       }
     }
 
-    @media screen and (min-width: $breakpoint_min) {
+    @media (min-width: $breakpoint) {
       max-width: 880px;
+      &:nth-of-type(n) {
+        margin-right: 0px;
+      }
     }
 
     &:active {
@@ -390,7 +390,7 @@ section {
   }
 
   &__ttl {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   &__term {
