@@ -1,17 +1,26 @@
 /* node-sass css/style.scss css/style.css -w */
 
 /*all*/
+$breakpoint_max: 767px;
+$breakpoint_min: 768px;
+
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
   font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴ ProN W3",
     "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
-}
 
-$breakpoint_max: 767px;
-$breakpoint_min: 768px;
+  @media screen and (max-width: $breakpoint_max) {
+    font-size: 1.4em;
+  }
+
+  @media screen and (min-width: $breakpoint_min) {
+    font-size: 1.6em;
+  }
+}
 
 %sectionArea {
   width: 80vw;
@@ -21,9 +30,9 @@ $breakpoint_min: 768px;
     padding: 64px 0;
   }
   @media screen and (min-width: $breakpoint_min) {
+    margin: 0 auto;
     padding: 80px 0;
     max-width: 1120px;
-    margin: 0 auto;
   }
 }
 
@@ -37,12 +46,12 @@ $color_text_spring: #775435;
 }
 
 h1 {
-  font-size: 200%;
+  font-size: 2.8rem;
   margin-bottom: 32px;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /*nav*/
@@ -197,7 +206,7 @@ nav {
 
         &:first-child {
           flex-grow: 2;
-          font-size: 130%;
+          font-size: 2rem;
         }
 
         a {
@@ -255,7 +264,7 @@ section {
   }
 
   &__name {
-    font-size: 140%;
+    font-size: 2.4rem;
     border-bottom: $color_main_spring 1px dashed;
     margin-bottom: 16px;
   }
@@ -283,7 +292,7 @@ section {
       text-align: center;
       text-decoration: none;
       color: $color_text_spring;
-      font-size: 120%;
+      font-size: 1.8rem;
       position: relative;
       transition: all 0.3s ease;
 
@@ -381,12 +390,12 @@ section {
   }
 
   &__ttl {
-    font-size: 140%;
+    font-size: 2.4rem;
   }
 
   &__term {
-    font-size: 80%;
-    margin-bottom: 16px;
+    font-size: 1.2rem;
+    margin: 4px 0 16px 0;
   }
 
   &__summary {
@@ -396,6 +405,6 @@ section {
   &__link {
     color: $color_main_spring;
     text-align: right;
-    margin-top: 8px;
+    margin-top: 16px;
   }
 }
