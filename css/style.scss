@@ -236,8 +236,8 @@ section {
   align-items: center;
 }
 
-/*profile*/
-.profile {
+/*about*/
+.about {
   &__box--img {
     height: 320px;
     flex: 1 2 320px;
@@ -325,18 +325,28 @@ section {
   }
 }
 
-#profile__label {
+#about__label {
   position: relative;
   top: calc(50% - 120px);
 }
 
-#profile__input:checked ~ #profile__label > .profile__img {
+#about__input:checked ~ #about__label > .about__img {
   transition: 0.5s ease-in-out;
   &:first-child {
     opacity: 0;
   }
   &:last-child {
     opacity: 1;
+  }
+}
+
+/*skills*/
+.skills {
+  &__card {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    width: 240px;
+    height: 160px;
   }
 }
 

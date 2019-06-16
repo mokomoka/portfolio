@@ -225,14 +225,14 @@ section {
   align-items: center;
 }
 
-/*profile*/
-.profile__box--img {
+/*about*/
+.about__box--img {
   height: 320px;
   flex: 1 2 320px;
   justify-content: center;
 }
 
-.profile__img {
+.about__img {
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -244,17 +244,17 @@ section {
   left: -120px;
 }
 
-.profile__img:last-child {
+.about__img:last-child {
   opacity: 0;
 }
 
-.profile__name {
+.about__name {
   font-size: 2.4rem;
   border-bottom: #f28f99 1px dashed;
   margin-bottom: 16px;
 }
 
-.profile__box--txt {
+.about__box--txt {
   flex: 2 1 320px;
   flex-flow: column;
   justify-content: center;
@@ -262,14 +262,14 @@ section {
   min-height: 320px;
 }
 
-.profile__button--box {
+.about__button--box {
   display: inline-block;
   border-radius: 8px;
   border: #f28f99 2px solid;
   margin: 16px 0 0 auto;
 }
 
-.profile__button--link {
+.about__button--link {
   border-radius: 8px;
   display: inline-block;
   padding: 8px 16px;
@@ -281,7 +281,7 @@ section {
   transition: all 0.3s ease;
 }
 
-.profile__button--link::before, .profile__button--link::after {
+.about__button--link::before, .about__button--link::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -289,41 +289,49 @@ section {
   background: #f28f99;
 }
 
-.profile__button--link::after {
+.about__button--link::after {
   height: 0;
   left: 0;
   bottom: 0;
   width: 100%;
 }
 
-.profile__button--link:hover {
+.about__button--link:hover {
   color: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.profile__button--link:hover:after {
+.about__button--link:hover:after {
   height: 100%;
 }
 
-.profile__button--link:active {
+.about__button--link:active {
   box-shadow: none;
 }
 
-#profile__label {
+#about__label {
   position: relative;
   top: calc(50% - 120px);
 }
 
-#profile__input:checked ~ #profile__label > .profile__img {
+#about__input:checked ~ #about__label > .about__img {
   transition: 0.5s ease-in-out;
 }
 
-#profile__input:checked ~ #profile__label > .profile__img:first-child {
+#about__input:checked ~ #about__label > .about__img:first-child {
   opacity: 0;
 }
 
-#profile__input:checked ~ #profile__label > .profile__img:last-child {
+#about__input:checked ~ #about__label > .about__img:last-child {
   opacity: 1;
+}
+
+/*skills*/
+.skills__card {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 240px;
+  height: 160px;
 }
 
 /*works*/

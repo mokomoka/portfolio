@@ -19,9 +19,9 @@
       <label id="nav__label--close" class="unshown" for="nav__input"></label>
       <ul id="nav__content">
         <li class="nav__li"><a href="#main">Tomoka's portfolio</a></li>
-        <li class="nav__li"><a href="#profile">Profile</a></li>
+        <li class="nav__li"><a href="#about">About me</a></li>
+        <li class="nav__li"><a href="#skills">Skills</a></li>
         <li class="nav__li"><a href="#works">Works</a></li>
-        <li class="nav__li"><a href="#link">Link</a></li>
         <li class="nav__li"><a href="#extra">Extra</a></li>
       </ul>
     </nav>
@@ -32,36 +32,185 @@
 
     <hr class="border-style season" />
 
-    <section id="profile" class="profile">
-      <h1 class="section__ttl">Profile</h1>
+    <section id="about" class="about">
+      <h1 class="section__ttl">About me</h1>
       <div class="section__flexbox">
-        <div class="profile__box--img section__flexbox">
-          <input id="profile__input" type="checkbox" class="unshown" />
-          <label id="profile__label" for="profile__input">
+        <div class="about__box--img section__flexbox">
+          <input id="about__input" type="checkbox" class="unshown" />
+          <label id="about__label" for="about__input">
             <img
-              class="profile__img"
+              class="about__img"
               src="image/me1.jpg"
               alt="自撮り"
               oncontextmenu="return false;"
             />
             <img
-              class="profile__img"
+              class="about__img"
               src="image/me2.jpg"
               alt="自画像"
               oncontextmenu="return false;"
             />
           </label>
         </div>
-        <div class="section__flexbox profile__box--txt">
-          <h3 class="profile__name"><strong>はやしともか</strong></h3>
+        <div class="section__flexbox about__box--txt">
+          <h2 class="about__name"><strong>はやしともか</strong></h2>
           <p>
             公立はこだて未来大学（未来大）に通う情報系女子（？）。デザインの興味からフロントエンドへ興味が移り、いつのまにかサーバサイドもやっていました。<br />
             何が自分に向いているのかを模索しながら、幅広く手を付けています。
           </p>
-          <p class="profile__button--box">
-            <a class="profile__button--link" href="profile.html" ontouchstart=""
+          <p class="about__button--box">
+            <a class="about__button--link" href="about.html" ontouchstart=""
               >もっと見る</a
             >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border-style season" />
+    <section id="skills">
+      <h1 class="section__ttl">Skills</h1>
+      <p>※レベルはあくまで主観</p>
+      <h2 class="skills__type">興味高</h2>
+      <div class="section__flexbox skills__box">
+        <div class="skills__card">
+          <h3>Kotlin (Android)</h3>
+          <p>1</p>
+          <p>
+            まだまだ入門中
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>Java (Android)</h3>
+          <p>2</p>
+          <p>
+            チーム開発演習でアプリの1画面を担当（詳しくは「高度ICT演習」）
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>Ruby (Ruby on Rails)</h3>
+          <p>2</p>
+          <p>
+            Androidアプリで使うためのWebAPIを作成（詳しくは「プロジェクト学習」）
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>PHP (Laravel)</h3>
+          <p>2</p>
+          <p>
+            インターンシップでECサイトの修正など
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>HTML, CSS</h3>
+          <p>3</p>
+          <p>
+            基本的にフレームワークを使わないが、Bootstrapは使ったことがある
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>SASS (SCSS)</h3>
+          <p>2</p>
+          <p>
+            SCSS使うけどmixinとかちょっと怪しい
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>JavaScript</h3>
+          <p>1</p>
+          <p>
+            素のものとjQuery, Vue.js,
+            node.jsを使ったことがあるけどあまり自信はない
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>Adobe Illustrator</h3>
+          <p>3</p>
+          <p>
+            ポスター制作やお絵かき
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>Adobe XD</h3>
+          <p>2</p>
+          <p>
+            講義のために自主的にモックアップを作成
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>AviUtl</h3>
+          <p>3</p>
+          <p>
+            Works内にある動画は全てこれで作成
+          </p>
+        </div>
+      </div>
+      <h2 class="skills__type">まあまあ</h2>
+      <div class="section__flexbox skills__box">
+        <div class="skills__card">
+          <h3>Processing</h3>
+          <p>2</p>
+          <p>
+            講義課題のブロック崩し、スケジューラー以外には、8音のみの簡易キーボードや自分用色選びアプリを作成
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>C</h3>
+          <p>2</p>
+          <p>
+            一般的な情報系大学生が嗜む程度
+          </p>
+        </div>
+      </div>
+      <h2 class="skills__type">触ったことある程度</h2>
+      <div class="section__flexbox skills__box">
+        <div class="skills__card">
+          <h3>Go</h3>
+          <p>1</p>
+          <p>
+            システムコールを学ぶ講義の課題でなんちゃってシェルを作成
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>Python</h3>
+          <p>1</p>
+          <p>
+            Twitter APIとtwitterライブラリを使ってみた
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>Adobe Photoshop</h3>
+          <p>1</p>
+          <p>
+            写真の色調補正や切り抜きのためにたまに使用
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>Adobe After Effects</h3>
+          <p>1</p>
+          <p>
+            クロマキー合成や加工をしたけど、使わないので方法を忘れがち
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>Adobe Premiere</h3>
+          <p>1</p>
+          <p>
+            触ったことはあるけど普段使わないので忘れがち
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>EDIUS Neo</h3>
+          <p>1</p>
+          <p>
+            触ったことはあるけど普段使わないので忘れがち
+          </p>
+        </div>
+        <div class="skills__card">
+          <h3>3ds Max</h3>
+          <p>1</p>
+          <p>
+            インターンシップで机は作ったけど人の形は難しかった…
           </p>
         </div>
       </div>
@@ -141,12 +290,6 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <hr class="border-style season" />
-
-    <section id="link">
-      <h1 class="season">Link</h1>
     </section>
 
     <hr class="border-style season" />
