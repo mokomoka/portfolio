@@ -442,3 +442,11 @@ section {
   border: 15px solid transparent;
   border-right: 15px solid rgba(242, 143, 153, 0.5);
 }
+
+/*footer*/
+footer {
+  background: #f28f99;
+  color: #775435;
+  text-align: center;
+  padding: 4px;
+}
