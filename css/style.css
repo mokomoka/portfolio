@@ -404,3 +404,41 @@ section {
   text-align: right;
   margin-top: 16px;
 }
+
+/*links*/
+.links__box {
+  flex-direction: column;
+  width: 100%;
+}
+
+.links__card {
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.links__card:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.links__link {
+  color: #f28f99;
+}
+
+.links__txt {
+  flex-grow: 1;
+  position: relative;
+  margin-left: 30px;
+  padding: 10px;
+  background: rgba(242, 143, 153, 0.5);
+  border-radius: 5px;
+}
+
+.links__txt:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid rgba(242, 143, 153, 0.5);
+}

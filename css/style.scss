@@ -418,3 +418,43 @@ section {
     margin-top: 16px;
   }
 }
+
+/*links*/
+.links {
+  &__box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__card {
+    width: 100%;
+    flex-wrap: nowrap;
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__link {
+    color: $color_main_spring;
+  }
+
+  &__txt {
+    flex-grow: 1;
+    position: relative;
+    margin-left: 30px;
+    padding: 10px;
+    background: rgba($color_main_spring, 0.5);
+    border-radius: 5px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      margin-top: -15px;
+      border: 15px solid transparent;
+      border-right: 15px solid rgba($color_main_spring, 0.5);
+    }
+  }
+}
