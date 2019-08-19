@@ -336,11 +336,16 @@ section {
 
 /*works*/
 .works__box {
-  justify-content: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 640px), (min-width: 768px) {
+  .works__box {
+    justify-content: center;
+  }
 }
 
 .works__card {
-  flex-flow: row wrap;
   align-content: flex-start;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   margin-bottom: 32px;
@@ -348,15 +353,8 @@ section {
   max-width: 240px;
 }
 
-.works__card:nth-of-type(odd) {
-  margin-right: 32px;
-}
-
 @media (max-width: 640px) {
   .works__card {
-    max-width: 240px;
-  }
-  .works__card:nth-of-type(n) {
     margin-right: 16px;
     margin-left: 16px;
   }
@@ -365,8 +363,6 @@ section {
 @media (min-width: 768px) {
   .works__card {
     max-width: 880px;
-  }
-  .works__card:nth-of-type(n) {
     margin-right: 0px;
   }
 }
@@ -376,14 +372,24 @@ section {
 }
 
 .works__thumbnail {
+  flex: 0 0 240px;
   width: 240px;
   height: 240px;
 }
 
 .works__txt {
-  flex: 240px;
+  height: calc(100% - 240px);
+  min-height: 240px;
+  flex: 1 0 240px;
   padding: 16px;
   flex-flow: column;
+  align-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .works__txt {
+    height: 240px;
+  }
 }
 
 .works__ttl {
@@ -392,27 +398,30 @@ section {
 
 .works__term {
   font-size: 1.2rem;
-  margin: 4px 0 16px 0;
+  margin: 4px 0 8px 0;
 }
 
 .works__summary {
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 .works__link {
   color: #f28f99;
   text-align: right;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 /*links*/
 .links__box {
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 .links__card {
   width: 100%;
+  max-width: 880px;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -427,20 +436,20 @@ section {
 .links__txt {
   flex-grow: 1;
   position: relative;
-  margin-left: 30px;
-  padding: 10px;
-  background: rgba(242, 143, 153, 0.5);
-  border-radius: 5px;
+  margin-left: 32px;
+  padding: 16px;
+  background: rgba(242, 143, 153, 0.4);
+  border-radius: 4px;
 }
 
 .links__txt:before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -30px;
-  margin-top: -15px;
-  border: 15px solid transparent;
-  border-right: 15px solid rgba(242, 143, 153, 0.5);
+  left: -32px;
+  margin-top: -16px;
+  border: 16px solid transparent;
+  border-right: 16px solid rgba(242, 143, 153, 0.4);
 }
 
 /*footer*/
