@@ -31,10 +31,12 @@ body {
   }
 }
 
-$color_base_spring: #ffffff;
-$color_main_spring: #f28f99;
-$color_accent_spring: #e2e28a;
-$color_text_spring: #775435;
+$color_base: #ffffff;
+$color_base_hover: #eeeeee;
+$color_main: #f28f99;
+$color_main_hover: #e67e89;
+$color_accent: #e2e28a;
+$color_text: #775435;
 
 .unshown {
   display: none;
@@ -55,7 +57,7 @@ nav {
   position: fixed;
   z-index: 99;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  background-color: $color_main_spring;
+  background-color: $color_main;
 
   ul {
     width: 100%;
@@ -73,7 +75,7 @@ nav {
     font-feature-settings: "liga" 0;
     letter-spacing: 3px;
     transition: 0.5s ease-out;
-    color: $color_text_spring;
+    color: $color_text;
   }
 }
 
@@ -103,7 +105,7 @@ nav {
     right: 0;
     bottom: 0;
     border-radius: 3px;
-    background: $color_text_spring;
+    background: $color_text;
     display: block;
     content: "";
     cursor: pointer;
@@ -141,12 +143,18 @@ nav {
   left: 0;
   z-index: 1;
   width: 100%;
-  background: #fff;
+  background: $color_base;
   transition: 0.5s ease-in-out;
   transform: translateY(-105%);
 
-  li {
+  .nav__li {
     line-height: 60px;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background: $color_base_hover;
+      transition: 0.5s ease-in-out;
+    }
 
     &:first-child {
       display: none;
@@ -169,7 +177,7 @@ nav {
 
 #nav__input:checked ~ #nav__label--open {
   span {
-    background: $color_main_spring;
+    background: $color_main;
 
     &::before {
       transform: rotate(-45deg) translateY(0px);
@@ -200,6 +208,12 @@ nav {
       .nav__li {
         display: block;
         flex-grow: 1;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          background: $color_main_hover;
+          transition: 0.5s ease-in-out;
+        }
 
         &:first-child {
           flex-grow: 2;
@@ -218,7 +232,7 @@ nav {
 section {
   height: 100%;
   @extend %sectionArea;
-  color: $color_text_spring;
+  color: $color_text;
 }
 
 .section__flexbox {
@@ -262,7 +276,7 @@ section {
 
   &__name {
     font-size: 2.4rem;
-    border-bottom: $color_main_spring 1px dashed;
+    border-bottom: $color_main 1px dashed;
     margin-bottom: 16px;
   }
 
@@ -271,14 +285,17 @@ section {
     flex-flow: column;
     justify-content: center;
     max-width: 640px;
-    min-height: 320px;
+
+    @media (min-width: $breakpoint) {
+      min-height: 320px;
+    }
   }
 
   &__button {
     &--box {
       display: inline-block;
       border-radius: 8px;
-      border: $color_main_spring 2px solid;
+      border: $color_main 2px solid;
       margin: 16px 0 0 auto;
     }
 
@@ -288,7 +305,7 @@ section {
       padding: 8px 16px;
       text-align: center;
       text-decoration: none;
-      color: $color_text_spring;
+      color: $color_text;
       font-size: 1.8rem;
       position: relative;
       transition: all 0.3s ease;
@@ -299,7 +316,7 @@ section {
         position: absolute;
         z-index: -1;
         transition: all 0.3s ease;
-        background: $color_main_spring;
+        background: $color_main;
       }
 
       &::after {
@@ -310,7 +327,7 @@ section {
       }
 
       &:hover {
-        color: $color_base_spring;
+        color: $color_base;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
       }
 
@@ -416,9 +433,15 @@ section {
   }
 
   &__link {
-    color: $color_main_spring;
+    color: $color_main;
     text-align: right;
     margin-top: 8px;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      color: $color_main_hover;
+      transition: 0.5s ease-in-out;
+    }
   }
 }
 
@@ -442,7 +465,13 @@ section {
   }
 
   &__link {
-    color: $color_main_spring;
+    color: $color_main;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      color: $color_main_hover;
+      transition: 0.5s ease-in-out;
+    }
   }
 
   &__txt {
@@ -450,7 +479,7 @@ section {
     position: relative;
     margin-left: 32px;
     padding: 16px;
-    background: rgba($color_main_spring, 0.4);
+    background: rgba($color_main, 0.4);
     border-radius: 4px;
 
     &:before {
@@ -460,15 +489,15 @@ section {
       left: -32px;
       margin-top: -16px;
       border: 16px solid transparent;
-      border-right: 16px solid rgba($color_main_spring, 0.4);
+      border-right: 16px solid rgba($color_main, 0.4);
     }
   }
 }
 
 /*footer*/
 footer {
-  background: $color_main_spring;
-  color: $color_text_spring;
+  background: $color_main;
+  color: $color_text;
   text-align: center;
   padding: 4px;
 }
