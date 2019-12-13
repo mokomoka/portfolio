@@ -290,7 +290,7 @@ section {
 
   &__name {
     font-size: 2.4rem;
-    border-bottom: $color_main 1px dashed;
+    border-bottom: $color_main 2px solid;
     margin-bottom: 16px;
   }
 
@@ -301,7 +301,12 @@ section {
       border-bottom: thin dashed $color_main;
     }
     td {
-      padding: 8px;
+      &:first-child {
+        padding: 8px 0px;
+      }
+      &:last-child {
+        padding: 8px 0px 8px 16px;
+      }
     }
   }
 

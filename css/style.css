@@ -275,7 +275,7 @@ section {
 
 .about__name {
   font-size: 2.4rem;
-  border-bottom: #f28f99 1px dashed;
+  border-bottom: #f28f99 2px solid;
   margin-bottom: 16px;
 }
 
@@ -288,8 +288,12 @@ section {
   border-bottom: thin dashed #f28f99;
 }
 
-.about__table td {
-  padding: 8px;
+.about__table td:first-child {
+  padding: 8px 0px;
+}
+
+.about__table td:last-child {
+  padding: 8px 0px 8px 16px;
 }
 
 .about__button--box {
