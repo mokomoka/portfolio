@@ -9,9 +9,12 @@ html {
 }
 
 body {
-  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴ ProN W3",
-    "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+  font-family: "Lato", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体",
+    "Yu Gothic Medium", "YuGothic", "ヒラギノ角ゴシック", "Hiragino Sans",
+    "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo",
+    sans-serif;
   font-size: 1.4em;
+  font-weight: 400;
 
   @media (min-width: $breakpoint) {
     font-size: 1.6em;
