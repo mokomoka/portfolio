@@ -21,8 +21,8 @@ body {
 %sectionArea {
   width: 80vw;
   min-height: 100vh;
-  margin: 0 10%;
-  padding: 64px 0;
+  margin: 0 10vw;
+  padding: 72px 0;
 
   @media (min-width: $breakpoint) {
     margin: 0 auto;
@@ -43,7 +43,7 @@ $color_text: #775435;
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   margin-bottom: 32px;
 }
 
@@ -53,7 +53,7 @@ p {
 
 /*nav*/
 nav {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 99;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -274,12 +274,6 @@ section {
     }
   }
 
-  &__name {
-    font-size: 2.4rem;
-    border-bottom: $color_main 1px dashed;
-    margin-bottom: 16px;
-  }
-
   &__box--txt {
     flex: 2 1 320px;
     flex-flow: column;
@@ -291,12 +285,29 @@ section {
     }
   }
 
+  &__name {
+    font-size: 2.4rem;
+    border-bottom: $color_main 1px dashed;
+    margin-bottom: 16px;
+  }
+
+  &__table {
+    margin: 32px auto;
+    border-collapse: collapse;
+    tr {
+      border-bottom: thin dashed $color_main;
+    }
+    td {
+      padding: 8px;
+    }
+  }
+
   &__button {
     &--box {
       display: inline-block;
       border-radius: 8px;
       border: $color_main 2px solid;
-      margin: 16px 0 0 auto;
+      margin: 0 0 0 auto;
     }
 
     &--link {
