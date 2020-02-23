@@ -58,7 +58,7 @@ p {
 nav {
   width: 100vw;
   position: fixed;
-  z-index: 99;
+  z-index: 9;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   background-color: $color_main;
 
@@ -236,6 +236,16 @@ section {
   height: 100%;
   @extend %sectionArea;
   color: $color_text;
+
+  & a {
+    &:link,
+    &:visited {
+      color: $color_main;
+    }
+    &:hover {
+      color: $color_main_hover;
+    }
+  }
 }
 
 .section__flexbox {
@@ -324,7 +334,6 @@ section {
       padding: 8px 16px;
       text-align: center;
       text-decoration: none;
-      color: $color_text;
       font-size: 1.8rem;
       position: relative;
       transition: all 0.3s ease;
@@ -343,6 +352,11 @@ section {
         left: 0;
         bottom: 0;
         width: 100%;
+      }
+
+      &:link,
+      &:visited {
+        color: $color_text;
       }
 
       &:hover {
@@ -415,7 +429,7 @@ section {
     height: 240px;
   }
 
-  &__txt {
+  &__body {
     height: calc(100% - 240px);
     min-height: 240px;
     flex: 1 0 240px;
@@ -442,14 +456,129 @@ section {
   }
 
   &__link {
-    color: $color_main;
     text-align: right;
     margin-top: 8px;
     transition: 0.5s ease-in-out;
 
-    &:hover {
-      color: $color_main_hover;
-      transition: 0.5s ease-in-out;
+    & > a {
+      color: $color_main;
+      text-decoration: none;
+
+      &:hover {
+        color: $color_main_hover;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+
+  &__modal {
+    &--wrapper {
+      z-index: 9;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+
+      &:not(:target) {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+      }
+
+      &:target {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s, visibility 0.3s;
+      }
+
+      &::after {
+        display: inline-block;
+        height: 100%;
+        margin-left: -0.05em;
+        vertical-align: middle;
+        content: "";
+      }
+      .works__modal--window {
+        box-sizing: border-box;
+        display: inline-block;
+        z-index: 9;
+        position: relative;
+        width: 80%;
+        min-height: 60%;
+        max-height: 80%;
+        left: 10%;
+        padding: 32px;
+        border-radius: 4px;
+        background-color: $color_base;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        vertical-align: middle;
+        overflow-y: auto;
+
+        @media (min-width: $breakpoint) {
+          width: 60%;
+          left: 20%;
+        }
+      }
+
+      .works__modal--close {
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 4rem;
+        line-height: 1;
+        width: 4rem;
+        color: $color_main;
+        text-align: center;
+        text-decoration: none;
+        text-indent: 0;
+
+        &:hover {
+          color: $color_main_hover;
+        }
+      }
+    }
+
+    &--overlay {
+      z-index: 9;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    &--ttl {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    &--body {
+      & > img,
+      & > video {
+        width: 100%;
+        margin-top: 32px;
+      }
+      & > p.works__modal {
+        &--text {
+          margin-bottom: 16px;
+          text-indent: 1em;
+        }
+        &--caption {
+          font-size: 1.4rem;
+          margin-bottom: 16px;
+          padding-left: 2em;
+          text-indent: -2em;
+          &:before {
+            content: "▲　";
+          }
+        }
+      }
     }
   }
 }
