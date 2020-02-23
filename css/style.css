@@ -268,6 +268,29 @@ section a:hover {
   opacity: 0;
 }
 
+.about__img--text {
+  font-size: 2.4rem;
+  text-align: center;
+  display: block;
+  width: 240px;
+  position: absolute;
+  top: -40px;
+  left: -120px;
+  animation: profImageText 8s linear infinite;
+}
+
+.about__img--text:before, .about__img--text:after {
+  font-size: 1.6rem;
+}
+
+.about__img--text:before {
+  content: "＼ ";
+}
+
+.about__img--text:after {
+  content: " ／";
+}
+
 .about__box--txt {
   flex: 2 1 320px;
   flex-flow: column;
@@ -360,7 +383,7 @@ section a:hover {
 }
 
 #about__input:checked ~ #about__label > .about__img {
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 #about__input:checked ~ #about__label > .about__img:first-child {
@@ -369,6 +392,31 @@ section a:hover {
 
 #about__input:checked ~ #about__label > .about__img:last-child {
   opacity: 1;
+}
+
+@keyframes profImageText {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: scale(0.6);
+  }
+  8% {
+    opacity: 1;
+    top: -44px;
+    transform: scale(1.1);
+  }
+  10%,
+  35% {
+    opacity: 1;
+    top: -40px;
+    transform: scale(1);
+  }
+  40%,
+  100% {
+    opacity: 0;
+    top: 0;
+    transform: scale(0.6);
+  }
 }
 
 /*works*/
