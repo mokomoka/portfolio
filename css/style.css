@@ -37,11 +37,6 @@ section {
   display: none;
 }
 
-h1 {
-  font-size: 3.2rem;
-  margin-bottom: 32px;
-}
-
 p {
   line-height: 1.6;
 }
@@ -71,7 +66,7 @@ nav a {
   font-feature-settings: "liga" 0;
   letter-spacing: 3px;
   transition: 0.5s ease-out;
-  color: #775435;
+  color: #ffffff;
 }
 
 #nav__drawer {
@@ -235,6 +230,28 @@ section a:hover {
   flex-wrap: wrap;
 }
 
+.section__ttl {
+  margin-bottom: 32px;
+}
+
+.section__ttl > h1 {
+  font-size: 3.2rem;
+}
+
+.section__ttl > h2 {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .section__ttl > h1,
+  .section__ttl > h2 {
+    display: inline;
+  }
+  .section__ttl > h2 {
+    padding-left: 2em;
+  }
+}
+
 /*main*/
 .main {
   font-size: 200%;
@@ -256,6 +273,7 @@ section a:hover {
   width: 240px;
   height: 240px;
   border-radius: 50%;
+  border: 2px solid #f28f99;
   display: block;
   transition: all 0.5s ease-in-out;
   opacity: 1;
@@ -276,7 +294,7 @@ section a:hover {
   position: absolute;
   top: -40px;
   left: -120px;
-  animation: profImageText 8s linear infinite;
+  animation: profImageText 4s linear infinite;
 }
 
 .about__img--text:before, .about__img--text:after {
@@ -667,7 +685,7 @@ section a:hover {
 /*footer*/
 footer {
   background: #f28f99;
-  color: #775435;
+  color: #ffffff;
   text-align: center;
   padding: 4px;
 }

@@ -45,11 +45,6 @@ $color_text: #775435;
   display: none;
 }
 
-h1 {
-  font-size: 3.2rem;
-  margin-bottom: 32px;
-}
-
 p {
   line-height: 1.6;
 }
@@ -78,7 +73,7 @@ nav {
     font-feature-settings: "liga" 0;
     letter-spacing: 3px;
     transition: 0.5s ease-out;
-    color: $color_text;
+    color: $color_base;
   }
 }
 
@@ -248,9 +243,31 @@ section {
   }
 }
 
-.section__flexbox {
-  display: flex;
-  flex-wrap: wrap;
+.section {
+  &__flexbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__ttl {
+    margin-bottom: 32px;
+    & > h1 {
+      font-size: 3.2rem;
+    }
+    & > h2 {
+      font-size: 1.6rem;
+    }
+
+    @media (min-width: $breakpoint) {
+      & > h1,
+      & > h2 {
+        display: inline;
+      }
+      & > h2 {
+        padding-left: 2em;
+      }
+    }
+  }
 }
 
 /*main*/
@@ -275,6 +292,7 @@ section {
     width: 240px;
     height: 240px;
     border-radius: 50%;
+    border: 2px solid $color_main;
     display: block;
     transition: all 0.5s ease-in-out;
     opacity: 1;
@@ -294,7 +312,7 @@ section {
       position: absolute;
       top: -40px;
       left: -120px;
-      animation: profImageText 8s linear infinite;
+      animation: profImageText 4s linear infinite;
 
       &:before,
       &:after {
@@ -682,7 +700,7 @@ section {
 /*footer*/
 footer {
   background: $color_main;
-  color: $color_text;
+  color: $color_base;
   text-align: center;
   padding: 4px;
 }
