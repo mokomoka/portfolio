@@ -275,6 +275,61 @@ section {
   align-items: center;
 }
 
+.main__ttl {
+  position: relative;
+  z-index: auto;
+}
+
+.main__ttl--text {
+  padding-bottom: 8px;
+  text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
+}
+
+.main__ttl--bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 24px;
+  animation: borderBottom 12s linear infinite;
+  z-index: -1;
+}
+
+@keyframes borderBottom {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    width: 0%;
+    left: 50%;
+    background: transparent;
+  }
+  5%,
+  20% {
+    width: 108%;
+    left: -4%;
+    background: rgba(249, 168, 37, 0.6);
+  }
+  30%,
+  45% {
+    width: 108%;
+    left: -4%;
+    background: rgba(205, 54, 42, 0.6);
+  }
+  55%,
+  70% {
+    width: 108%;
+    left: -4%;
+    background: rgba(118, 158, 88, 0.6);
+  }
+  80%,
+  95% {
+    width: 108%;
+    left: -4%;
+    background: rgba(36, 123, 193, 0.6);
+  }
+}
+
 /*about*/
 .about a {
   transition: 0.5s ease-in-out;
