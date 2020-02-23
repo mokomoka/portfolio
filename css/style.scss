@@ -296,7 +296,6 @@ section {
 
   &__ttl {
     position: relative;
-    z-index: auto;
     &--text {
       padding-bottom: 8px;
       text-shadow: 0 0 2px $color_base, 0 0 2px $color_base, 0 0 2px $color_base,
@@ -327,25 +326,25 @@ section {
   20% {
     width: 108%;
     left: -4%;
-    background: rgba($color_k, 0.6);
+    background: rgba($color_k, 0.4);
   }
   30%,
   45% {
     width: 108%;
     left: -4%;
-    background: rgba($color_a, 0.6);
+    background: rgba($color_a, 0.4);
   }
   55%,
   70% {
     width: 108%;
     left: -4%;
-    background: rgba($color_e, 0.6);
+    background: rgba($color_e, 0.4);
   }
   80%,
   95% {
     width: 108%;
     left: -4%;
-    background: rgba($color_f, 0.6);
+    background: rgba($color_f, 0.4);
   }
 }
 
