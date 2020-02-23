@@ -41,6 +41,29 @@ p {
   line-height: 1.6;
 }
 
+/*loading*/
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  animation: loadingBackground ease-in 8s forwards;
+}
+
+@keyframes loadingBackground {
+  0%,
+  90% {
+    opacity: 1;
+    background: #ffffff;
+  }
+  100% {
+    display: none;
+    pointer-events: none;
+  }
+}
+
 /*nav*/
 nav {
   width: 100vw;
