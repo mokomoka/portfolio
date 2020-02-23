@@ -323,9 +323,19 @@ section a:hover {
 }
 
 .about__name {
-  font-size: 2.4rem;
   border-bottom: #f28f99 2px solid;
   margin-bottom: 16px;
+}
+
+.about__name--ja {
+  display: inline;
+  font-size: 2.4rem;
+}
+
+.about__name--en {
+  display: inline;
+  font-size: 1.6rem;
+  padding-left: 1em;
 }
 
 .about__table {
