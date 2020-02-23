@@ -41,29 +41,6 @@ p {
   line-height: 1.6;
 }
 
-/*loading*/
-.loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  animation: loadingBackground ease-in 8s forwards;
-}
-
-@keyframes loadingBackground {
-  0%,
-  90% {
-    opacity: 1;
-    background: #ffffff;
-  }
-  100% {
-    display: none;
-    pointer-events: none;
-  }
-}
-
 /*nav*/
 nav {
   width: 100vw;
@@ -644,7 +621,6 @@ section {
 }
 
 .works__modal--wrapper {
-  z-index: 9;
   position: fixed;
   top: 0;
   right: 0;
@@ -657,10 +633,10 @@ section {
 .works__modal--wrapper:not(:target) {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .works__modal--wrapper:target {
+  z-index: 9;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s, visibility 0.3s;
