@@ -56,6 +56,10 @@ p {
   line-height: 1.6;
 }
 
+img {
+  pointer-events: none;
+}
+
 /*nav*/
 nav {
   width: 100vw;
@@ -370,6 +374,7 @@ section {
   position: absolute;
   top: 0;
   left: -120px;
+  pointer-events: auto;
 }
 
 .about__img:last-child {
