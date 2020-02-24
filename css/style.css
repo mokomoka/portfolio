@@ -33,6 +33,21 @@ section {
   }
 }
 
+.about__link, .works__modal--link {
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+}
+
+.about__link:after, .works__modal--link:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: " \f35d";
+}
+
+.about__link:hover, .works__modal--link:hover {
+  transition: 0.5s ease-in-out;
+}
+
 .unshown {
   display: none;
 }
@@ -330,17 +345,12 @@ section {
 }
 
 /*about*/
-.about a {
-  transition: 0.5s ease-in-out;
-}
-
-.about a:link, .about a:visited {
+.about__link:link, .about__link:visited {
   color: #cd362a;
 }
 
-.about a:hover {
+.about__link:hover {
   color: #941c14;
-  transition: 0.5s ease-in-out;
 }
 
 .about__box--img {
@@ -650,7 +660,7 @@ section {
   content: "";
 }
 
-.works__modal--wrapper .works__modal--window {
+.works__modal--window {
   box-sizing: border-box;
   display: inline-block;
   z-index: 9;
@@ -668,13 +678,13 @@ section {
 }
 
 @media (min-width: 768px) {
-  .works__modal--wrapper .works__modal--window {
+  .works__modal--window {
     width: 60%;
     left: 20%;
   }
 }
 
-.works__modal--wrapper .works__modal--close {
+.works__modal--close {
   z-index: 9;
   position: absolute;
   top: 0;
@@ -688,7 +698,7 @@ section {
   text-indent: 0;
 }
 
-.works__modal--wrapper .works__modal--close:hover {
+.works__modal--close:hover {
   color: #45642c;
 }
 
@@ -714,19 +724,19 @@ section {
   margin-top: 32px;
 }
 
-.works__modal--body > p.works__modal--text {
+.works__modal--text {
   margin-bottom: 16px;
   text-indent: 1em;
 }
 
-.works__modal--body > p.works__modal--caption {
+.works__modal--caption {
   font-size: 1.4rem;
   margin-bottom: 16px;
   padding-left: 2em;
   text-indent: -2em;
 }
 
-.works__modal--body > p.works__modal--caption:before {
+.works__modal--caption:before {
   content: "▲　";
 }
 

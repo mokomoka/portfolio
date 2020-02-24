@@ -34,6 +34,19 @@ body {
   }
 }
 
+%external-link {
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: " \f35d";
+  }
+  &:hover {
+    transition: 0.5s ease-in-out;
+  }
+}
+
 $color_base: #ffffff;
 $color_base_hover: #dddddd;
 $color_a: #cd362a;
@@ -350,15 +363,14 @@ section {
 
 /*about*/
 .about {
-  a {
-    transition: 0.5s ease-in-out;
+  &__link {
+    @extend %external-link;
     &:link,
     &:visited {
       color: $color_a;
     }
     &:hover {
       color: $color_a_hover;
-      transition: 0.5s ease-in-out;
     }
   }
 
@@ -660,44 +672,45 @@ section {
         vertical-align: middle;
         content: "";
       }
-      .works__modal--window {
-        box-sizing: border-box;
-        display: inline-block;
-        z-index: 9;
-        position: relative;
-        width: 80%;
-        min-height: 60%;
-        max-height: 80%;
-        left: 10%;
-        padding: 32px;
-        border-radius: 4px;
-        background-color: $color_base;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-        vertical-align: middle;
-        overflow-y: auto;
+    }
 
-        @media (min-width: $breakpoint) {
-          width: 60%;
-          left: 20%;
-        }
+    &--window {
+      box-sizing: border-box;
+      display: inline-block;
+      z-index: 9;
+      position: relative;
+      width: 80%;
+      min-height: 60%;
+      max-height: 80%;
+      left: 10%;
+      padding: 32px;
+      border-radius: 4px;
+      background-color: $color_base;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+      vertical-align: middle;
+      overflow-y: auto;
+
+      @media (min-width: $breakpoint) {
+        width: 60%;
+        left: 20%;
       }
+    }
 
-      .works__modal--close {
-        z-index: 9;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 4rem;
-        line-height: 1;
-        width: 4rem;
-        color: $color_e;
-        text-align: center;
-        text-decoration: none;
-        text-indent: 0;
+    &--close {
+      z-index: 9;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 4rem;
+      line-height: 1;
+      width: 4rem;
+      color: $color_e;
+      text-align: center;
+      text-decoration: none;
+      text-indent: 0;
 
-        &:hover {
-          color: $color_e_hover;
-        }
+      &:hover {
+        color: $color_e_hover;
       }
     }
 
@@ -723,21 +736,25 @@ section {
         width: 100%;
         margin-top: 32px;
       }
-      & > p.works__modal {
-        &--text {
-          margin-bottom: 16px;
-          text-indent: 1em;
-        }
-        &--caption {
-          font-size: 1.4rem;
-          margin-bottom: 16px;
-          padding-left: 2em;
-          text-indent: -2em;
-          &:before {
-            content: "▲　";
-          }
-        }
+    }
+
+    &--text {
+      margin-bottom: 16px;
+      text-indent: 1em;
+    }
+
+    &--caption {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      padding-left: 2em;
+      text-indent: -2em;
+      &:before {
+        content: "▲　";
       }
+    }
+
+    &--link {
+      @extend %external-link;
     }
   }
 }
