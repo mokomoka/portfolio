@@ -410,14 +410,8 @@ nav a {
 .about__box--txt {
   flex: 2 1 320px;
   flex-flow: column;
-  justify-content: center;
   max-width: 640px;
-}
-
-@media (min-width: 768px) {
-  .about__box--txt {
-    min-height: 320px;
-  }
+  justify-content: center;
 }
 
 .about__name {
@@ -437,7 +431,8 @@ nav a {
 }
 
 .about__table {
-  margin: 32px auto;
+  width: 100%;
+  margin: 32px 0;
   border-collapse: collapse;
 }
 
