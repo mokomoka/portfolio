@@ -34,9 +34,13 @@
     </nav>
 
     <section id="main" class="main">
-      <div class="main__ttl">
-        <h1 class="main__ttl--text">Tomoka's portfolio</h1>
-        <div class="main__ttl--bg"></div>
+      <div class="section__inner">
+        <div class="main__box">
+          <div class="main__ttl">
+            <h1 class="main__ttl--text">Tomoka's portfolio</h1>
+            <div class="main__ttl--bg"></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -46,83 +50,85 @@
     <hr class="section__border--f" />
 
     <section id="about" class="about">
-      <div class="section__ttl">
-        <h1>About me</h1>
-        <h2>ざっくりとした自己紹介のようなもの</h2>
-      </div>
-      <div class="section__flexbox">
-        <div class="about__box--img section__flexbox">
-          <input id="about__input" type="checkbox" class="unshown" />
-          <label id="about__label" for="about__input">
-            <p class="about__img--text">Click me!</p>
-            <img
-              class="about__img"
-              src="image/me1.jpg"
-              alt="人に撮ってもらった私の写真"
-              oncontextmenu="return false;"
-            />
-            <img
-              class="about__img"
-              src="image/me2.png"
-              alt="自画像"
-              oncontextmenu="return false;"
-            />
-          </label>
+      <div class="section__inner">
+        <div class="section__ttl">
+          <h1>About me</h1>
+          <h2>ざっくりとした自己紹介のようなもの</h2>
         </div>
-        <div class="section__flexbox about__box--txt">
-          <div class="about__name">
-            <h2 class="about__name--ja">林 友佳</h2>
-            <h2 class="about__name--en">Tomoka Hayashi</h2>
+        <div class="section__flexbox">
+          <div class="about__box--img section__flexbox">
+            <input id="about__input" type="checkbox" class="unshown" />
+            <label id="about__label" for="about__input">
+              <p class="about__img--text">Click me!</p>
+              <img
+                class="about__img"
+                src="image/me1.jpg"
+                alt="人に撮ってもらった私の写真"
+                oncontextmenu="return false;"
+              />
+              <img
+                class="about__img"
+                src="image/me2.png"
+                alt="自画像"
+                oncontextmenu="return false;"
+              />
+            </label>
           </div>
-          <p>
-            <b>公立はこだて未来大学</b>（未来大）に通う情報系女子（ジョジョ）。デザインからフロントエンドへ興味が移り、いつのまにかサーバサイドもやっていました。<br />
-            現在は、何が自分に向いているのかを模索しながら、幅広くチャレンジするようにしています。
-          </p>
-          <table class="about__table">
-            <tr>
-              <td>呼び名</td>
-              <td>ともかちゃん、はや（し|っ）ちゃん</td>
-            </tr>
-            <tr>
-              <td>誕生日</td>
-              <td>1997年11月4日</td>
-            </tr>
-            <tr>
-              <td>趣味</td>
-              <td>お絵かき、動画編集、フォントを眺めることなど</td>
-            </tr>
-            <tr>
-              <td>マイブーム</td>
-              <td>
-                <a
-                  href="https://www.youtube.com/channel/UCzciBmqDXPE47nOPRrjmo9A"
-                  target="_blank"
-                  class="about__link"
-                  >M.S.S Project（MSSP）</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>情報系に興味を持ったきっかけ</td>
-              <td>
-                ゲームが好きだったことと、MSSPの動画で動画投稿サイトに興味を持ったこと
-              </td>
-            </tr>
-            <tr>
-              <td>研究テーマ（ざっくり）</td>
-              <td>システム監視ツールのUIデザイン</td>
-            </tr>
-            <tr>
-              <td>主に勉強中なこと</td>
-              <td>Android（Kotlin）<br />JavaScript<br />UI・UXデザインなど</td>
-            </tr>
-          </table>
-<!-- 
-          <p class="about__button--box">
-            <a class="about__button--link" href="about.html" ontouchstart=""
-              >詳しく見る</a
-            >
-          </p> -->
+          <div class="section__flexbox about__box--txt">
+            <div class="about__name">
+              <h2 class="about__name--ja">林 友佳</h2>
+              <h2 class="about__name--en">Tomoka Hayashi</h2>
+            </div>
+            <p>
+              <b>公立はこだて未来大学</b>（未来大）に通う情報系女子（ジョジョ）。デザインからフロントエンドへ興味が移り、いつのまにかサーバサイドもやっていました。<br />
+              現在は、何が自分に向いているのかを模索しながら、幅広くチャレンジするようにしています。
+            </p>
+            <table class="about__table">
+              <tr>
+                <td>呼び名</td>
+                <td>ともかちゃん、はや（し|っ）ちゃん</td>
+              </tr>
+              <tr>
+                <td>誕生日</td>
+                <td>1997年11月4日</td>
+              </tr>
+              <tr>
+                <td>趣味</td>
+                <td>お絵かき、動画編集、フォントを眺めることなど</td>
+              </tr>
+              <tr>
+                <td>マイブーム</td>
+                <td>
+                  <a
+                    href="https://www.youtube.com/channel/UCzciBmqDXPE47nOPRrjmo9A"
+                    target="_blank"
+                    class="about__link"
+                    >M.S.S Project（MSSP）</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>情報系に興味を持ったきっかけ</td>
+                <td>
+                  ゲームが好きだったことと、MSSPの動画で動画投稿サイトに興味を持ったこと
+                </td>
+              </tr>
+              <tr>
+                <td>研究テーマ（ざっくり）</td>
+                <td>システム監視ツールのUIデザイン</td>
+              </tr>
+              <tr>
+                <td>主に勉強中なこと</td>
+                <td>Android（Kotlin）<br />JavaScript<br />UI・UXデザインなど</td>
+              </tr>
+            </table>
+  <!-- 
+            <p class="about__button--box">
+              <a class="about__button--link" href="about.html" ontouchstart=""
+                >詳しく見る</a
+              >
+            </p> -->
+          </div>
         </div>
       </div>
     </section>
@@ -133,282 +139,284 @@
     <hr class="section__border--f" />
 
     <section id="works" class="works">
-      <div class="section__ttl">
-        <h1>Works</h1>
-        <h2>つくったもの・やったこといろいろ</h2>
-      </div>
-      <div class="works__box section__flexbox">
-        <div class="works__card section__flexbox">
-          <img class="works__thumbnail" src="image/works_project.jpg"/>
-          <div class="works__body section__flexbox">
-            <h3 class="works__ttl">プロジェクト学習</h3>
-            <p class="works__term">2018.5 - 2019.2</p>
-            <p class="works__summary">
-              未来大には、3年生が必ず参加する「プロジェクト学習」があります。私はビーコンを活用したアプリを開発するプロジェクトで、サーバサイドを担当しました。
-            </p>
-            <p class="works__link"><a href="#works__modal--project">詳しく見る</a></p>
-          </div>
+      <div class="section__inner">
+        <div class="section__ttl">
+          <h1>Works</h1>
+          <h2>つくったもの・やったこといろいろ</h2>
         </div>
-        <div class="works__modal--wrapper" id="works__modal--project">
-          <a href="#!" class="works__modal--overlay"></a>
-          <div class="works__modal--window">
-            <div class="works__modal--content">
-              <h3 class="works__modal--ttl">プロジェクト学習</h3>
-              <div class="works__modal--body">
-                <p class="works__modal--text">
-                  未来大には、3年生が必ず参加する「プロジェクト学習」があります。私が所属していたプロジェクトは「<b>ビーコンIoTで函館のまちをハックする</b>」です。BLE
-                  ビーコンを活用した新しいサービスを考案・実現することで、函館の課題を解決したり、函館に新しい価値をもたらしたりすることを目的として活動しました。私はプロジェクトの<b>サブリーダー</b>としてリーダーの補佐を行うとともに、「<b>Becoma</b>」開発チームでサーバサイドを担当しました。残念ながらコードはお見せできませんが、未来大公式サイトに掲載されている成果発表ポスターをご覧いただければ、大まかにどのようなものを作ったかについてはわかるかと思います。<br />
-                  <a
-                    href="http://www.fun.ac.jp/~sisp/old_report/2018/14/poster14_main.pdf"
-                    target="_blank"
-                    class="works__modal--link"
-                    >プロジェクト全体について</a
-                  ><br />
-                  <a
-                    href="http://www.fun.ac.jp/~sisp/old_report/2018/14/poster14_B.pdf"
-                    target="_blank"
-                    class="works__modal--link"
-                    >Becomaについて</a
-                  ><br />
-                </p>
-                <p class="works__modal--text">
-                  サーバサイドは未経験だったため、最初は「curlってなに？」「Webページに文字しか表示されない状態でいいの！？」といった状態でした。なんとか<b
-                    >Ruby on Rails</b
-                  >を1ヶ月半ほど学習し、2ヶ月半ほどの期間でREST
-                  APIを実装しました。自分はデザインに興味があったため、フロントエンド向きでサーバサイドは向いていないと思っていましたが、実際にやってみると思っていた以上に楽しむことができました。
-                </p>
-                <p class="works__modal--text">
-                  また、プロジェクト全体を通して、<b>デザイン</b>についても学びました。本を読みデザインの基本原則などについて理解を深めただけでなく、ツールを使いこなせるように努力しました。特に、<b
-                    >Adobe Illustrator</b
-                  >については、プロジェクト開始時はペンツールを使うことすら下手でしたが、プロジェクト終了時点ではそれなりに使えるようになりました。先程の「プロジェクト全体について」リンク先にあるポスターは、3ページとも私が作成したものです。プロジェクトのイメージカラーである水色をベースに、全体的に統一感があり読みやすいポスターになるように工夫しました。
-                </p>
-                <p class="works__modal--text">
-                  その他、細々したものとしては、Slack用のBotやアイキャッチ用の動画を作成しました。Botについては、毎時間の議事録担当を決めてSlackにお知らせしてくれる「minutesBot」と、トリガーワードを入力すると5人のオリジナルキャラクターのうち1人が、呼び出したメンバーを褒めてくれる「褒めBot」をGAS（Google Apps Script）で作成しました。Botのアイコンも自分で描き、とても愛着が湧くBotとなりました。
-                </p>
-                <img
-                  src="image/project_minutesBot.png"
-                />
-                <p class="works__modal--caption">minutesBotのアイコン。プロジェクトのロゴを考える際に、とあるメンバーが描いたイラストを基に、私が描き直したものです。</p>
-                <p class="works__modal--text">
-                  アイキャッチ用の動画は、最終発表の前日に思い立って作った動画です。各サービスのデザイン担当者が作成したロゴと、各サービスのキャッチコピーを借りて、ロゴのモチーフから想像した動きに組み込んでみました。メンバーや先生が気に入ってくださり、発表会の場面転換の際に上映していただきました。
-                </p>
-                <video
-                  src="image/project_logo.mp4"
-                  preload="metadata"
-                  controls
-                ></video>
-                <p class="works__modal--caption">アイキャッチ動画。出てくるサービスの順番に深い意図はなく、動きが思いついた順です。</p>
-              </div>
+        <div class="works__box section__flexbox">
+          <div class="works__card section__flexbox">
+            <img class="works__thumbnail" src="image/works_project.jpg"/>
+            <div class="works__body section__flexbox">
+              <h3 class="works__ttl">プロジェクト学習</h3>
+              <p class="works__term">2018.5 - 2019.2</p>
+              <p class="works__summary">
+                未来大には、3年生が必ず参加する「プロジェクト学習」があります。私はビーコンを活用したアプリを開発するプロジェクトで、サーバサイドを担当しました。
+              </p>
+              <p class="works__link"><a href="#works__modal--project">詳しく見る</a></p>
             </div>
-            <a href="#!" class="works__modal--close">×</a>
           </div>
-        </div>
-        <div class="works__card section__flexbox">
-          <img class="works__thumbnail" src="image/works_ict.jpg"/>
-          <div class="works__body section__flexbox">
-            <h3 class="works__ttl">高度ICT演習</h3>
-            <p class="works__term">2018.4 -</p>
-            <p class="works__summary">
-              学年に関わらず、希望者がチームを組んで開発する「高度ICT演習」。私は函館のスイーツの魅力を広めることを目的としたチームで、Androidアプリの開発をしています。
-            </p>
-            <p class="works__link"><a href="#works__modal--ict">詳しく見る</a></p class="works__link">
-          </div>
-        </div>
-        <div class="works__modal--wrapper" id="works__modal--ict">
-          <a href="#!" class="works__modal--overlay"></a>
-          <div class="works__modal--window">
-            <div class="works__modal--content">
-              <h3 class="works__modal--ttl">高度ICT演習</h3>
-              <div class="works__modal--body">
-                <p class="works__modal--text">
-                  未来大のPBL演習活動の一つに高度ICT演習があります。高度ICT演習では、学部1年～修士2年まで、学年に関わらず希望者がチームを組んでプロダクト開発を行っています。高度ICT演習には、毎年複数のテーマがあります。<br />
-                  <a
-                    href="https://www.fun.ac.jp/department/course/ict/ict_about/"
-                    target="_blank"
-                    class="works__modal--link"
-                    >高度ICT演習の説明やテーマ一覧について</a
-                  >
-                </p>
-                <p class="works__modal--text">
-                  私ははこだてSweetsというチームに所属しています。はこだてSweetsでは、「観光のおともに、あまはこで函館の街を食べ歩き」をコンセプトとしたアプリ「あまはこ」の開発を主に行っています。私はAndroidアプリの開発チームに2018年度から加入し、学びながら開発に携わっています。
-                </p>
+          <div class="works__modal--wrapper" id="works__modal--project">
+            <a href="#!" class="works__modal--overlay"></a>
+            <div class="works__modal--window">
+              <div class="works__modal--content">
+                <h3 class="works__modal--ttl">プロジェクト学習</h3>
+                <div class="works__modal--body">
+                  <p class="works__modal--text">
+                    未来大には、3年生が必ず参加する「プロジェクト学習」があります。私が所属していたプロジェクトは「<b>ビーコンIoTで函館のまちをハックする</b>」です。BLE
+                    ビーコンを活用した新しいサービスを考案・実現することで、函館の課題を解決したり、函館に新しい価値をもたらしたりすることを目的として活動しました。私はプロジェクトの<b>サブリーダー</b>としてリーダーの補佐を行うとともに、「<b>Becoma</b>」開発チームでサーバサイドを担当しました。残念ながらコードはお見せできませんが、未来大公式サイトに掲載されている成果発表ポスターをご覧いただければ、大まかにどのようなものを作ったかについてはわかるかと思います。<br />
+                    <a
+                      href="http://www.fun.ac.jp/~sisp/old_report/2018/14/poster14_main.pdf"
+                      target="_blank"
+                      class="works__modal--link"
+                      >プロジェクト全体について</a
+                    ><br />
+                    <a
+                      href="http://www.fun.ac.jp/~sisp/old_report/2018/14/poster14_B.pdf"
+                      target="_blank"
+                      class="works__modal--link"
+                      >Becomaについて</a
+                    ><br />
+                  </p>
+                  <p class="works__modal--text">
+                    サーバサイドは未経験だったため、最初は「curlってなに？」「Webページに文字しか表示されない状態でいいの！？」といった状態でした。なんとか<b
+                      >Ruby on Rails</b
+                    >を1ヶ月半ほど学習し、2ヶ月半ほどの期間でREST
+                    APIを実装しました。自分はデザインに興味があったため、フロントエンド向きでサーバサイドは向いていないと思っていましたが、実際にやってみると思っていた以上に楽しむことができました。
+                  </p>
+                  <p class="works__modal--text">
+                    また、プロジェクト全体を通して、<b>デザイン</b>についても学びました。本を読みデザインの基本原則などについて理解を深めただけでなく、ツールを使いこなせるように努力しました。特に、<b
+                      >Adobe Illustrator</b
+                    >については、プロジェクト開始時はペンツールを使うことすら下手でしたが、プロジェクト終了時点ではそれなりに使えるようになりました。先程の「プロジェクト全体について」リンク先にあるポスターは、3ページとも私が作成したものです。プロジェクトのイメージカラーである水色をベースに、全体的に統一感があり読みやすいポスターになるように工夫しました。
+                  </p>
+                  <p class="works__modal--text">
+                    その他、細々したものとしては、Slack用のBotやアイキャッチ用の動画を作成しました。Botについては、毎時間の議事録担当を決めてSlackにお知らせしてくれる「minutesBot」と、トリガーワードを入力すると5人のオリジナルキャラクターのうち1人が、呼び出したメンバーを褒めてくれる「褒めBot」をGAS（Google Apps Script）で作成しました。Botのアイコンも自分で描き、とても愛着が湧くBotとなりました。
+                  </p>
+                  <img
+                    src="image/project_minutesBot.png"
+                  />
+                  <p class="works__modal--caption">minutesBotのアイコン。プロジェクトのロゴを考える際に、とあるメンバーが描いたイラストを基に、私が描き直したものです。</p>
+                  <p class="works__modal--text">
+                    アイキャッチ用の動画は、最終発表の前日に思い立って作った動画です。各サービスのデザイン担当者が作成したロゴと、各サービスのキャッチコピーを借りて、ロゴのモチーフから想像した動きに組み込んでみました。メンバーや先生が気に入ってくださり、発表会の場面転換の際に上映していただきました。
+                  </p>
+                  <video
+                    src="image/project_logo.mp4"
+                    preload="metadata"
+                    controls
+                  ></video>
+                  <p class="works__modal--caption">アイキャッチ動画。出てくるサービスの順番に深い意図はなく、動きが思いついた順です。</p>
+                </div>
               </div>
+              <a href="#!" class="works__modal--close">×</a>
             </div>
-            <a href="#!" class="works__modal--close">×</a>
           </div>
-        </div>
-        <div class="works__card section__flexbox">
-          <img class="works__thumbnail" src="image/works_miraisai17.jpg"/>
-          <div class="works__body section__flexbox">
-            <h3 class="works__ttl">第17回未来祭</h3>
-            <p class="works__term">2016.4 - 2016.10</p>
-            <p class="works__summary">
-              1～2年生の時には未来祭実行委員会に所属していました。2016年度の未来祭（大学祭）では、新設された広報セクションのメンバーとして、告知動画を作成しました。
-            </p>
-            <p class="works__link"><a href="#works__modal--miraisai17">詳しく見る</a></p>
+          <div class="works__card section__flexbox">
+            <img class="works__thumbnail" src="image/works_ict.jpg"/>
+            <div class="works__body section__flexbox">
+              <h3 class="works__ttl">高度ICT演習</h3>
+              <p class="works__term">2018.4 -</p>
+              <p class="works__summary">
+                学年に関わらず、希望者がチームを組んで開発する「高度ICT演習」。私は函館のスイーツの魅力を広めることを目的としたチームで、Androidアプリの開発をしています。
+              </p>
+              <p class="works__link"><a href="#works__modal--ict">詳しく見る</a></p class="works__link">
+            </div>
           </div>
-        </div>
-        <div class="works__modal--wrapper" id="works__modal--miraisai17">
-          <a href="#!" class="works__modal--overlay"></a>
-          <div class="works__modal--window">
-            <div class="works__modal--content">
-              <h3 class="works__modal--ttl">第17回未来祭</h3>
-              <div class="works__modal--body">
-                <p class="works__modal--text">
-                  1～2年生の時には未来祭実行委員会に所属していました。2016年度の<b>未来祭</b>（大学祭）では、新設された<b>広報セクション</b>のメンバーとして、<b>告知動画を作成</b>しました。
-                </p>
-                <p class="works__modal--text">
-                  ロゴのイメージを基に、曲を選んだり動きを決めたり…また、サークルの動画である以上、自分だけで決めるわけにはいかないので、動画編集に詳しくない人の意見も聞きました。それまであまりモーショングラフィックスは作ったことがなかったので、悩む場面が多々ありましたが、最終的には自分自身納得いくものができてとても嬉しくなりました。
-                </p>
-                <video
-                  src="image/miraisai17_video.mp4"
-                  preload="metadata"
-                  controls
-                  poster="image/miraisai17_video.png"
-                ></video>
-                <p class="works__modal--caption">第17回未来祭告知動画。ロゴの円から動きを連想し、カラフルでポップな印象の動画にしました。</p>
+          <div class="works__modal--wrapper" id="works__modal--ict">
+            <a href="#!" class="works__modal--overlay"></a>
+            <div class="works__modal--window">
+              <div class="works__modal--content">
+                <h3 class="works__modal--ttl">高度ICT演習</h3>
+                <div class="works__modal--body">
+                  <p class="works__modal--text">
+                    未来大のPBL演習活動の一つに高度ICT演習があります。高度ICT演習では、学部1年～修士2年まで、学年に関わらず希望者がチームを組んでプロダクト開発を行っています。高度ICT演習には、毎年複数のテーマがあります。<br />
+                    <a
+                      href="https://www.fun.ac.jp/department/course/ict/ict_about/"
+                      target="_blank"
+                      class="works__modal--link"
+                      >高度ICT演習の説明やテーマ一覧について</a
+                    >
+                  </p>
+                  <p class="works__modal--text">
+                    私ははこだてSweetsというチームに所属しています。はこだてSweetsでは、「観光のおともに、あまはこで函館の街を食べ歩き」をコンセプトとしたアプリ「あまはこ」の開発を主に行っています。私はAndroidアプリの開発チームに2018年度から加入し、学びながら開発に携わっています。
+                  </p>
+                </div>
               </div>
+              <a href="#!" class="works__modal--close">×</a>
             </div>
-            <a href="#!" class="works__modal--close">×</a>
           </div>
-        </div>
-        <div class="works__card section__flexbox">
-          <img class="works__thumbnail" src="image/works_miraisai18.jpg"/>
-          <div class="works__body section__flexbox">
-            <h3 class="works__ttl">第18回未来祭</h3>
-            <p class="works__term">2016.11 - 2017.10</p>
-            <p class="works__summary">
-              2017年度の未来祭では、広報セクションのリーダーとして、様々な活動に関わりました。
-              主に制作したものは、告知動画と公式サイトなどです。
-            </p>
-            <p class="works__link"><a href="#works__modal--miraisai18">詳しく見る</a></p>
+          <div class="works__card section__flexbox">
+            <img class="works__thumbnail" src="image/works_miraisai17.jpg"/>
+            <div class="works__body section__flexbox">
+              <h3 class="works__ttl">第17回未来祭</h3>
+              <p class="works__term">2016.4 - 2016.10</p>
+              <p class="works__summary">
+                1～2年生の時には未来祭実行委員会に所属していました。2016年度の未来祭（大学祭）では、新設された広報セクションのメンバーとして、告知動画を作成しました。
+              </p>
+              <p class="works__link"><a href="#works__modal--miraisai17">詳しく見る</a></p>
+            </div>
           </div>
-        </div>
-        <div class="works__modal--wrapper" id="works__modal--miraisai18">
-          <a href="#!" class="works__modal--overlay"></a>
-          <div class="works__modal--window">
-            <div class="works__modal--content">
-              <h3 class="works__modal--ttl">第18回未来祭</h3>
-              <div class="works__modal--body">
-                <p class="works__modal--text">
-                  2017年度の<b>未来祭</b>（大学祭）では、<b>広報セクションのリーダー</b>として、いろいろな活動に関わりました。主に制作したものは、<b>告知動画と、公式サイト</b>などです。
-                </p>
-                <p class="works__modal--text">
-                  サイト制作は0からのスタートで、さらに時間がなかったこともあり、大変苦労しました。
-                </p>
-                <p class="works__modal--text">
-                  告知動画は2016年度と同じように作成しましたが、ロゴやイメージカラーがシンプルだったので、そこからどう連想して動きをつけるかに苦労した記憶があります。
-                </p>
-                <video
-                  src="image/miraisai18_video.mp4"
-                  preload="metadata"
-                  controls
-                  poster="image/miraisai18_video.png"
-                ></video>
-                <p class="works__modal--caption">第18回未来祭告知動画。テーマに合わせてファンファーレから始まり、「ワクワクするお祭りが始まるぞ！」という高揚感が出せるように作りました。</p>
-                <p class="works__modal--text">
-                  ほかには、<b>新入生勧誘のビラ、NCV（ケーブルテレビ）で表示していただいた広告画像、サイトトップの動画</b>も私が作成しています。
-                </p>
-                <img
-                  src="image/miraisai18_ad.png"
-                />
-                <p class="works__modal--caption">NCVの広告画像。このような画像を作る機会はこれまでなかったので、どのような情報を載せるべきか悩みました。</p>
+          <div class="works__modal--wrapper" id="works__modal--miraisai17">
+            <a href="#!" class="works__modal--overlay"></a>
+            <div class="works__modal--window">
+              <div class="works__modal--content">
+                <h3 class="works__modal--ttl">第17回未来祭</h3>
+                <div class="works__modal--body">
+                  <p class="works__modal--text">
+                    1～2年生の時には未来祭実行委員会に所属していました。2016年度の<b>未来祭</b>（大学祭）では、新設された<b>広報セクション</b>のメンバーとして、<b>告知動画を作成</b>しました。
+                  </p>
+                  <p class="works__modal--text">
+                    ロゴのイメージを基に、曲を選んだり動きを決めたり…また、サークルの動画である以上、自分だけで決めるわけにはいかないので、動画編集に詳しくない人の意見も聞きました。それまであまりモーショングラフィックスは作ったことがなかったので、悩む場面が多々ありましたが、最終的には自分自身納得いくものができてとても嬉しくなりました。
+                  </p>
+                  <video
+                    src="image/miraisai17_video.mp4"
+                    preload="metadata"
+                    controls
+                    poster="image/miraisai17_video.png"
+                  ></video>
+                  <p class="works__modal--caption">第17回未来祭告知動画。ロゴの円から動きを連想し、カラフルでポップな印象の動画にしました。</p>
+                </div>
               </div>
+              <a href="#!" class="works__modal--close">×</a>
             </div>
-            <a href="#!" class="works__modal--close">×</a>
           </div>
-        </div>
-        <div class="works__card section__flexbox">
-          <img class="works__thumbnail" src="image/works_mmd.jpg"/>
-          <div class="works__body section__flexbox">
-            <h3 class="works__ttl">MikuMikuDance</h3>
-            <p class="works__term">2014 -</p>
-            <p class="works__summary">
-              趣味でMikuMikuDance (MMD)
-              というフリーソフトを使った動画・静止画制作をしています。
-            </p>
-            <p class="works__link"><a href="#works__modal--mmd">詳しく見る</a></p>
+          <div class="works__card section__flexbox">
+            <img class="works__thumbnail" src="image/works_miraisai18.jpg"/>
+            <div class="works__body section__flexbox">
+              <h3 class="works__ttl">第18回未来祭</h3>
+              <p class="works__term">2016.11 - 2017.10</p>
+              <p class="works__summary">
+                2017年度の未来祭では、広報セクションのリーダーとして、様々な活動に関わりました。
+                主に制作したものは、告知動画と公式サイトなどです。
+              </p>
+              <p class="works__link"><a href="#works__modal--miraisai18">詳しく見る</a></p>
+            </div>
           </div>
-        </div>
-        <div class="works__modal--wrapper" id="works__modal--mmd">
-          <a href="#!" class="works__modal--overlay"></a>
-          <div class="works__modal--window">
-            <div class="works__modal--content">
-              <h3 class="works__modal--ttl">MikuMikuDance</h3>
-              <div class="works__modal--body">
-                <p class="works__modal--text">
-                  趣味で<b>MikuMikuDance</b>（MMD）というフリーソフトを使った動画・静止画制作をしています。
-                </p>
-                <p class="works__modal--text">
-                  現状は配布されたモデルやモーションを使用することが多く、エフェクトの使い方やカメラアングル、動画編集で他の動画と差別化を図っています。いずれはモデルやモーション、エフェクトの作成にも挑戦したいと思います。
-                </p>
-                <video
-                  src="image/mmd_torinoko.mp4"
-                  preload="metadata"
-                  controls
-                  poster="image/mmd_torinoko.png"
-                ></video>
-                <video
-                  src="image/mmd_donut.mp4"
-                  preload="metadata"
-                  controls
-                  poster="image/mmd_donut.png"
-                ></video>
-                <video
-                  src="image/mmd_alle.mp4"
-                  preload="metadata"
-                  controls
-                  poster="image/mmd_alle.png"
-                ></video>
+          <div class="works__modal--wrapper" id="works__modal--miraisai18">
+            <a href="#!" class="works__modal--overlay"></a>
+            <div class="works__modal--window">
+              <div class="works__modal--content">
+                <h3 class="works__modal--ttl">第18回未来祭</h3>
+                <div class="works__modal--body">
+                  <p class="works__modal--text">
+                    2017年度の<b>未来祭</b>（大学祭）では、<b>広報セクションのリーダー</b>として、いろいろな活動に関わりました。主に制作したものは、<b>告知動画と、公式サイト</b>などです。
+                  </p>
+                  <p class="works__modal--text">
+                    サイト制作は0からのスタートで、さらに時間がなかったこともあり、大変苦労しました。
+                  </p>
+                  <p class="works__modal--text">
+                    告知動画は2016年度と同じように作成しましたが、ロゴやイメージカラーがシンプルだったので、そこからどう連想して動きをつけるかに苦労した記憶があります。
+                  </p>
+                  <video
+                    src="image/miraisai18_video.mp4"
+                    preload="metadata"
+                    controls
+                    poster="image/miraisai18_video.png"
+                  ></video>
+                  <p class="works__modal--caption">第18回未来祭告知動画。テーマに合わせてファンファーレから始まり、「ワクワクするお祭りが始まるぞ！」という高揚感が出せるように作りました。</p>
+                  <p class="works__modal--text">
+                    ほかには、<b>新入生勧誘のビラ、NCV（ケーブルテレビ）で表示していただいた広告画像、サイトトップの動画</b>も私が作成しています。
+                  </p>
+                  <img
+                    src="image/miraisai18_ad.png"
+                  />
+                  <p class="works__modal--caption">NCVの広告画像。このような画像を作る機会はこれまでなかったので、どのような情報を載せるべきか悩みました。</p>
+                </div>
               </div>
+              <a href="#!" class="works__modal--close">×</a>
             </div>
-            <a href="#!" class="works__modal--close">×</a>
           </div>
-        </div>
-        <div class="works__card section__flexbox">
-          <img class="works__thumbnail" src="image/works_mg.jpg"/>
-          <div class="works__body section__flexbox">
-            <h3 class="works__ttl">Movies</h3>
-            <p class="works__term">2010 -</p>
-            <p class="works__summary">
-              MMD以外では、モーショングラフィックスやストップモーション、タイムラプスの動画も作ることがあります。
-            </p>
-            <p class="works__link"><a href="#works__modal--movies">詳しく見る</a></p>
+          <div class="works__card section__flexbox">
+            <img class="works__thumbnail" src="image/works_mmd.jpg"/>
+            <div class="works__body section__flexbox">
+              <h3 class="works__ttl">MikuMikuDance</h3>
+              <p class="works__term">2014 -</p>
+              <p class="works__summary">
+                趣味でMikuMikuDance (MMD)
+                というフリーソフトを使った動画・静止画制作をしています。
+              </p>
+              <p class="works__link"><a href="#works__modal--mmd">詳しく見る</a></p>
+            </div>
           </div>
-        </div>
-        <div class="works__modal--wrapper" id="works__modal--movies">
-          <a href="#!" class="works__modal--overlay"></a>
-          <div class="works__modal--window">
-            <div class="works__modal--content">
-              <h3 class="works__modal--ttl">Movies</h3>
-              <div class="works__modal--body">
-                <p class="works__modal--text">
-                  MMD以外では、<b>モーショングラフィックスやストップモーション、タイムラプス</b>の動画も作ることがあります。
-                  ストップモーションはサークルや部活で共同制作したものが多く公開が難しいので、個人で作成したモーショングラフィックスとタイムラプスを公開します。
-                </p>
-                <p class="works__modal--text">
-                  未来祭の告知動画もモーショングラフィックスの類ですが、そちらは題材や目的がはっきり決まっているので、その制約が良い影響にも悪い影響にもなります。趣味で作るモーショングラフィックスの動画は制約がないので、とても自由な反面、何を作っていいか迷子になりがちです。そういうわけで、まだあまり作ってはいませんが、自分のペースで作れるところが魅力だと思うので、ぜひこれから作品を増やしていきたいです。
-                </p>
-                <video
-                  src="image/mg_amanojaku.mp4"
-                  preload="metadata"
-                  controls
-                  poster="image/mg_amanojaku.png"
-                ></video>
-                <video
-                  src="image/mg_test.mp4"
-                  preload="metadata"
-                  controls
-                  poster="image/mg_test.png"
-                ></video>
-                <video
-                  src="image/time_haneda.mp4"
-                  preload="metadata"
-                  controls
-                ></video>
+          <div class="works__modal--wrapper" id="works__modal--mmd">
+            <a href="#!" class="works__modal--overlay"></a>
+            <div class="works__modal--window">
+              <div class="works__modal--content">
+                <h3 class="works__modal--ttl">MikuMikuDance</h3>
+                <div class="works__modal--body">
+                  <p class="works__modal--text">
+                    趣味で<b>MikuMikuDance</b>（MMD）というフリーソフトを使った動画・静止画制作をしています。
+                  </p>
+                  <p class="works__modal--text">
+                    現状は配布されたモデルやモーションを使用することが多く、エフェクトの使い方やカメラアングル、動画編集で他の動画と差別化を図っています。いずれはモデルやモーション、エフェクトの作成にも挑戦したいと思います。
+                  </p>
+                  <video
+                    src="image/mmd_torinoko.mp4"
+                    preload="metadata"
+                    controls
+                    poster="image/mmd_torinoko.png"
+                  ></video>
+                  <video
+                    src="image/mmd_donut.mp4"
+                    preload="metadata"
+                    controls
+                    poster="image/mmd_donut.png"
+                  ></video>
+                  <video
+                    src="image/mmd_alle.mp4"
+                    preload="metadata"
+                    controls
+                    poster="image/mmd_alle.png"
+                  ></video>
+                </div>
               </div>
+              <a href="#!" class="works__modal--close">×</a>
             </div>
-            <a href="#!" class="works__modal--close">×</a>
+          </div>
+          <div class="works__card section__flexbox">
+            <img class="works__thumbnail" src="image/works_mg.jpg"/>
+            <div class="works__body section__flexbox">
+              <h3 class="works__ttl">Movies</h3>
+              <p class="works__term">2010 -</p>
+              <p class="works__summary">
+                MMD以外では、モーショングラフィックスやストップモーション、タイムラプスの動画も作ることがあります。
+              </p>
+              <p class="works__link"><a href="#works__modal--movies">詳しく見る</a></p>
+            </div>
+          </div>
+          <div class="works__modal--wrapper" id="works__modal--movies">
+            <a href="#!" class="works__modal--overlay"></a>
+            <div class="works__modal--window">
+              <div class="works__modal--content">
+                <h3 class="works__modal--ttl">Movies</h3>
+                <div class="works__modal--body">
+                  <p class="works__modal--text">
+                    MMD以外では、<b>モーショングラフィックスやストップモーション、タイムラプス</b>の動画も作ることがあります。
+                    ストップモーションはサークルや部活で共同制作したものが多く公開が難しいので、個人で作成したモーショングラフィックスとタイムラプスを公開します。
+                  </p>
+                  <p class="works__modal--text">
+                    未来祭の告知動画もモーショングラフィックスの類ですが、そちらは題材や目的がはっきり決まっているので、その制約が良い影響にも悪い影響にもなります。趣味で作るモーショングラフィックスの動画は制約がないので、とても自由な反面、何を作っていいか迷子になりがちです。そういうわけで、まだあまり作ってはいませんが、自分のペースで作れるところが魅力だと思うので、ぜひこれから作品を増やしていきたいです。
+                  </p>
+                  <video
+                    src="image/mg_amanojaku.mp4"
+                    preload="metadata"
+                    controls
+                    poster="image/mg_amanojaku.png"
+                  ></video>
+                  <video
+                    src="image/mg_test.mp4"
+                    preload="metadata"
+                    controls
+                    poster="image/mg_test.png"
+                  ></video>
+                  <video
+                    src="image/time_haneda.mp4"
+                    preload="metadata"
+                    controls
+                  ></video>
+                </div>
+              </div>
+              <a href="#!" class="works__modal--close">×</a>
+            </div>
           </div>
         </div>
       </div>
@@ -420,96 +428,98 @@
     <hr class="section__border--f" />
 
     <section id="links" class="links">
-      <div class="section__ttl">
-        <h1>Links</h1>
-        <h2>私に関わるいろいろなリンク先</h2>
-      </div>
-      <div class="links__box section__flexbox">
-        <div class="links__card section__flexbox">
-          <a
-            href="https://twitter.com/moko2356789"
-            target="_blank"
-            class="links__link"
-          >
-            <i class="fab fa-twitter fa-fw fa-5x"></i>
-          </a>
-          <div class="links__txt">
-            <h4>Twitter</h4>
-            <p>だいたいここに住んでます</p>
-          </div>
+      <div class="section__inner">
+        <div class="section__ttl">
+          <h1>Links</h1>
+          <h2>私に関わるいろいろなリンク先</h2>
         </div>
-        <div class="links__card section__flexbox">
-          <a
-            href="https://www.facebook.com/h.tomoka"
-            target="_blank"
-            class="links__link"
-          >
-            <i class="fab fa-facebook fa-fw fa-5x"></i>
-          </a>
-          <div class="links__txt">
-            <h4>Facebook</h4>
-            <p>たまーにいます</p>
+        <div class="links__box section__flexbox">
+          <div class="links__card section__flexbox">
+            <a
+              href="https://twitter.com/moko2356789"
+              target="_blank"
+              class="links__link"
+            >
+              <i class="fab fa-twitter fa-fw fa-5x"></i>
+            </a>
+            <div class="links__txt">
+              <h4>Twitter</h4>
+              <p>だいたいここに住んでます</p>
+            </div>
           </div>
-        </div>
-        <div class="links__card section__flexbox">
-          <a
-            href="https://www.instagram.com/moko2356789/"
-            target="_blank"
-            class="links__link"
-          >
-            <i class="fab fa-instagram fa-fw fa-5x"></i>
-          </a>
-          <div class="links__txt">
-            <h4>Instagram</h4>
-            <p>写真撮るの好きなのでぜひ見てください！（だいたい食べ物）</p>
+          <div class="links__card section__flexbox">
+            <a
+              href="https://www.facebook.com/h.tomoka"
+              target="_blank"
+              class="links__link"
+            >
+              <i class="fab fa-facebook fa-fw fa-5x"></i>
+            </a>
+            <div class="links__txt">
+              <h4>Facebook</h4>
+              <p>たまーにいます</p>
+            </div>
           </div>
-        </div>
-        <div class="links__card section__flexbox">
-          <a
-            href="https://github.com/mokomoka"
-            target="_blank"
-            class="links__link"
-          >
-            <i class="fab fa-github fa-fw fa-5x"> </i>
-          </a>
-          <div class="links__txt">
-            <h4>GitHub</h4>
-            <p>精進中…</p>
+          <div class="links__card section__flexbox">
+            <a
+              href="https://www.instagram.com/moko2356789/"
+              target="_blank"
+              class="links__link"
+            >
+              <i class="fab fa-instagram fa-fw fa-5x"></i>
+            </a>
+            <div class="links__txt">
+              <h4>Instagram</h4>
+              <p>写真撮るの好きなのでぜひ見てください！（だいたい食べ物）</p>
+            </div>
           </div>
-        </div>
-        <div class="links__card section__flexbox">
-          <a href="https://www.wantedly.com/users/65431519" target="_blank" class="links__link">
-            <i class="far fa-address-book fa-fw fa-5x"></i>
-          </a>
-          <div class="links__txt">
-            <h4>Wantedly</h4>
-            <p>内容はこのサイトとほぼ同じです</p>
+          <div class="links__card section__flexbox">
+            <a
+              href="https://github.com/mokomoka"
+              target="_blank"
+              class="links__link"
+            >
+              <i class="fab fa-github fa-fw fa-5x"> </i>
+            </a>
+            <div class="links__txt">
+              <h4>GitHub</h4>
+              <p>精進中…</p>
+            </div>
           </div>
-        </div>
-        <div class="links__card section__flexbox">
-          <a
-            href="https://mokomoka.hateblo.jp/"
-            target="_blank"
-            class="links__link"
-          >
-            <i class="fas fa-blog fa-fw fa-5x"></i>
-          </a>
-          <div class="links__txt">
-            <h4>はてなブログ</h4>
-            <p>気が向いた時に書きます（なかなか続かない…）</p>
+          <div class="links__card section__flexbox">
+            <a href="https://www.wantedly.com/users/65431519" target="_blank" class="links__link">
+              <i class="far fa-address-book fa-fw fa-5x"></i>
+            </a>
+            <div class="links__txt">
+              <h4>Wantedly</h4>
+              <p>内容はこのサイトとほぼ同じです</p>
+            </div>
           </div>
-        </div>
-        <div class="links__card section__flexbox">
-          <a
-            href="https://www.fun.ac.jp/funbox201810/"
-            target="_blank"
-            class="links__link"
-          >
-            <i class="fas fa-newspaper fa-fw fa-5x"></i>
-          </a>
-          <div class="links__txt">
-            <h4>FUNBOX（大学公式サイト内記事）</h4>
-            <p>学部3年時に受けたインタビューが載っています</p>
+          <div class="links__card section__flexbox">
+            <a
+              href="https://mokomoka.hateblo.jp/"
+              target="_blank"
+              class="links__link"
+            >
+              <i class="fas fa-blog fa-fw fa-5x"></i>
+            </a>
+            <div class="links__txt">
+              <h4>はてなブログ</h4>
+              <p>気が向いた時に書きます（なかなか続かない…）</p>
+            </div>
+          </div>
+          <div class="links__card section__flexbox">
+            <a
+              href="https://www.fun.ac.jp/funbox201810/"
+              target="_blank"
+              class="links__link"
+            >
+              <i class="fas fa-newspaper fa-fw fa-5x"></i>
+            </a>
+            <div class="links__txt">
+              <h4>FUNBOX（大学公式サイト内記事）</h4>
+              <p>学部3年時に受けたインタビューが載っています</p>
+            </div>
           </div>
         </div>
       </div>

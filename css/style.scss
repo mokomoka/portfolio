@@ -22,7 +22,7 @@ body {
   }
 }
 
-%sectionArea {
+%sectionInnerArea {
   width: 80vw;
   min-height: 100vh;
   margin: 0 auto;
@@ -252,12 +252,12 @@ nav {
 }
 
 /*sections*/
-section {
-  @extend %sectionArea;
-  color: $color_text;
-}
-
 .section {
+  &__inner {
+    @extend %sectionInnerArea;
+    color: $color_text;
+  }
+
   &__flexbox {
     display: flex;
     flex-wrap: wrap;
@@ -301,18 +301,24 @@ section {
 
 /*main*/
 .main {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 200%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__box {
+    height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $breakpoint) {
+      height: calc(100vh - 160px);
+    }
+  }
 
   &__ttl {
     position: relative;
+    padding: 0 16px;
+
     &--text {
+      font-size: 4.8rem;
+      text-align: center;
       padding-bottom: 8px;
       text-shadow: 0 0 2px $color_base, 0 0 2px $color_base, 0 0 2px $color_base,
         0 0 2px $color_base;

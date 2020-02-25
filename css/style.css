@@ -18,7 +18,7 @@ body {
   }
 }
 
-section {
+.section__inner {
   width: 80vw;
   min-height: 100vh;
   margin: 0 auto;
@@ -26,7 +26,7 @@ section {
 }
 
 @media (min-width: 768px) {
-  section {
+  .section__inner {
     padding: 80px 0;
     max-width: 960px;
   }
@@ -233,7 +233,7 @@ nav a {
 }
 
 /*sections*/
-section {
+.section__inner {
   color: #413e1e;
 }
 
@@ -281,22 +281,27 @@ section {
 }
 
 /*main*/
-.main {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 200%;
-  text-align: center;
+.main__box {
+  height: calc(100vh - 140px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .main__box {
+    height: calc(100vh - 160px);
+  }
+}
+
 .main__ttl {
   position: relative;
+  padding: 0 16px;
 }
 
 .main__ttl--text {
+  font-size: 4.8rem;
+  text-align: center;
   padding-bottom: 8px;
   text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }
