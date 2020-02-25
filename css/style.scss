@@ -432,8 +432,12 @@ nav {
   &__box--txt {
     flex: 2 1 320px;
     flex-flow: column;
-    max-width: 640px;
     justify-content: center;
+    max-width: 640px;
+
+    @media (min-width: $breakpoint) {
+      min-height: 320px;
+    }
   }
 
   &__name {
@@ -453,8 +457,7 @@ nav {
   }
 
   &__table {
-    width: 100%;
-    margin: 32px 0;
+    margin: 32px auto;
     border-collapse: collapse;
     tr {
       border-bottom: thin dashed $color_a;
