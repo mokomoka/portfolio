@@ -18,18 +18,17 @@ body {
   }
 }
 
-section {
+.section__inner {
   width: 80vw;
   min-height: 100vh;
-  margin: 0 10vw;
+  margin: 0 auto;
   padding: 72px 0;
 }
 
 @media (min-width: 768px) {
-  section {
-    margin: 0 auto;
+  .section__inner {
     padding: 80px 0;
-    max-width: 1120px;
+    max-width: 960px;
   }
 }
 
@@ -234,8 +233,7 @@ nav a {
 }
 
 /*sections*/
-section {
-  height: 100%;
+.section__inner {
   color: #413e1e;
 }
 
@@ -283,22 +281,27 @@ section {
 }
 
 /*main*/
-.main {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 200%;
-  text-align: center;
+.main__box {
+  height: calc(100vh - 140px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .main__box {
+    height: calc(100vh - 160px);
+  }
+}
+
 .main__ttl {
   position: relative;
+  padding: 0 16px;
 }
 
 .main__ttl--text {
+  font-size: 4.8rem;
+  text-align: center;
   padding-bottom: 8px;
   text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }
@@ -408,12 +411,11 @@ section {
   flex: 2 1 320px;
   flex-flow: column;
   justify-content: center;
-  max-width: 640px;
 }
 
 @media (min-width: 768px) {
   .about__box--txt {
-    min-height: 320px;
+    margin-top: 40px;
   }
 }
 
@@ -583,7 +585,7 @@ section {
 
 @media (min-width: 768px) {
   .works__card {
-    max-width: 880px;
+    max-width: 960px;
     margin-right: 0px;
   }
 }
@@ -610,6 +612,12 @@ section {
 @media (min-width: 768px) {
   .works__body {
     height: 240px;
+  }
+}
+
+@media (min-width: 960px) {
+  .works__body {
+    width: calc(960px - 240px);
   }
 }
 
@@ -767,7 +775,7 @@ section {
 
 .links__card {
   width: 100%;
-  max-width: 880px;
+  max-width: 960px;
   align-items: center;
   flex-wrap: nowrap;
 }
