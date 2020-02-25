@@ -411,12 +411,11 @@ nav a {
   flex: 2 1 320px;
   flex-flow: column;
   justify-content: center;
-  max-width: 640px;
 }
 
 @media (min-width: 768px) {
   .about__box--txt {
-    min-height: 320px;
+    margin-top: 40px;
   }
 }
 

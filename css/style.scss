@@ -433,10 +433,9 @@ nav {
     flex: 2 1 320px;
     flex-flow: column;
     justify-content: center;
-    max-width: 640px;
 
     @media (min-width: $breakpoint) {
-      min-height: 320px;
+      margin-top: 40px;
     }
   }
 
