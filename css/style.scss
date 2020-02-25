@@ -2,6 +2,7 @@
 
 /*all*/
 $breakpoint: 768px;
+$max_width: 960px;
 
 html {
   scroll-behavior: smooth;
@@ -24,13 +25,12 @@ body {
 %sectionArea {
   width: 80vw;
   min-height: 100vh;
-  margin: 0 10vw;
+  margin: 0 auto;
   padding: 72px 0;
 
   @media (min-width: $breakpoint) {
-    margin: 0 auto;
     padding: 80px 0;
-    max-width: 1120px;
+    max-width: $max_width;
   }
 }
 
@@ -253,7 +253,6 @@ nav {
 
 /*sections*/
 section {
-  height: 100%;
   @extend %sectionArea;
   color: $color_text;
 }
@@ -598,7 +597,7 @@ section {
     }
 
     @media (min-width: $breakpoint) {
-      max-width: 880px;
+      max-width: $max_width;
       margin-right: 0px;
     }
 
@@ -623,6 +622,10 @@ section {
 
     @media (min-width: $breakpoint) {
       height: 240px;
+    }
+
+    @media (min-width: $max_width) {
+      width: calc(#{$max_width} - 240px);
     }
   }
 
@@ -786,7 +789,7 @@ section {
 
   &__card {
     width: 100%;
-    max-width: 880px;
+    max-width: $max_width;
     align-items: center;
     flex-wrap: nowrap;
 

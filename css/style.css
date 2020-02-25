@@ -21,15 +21,14 @@ body {
 section {
   width: 80vw;
   min-height: 100vh;
-  margin: 0 10vw;
+  margin: 0 auto;
   padding: 72px 0;
 }
 
 @media (min-width: 768px) {
   section {
-    margin: 0 auto;
     padding: 80px 0;
-    max-width: 1120px;
+    max-width: 960px;
   }
 }
 
@@ -235,7 +234,6 @@ nav a {
 
 /*sections*/
 section {
-  height: 100%;
   color: #413e1e;
 }
 
@@ -583,7 +581,7 @@ section {
 
 @media (min-width: 768px) {
   .works__card {
-    max-width: 880px;
+    max-width: 960px;
     margin-right: 0px;
   }
 }
@@ -610,6 +608,12 @@ section {
 @media (min-width: 768px) {
   .works__body {
     height: 240px;
+  }
+}
+
+@media (min-width: 960px) {
+  .works__body {
+    width: calc(960px - 240px);
   }
 }
 
@@ -767,7 +771,7 @@ section {
 
 .links__card {
   width: 100%;
-  max-width: 880px;
+  max-width: 960px;
   align-items: center;
   flex-wrap: nowrap;
 }
