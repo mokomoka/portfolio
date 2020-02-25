@@ -812,6 +812,11 @@ section {
       border: 16px solid transparent;
       border-right: 16px solid rgba($color_f, 0.2);
     }
+
+    & > h4 {
+      line-height: 1.6;
+      margin-bottom: 4px;
+    }
   }
 }
 

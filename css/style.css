@@ -795,6 +795,11 @@ section {
   border-right: 16px solid rgba(36, 123, 193, 0.2);
 }
 
+.links__txt > h4 {
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
 /*footer*/
 footer {
   background: #f9a825;
