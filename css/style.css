@@ -64,7 +64,7 @@ nav {
   width: 100vw;
   position: fixed;
   z-index: 9;
-  background-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 nav ul {
@@ -152,7 +152,7 @@ nav a {
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   transition: 0.5s ease-in-out;
   transform: translateY(-105%);
 }
@@ -214,11 +214,22 @@ nav a {
   #nav__drawer #nav__content .nav__li {
     display: block;
     flex-grow: 1;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
   #nav__drawer #nav__content .nav__li:hover {
-    background: #403017;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  #nav__drawer #nav__content .nav__li:hover:nth-child(1) {
+    background: #f9a825;
+  }
+  #nav__drawer #nav__content .nav__li:hover:nth-child(2) {
+    background: #cd362a;
+  }
+  #nav__drawer #nav__content .nav__li:hover:nth-child(3) {
+    background: #769e58;
+  }
+  #nav__drawer #nav__content .nav__li:hover:nth-child(4) {
+    background: #247bc1;
   }
   #nav__drawer #nav__content .nav__li:first-child {
     flex-grow: 2;
@@ -228,9 +239,11 @@ nav a {
     line-height: 60px;
     color: #403017;
     font-weight: 400;
+    transition: 0.2s ease-in-out;
   }
   #nav__drawer #nav__content .nav__li a:hover {
     color: #ffffff;
+    transition: 0.2s ease-in-out;
   }
 }
 

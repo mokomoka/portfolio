@@ -78,8 +78,7 @@ nav {
   width: 100vw;
   position: fixed;
   z-index: 9;
-  // box-shadow: 0px 2px 5px rgba($color_main_hover, 0.2);
-  background-color: rgba($color_base, 0.8);
+  background: rgba($color_base, 0.8);
 
   ul {
     width: 100%;
@@ -166,7 +165,7 @@ nav {
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: rgba($color_base, 0.8);
+  background: rgba($color_base, 0.8);
   transition: 0.5s ease-in-out;
   transform: translateY(-105%);
 
@@ -231,11 +230,23 @@ nav {
       .nav__li {
         display: block;
         flex-grow: 1;
-        transition: 0.5s ease-in-out;
+        transition: 0.2s ease-in-out;
 
         &:hover {
-          background: $color_main;
-          transition: 0.5s ease-in-out;
+          transition: 0.2s ease-in-out;
+
+          &:nth-child(1) {
+            background: $color_k;
+          }
+          &:nth-child(2) {
+            background: $color_a;
+          }
+          &:nth-child(3) {
+            background: $color_e;
+          }
+          &:nth-child(4) {
+            background: $color_f;
+          }
         }
 
         &:first-child {
@@ -247,8 +258,10 @@ nav {
           line-height: 60px;
           color: $color_main;
           font-weight: 400;
+          transition: 0.2s ease-in-out;
           &:hover {
             color: $color_base;
+            transition: 0.2s ease-in-out;
           }
         }
       }
