@@ -78,8 +78,8 @@ nav {
   width: 100vw;
   position: fixed;
   z-index: 9;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  background-color: $color_main;
+  // box-shadow: 0px 2px 5px rgba($color_main_hover, 0.2);
+  background-color: rgba($color_base, 0.8);
 
   ul {
     width: 100%;
@@ -97,7 +97,7 @@ nav {
     font-feature-settings: "liga" 0;
     letter-spacing: 2px;
     transition: 0.5s ease-out;
-    color: $color_base;
+    color: $color_main;
     font-weight: 600;
   }
 }
@@ -128,7 +128,7 @@ nav {
     right: 0;
     bottom: 0;
     border-radius: 3px;
-    background: $color_base;
+    background: $color_main;
     display: block;
     content: "";
     cursor: pointer;
@@ -166,7 +166,7 @@ nav {
   left: 0;
   z-index: 1;
   width: 100%;
-  background: $color_base;
+  background-color: rgba($color_base, 0.8);
   transition: 0.5s ease-in-out;
   transform: translateY(-105%);
 
@@ -200,7 +200,7 @@ nav {
 
 #nav__input:checked ~ #nav__label--open {
   span {
-    background: $color_main;
+    background: $color_base;
 
     &::before {
       transform: rotate(-45deg) translateY(0px);
@@ -234,7 +234,7 @@ nav {
         transition: 0.5s ease-in-out;
 
         &:hover {
-          background: $color_main_hover;
+          background: $color_main;
           transition: 0.5s ease-in-out;
         }
 
@@ -245,8 +245,11 @@ nav {
 
         a {
           line-height: 60px;
-          color: $color_base;
+          color: $color_main;
           font-weight: 400;
+          &:hover {
+            color: $color_base;
+          }
         }
       }
     }
