@@ -220,16 +220,16 @@ nav a {
     transition: 0.2s ease-in-out;
   }
   #nav__drawer #nav__content .nav__li:hover:nth-child(1) {
-    background: #fcc9a4;
+    background: #edda15;
   }
   #nav__drawer #nav__content .nav__li:hover:nth-child(2) {
-    background: #fca9a2;
+    background: #e94c4d;
   }
   #nav__drawer #nav__content .nav__li:hover:nth-child(3) {
-    background: #bcd78a;
+    background: #73a82d;
   }
   #nav__drawer #nav__content .nav__li:hover:nth-child(4) {
-    background: #72bfce;
+    background: #00b5de;
   }
   #nav__drawer #nav__content .nav__li:first-child {
     flex-grow: 2;
@@ -280,19 +280,19 @@ nav a {
 }
 
 .section__border--k {
-  border: 2px solid rgba(252, 201, 164, 0.4);
+  border: 2px solid rgba(237, 218, 21, 0.4);
 }
 
 .section__border--a {
-  border: 2px solid rgba(252, 169, 162, 0.4);
+  border: 2px solid rgba(233, 76, 77, 0.4);
 }
 
 .section__border--e {
-  border: 2px solid rgba(188, 215, 138, 0.4);
+  border: 2px solid rgba(115, 168, 45, 0.4);
 }
 
 .section__border--f {
-  border: 2px solid rgba(114, 191, 206, 0.4);
+  border: 2px solid rgba(0, 181, 222, 0.4);
 }
 
 /*main*/
@@ -344,40 +344,40 @@ nav a {
   20% {
     width: 100%;
     left: 0%;
-    background: rgba(252, 201, 164, 0.4);
+    background: rgba(237, 218, 21, 0.4);
   }
   30%,
   45% {
     width: 100%;
     left: 0%;
-    background: rgba(252, 169, 162, 0.4);
+    background: rgba(233, 76, 77, 0.4);
   }
   55%,
   70% {
     width: 100%;
     left: 0%;
-    background: rgba(188, 215, 138, 0.4);
+    background: rgba(115, 168, 45, 0.4);
   }
   80%,
   95% {
     width: 100%;
     left: 0%;
-    background: rgba(114, 191, 206, 0.4);
+    background: rgba(0, 181, 222, 0.4);
   }
 }
 
 /*about*/
 .about .section__ttl h1 {
-  border-left: 8px solid #fca9a2;
+  border-left: 8px solid #e94c4d;
   padding-left: 8px;
 }
 
 .about__link:link, .about__link:visited {
-  color: #fca9a2;
+  color: #e94c4d;
 }
 
 .about__link:hover {
-  color: #941c14;
+  color: #b43030;
 }
 
 .about__box--img {
@@ -390,7 +390,7 @@ nav a {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  border: 2px solid rgba(252, 169, 162, 0.4);
+  border: 2px solid rgba(233, 76, 77, 0.4);
   display: block;
   transition: all 0.5s ease-in-out;
   opacity: 1;
@@ -440,7 +440,7 @@ nav a {
 }
 
 .about__name {
-  border-bottom: #fca9a2 2px solid;
+  border-bottom: #e94c4d 2px solid;
   margin-bottom: 16px;
 }
 
@@ -461,7 +461,7 @@ nav a {
 }
 
 .about__table tr {
-  border-bottom: thin dashed #fca9a2;
+  border-bottom: thin dashed #e94c4d;
 }
 
 .about__table td:first-child {
@@ -475,7 +475,7 @@ nav a {
 .about__button--box {
   display: inline-block;
   border-radius: 8px;
-  border: #fca9a2 2px solid;
+  border: #e94c4d 2px solid;
   margin: 0 0 0 auto;
 }
 
@@ -495,7 +495,7 @@ nav a {
   position: absolute;
   z-index: -1;
   transition: all 0.3s ease;
-  background: #fca9a2;
+  background: #e94c4d;
 }
 
 .about__button--link::after {
@@ -566,7 +566,7 @@ nav a {
 
 /*works*/
 .works .section__ttl h1 {
-  border-left: 8px solid #bcd78a;
+  border-left: 8px solid #73a82d;
   padding-left: 8px;
 }
 
@@ -575,11 +575,11 @@ nav a {
 }
 
 .works a:link, .works a:visited {
-  color: #bcd78a;
+  color: #73a82d;
 }
 
 .works a:hover {
-  color: #45642c;
+  color: #56801f;
   transition: 0.5s ease-in-out;
 }
 
@@ -730,14 +730,14 @@ nav a {
   font-size: 4rem;
   line-height: 1;
   width: 4rem;
-  color: #bcd78a;
+  color: #73a82d;
   text-align: center;
   text-decoration: none;
   text-indent: 0;
 }
 
 .works__modal--close:hover {
-  color: #45642c;
+  color: #56801f;
 }
 
 .works__modal--overlay {
@@ -780,7 +780,7 @@ nav a {
 
 /*links*/
 .links .section__ttl h1 {
-  border-left: 8px solid #72bfce;
+  border-left: 8px solid #00b5de;
   padding-left: 8px;
 }
 
@@ -789,11 +789,11 @@ nav a {
 }
 
 .links a:link, .links a:visited {
-  color: #72bfce;
+  color: #00b5de;
 }
 
 .links a:hover {
-  color: #13568d;
+  color: #0495b6;
   transition: 0.5s ease-in-out;
 }
 
@@ -840,7 +840,7 @@ nav a {
 
 /*footer*/
 footer {
-  background: #fcc9a4;
+  background: #edda15;
   color: #ffffff;
   text-align: center;
   padding: 4px;
