@@ -57,7 +57,9 @@ $color_f: #247bc1;
 $color_f_hover: #13568d;
 $color_e: #769e58;
 $color_e_hover: #45642c;
-$color_text: #413e1e;
+$color_text: #403017;
+$color_main: #403017;
+$color_main_hover: #251c0c;
 
 .unshown {
   display: none;
@@ -77,7 +79,7 @@ nav {
   position: fixed;
   z-index: 9;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  background-color: $color_k;
+  background-color: $color_main;
 
   ul {
     width: 100%;
@@ -95,7 +97,7 @@ nav {
     font-feature-settings: "liga" 0;
     letter-spacing: 2px;
     transition: 0.5s ease-out;
-    color: $color_text;
+    color: $color_base;
     font-weight: 600;
   }
 }
@@ -126,7 +128,7 @@ nav {
     right: 0;
     bottom: 0;
     border-radius: 3px;
-    background: $color_text;
+    background: $color_base;
     display: block;
     content: "";
     cursor: pointer;
@@ -198,7 +200,7 @@ nav {
 
 #nav__input:checked ~ #nav__label--open {
   span {
-    background: $color_k;
+    background: $color_main;
 
     &::before {
       transform: rotate(-45deg) translateY(0px);
@@ -232,7 +234,7 @@ nav {
         transition: 0.5s ease-in-out;
 
         &:hover {
-          background: $color_k_hover;
+          background: $color_main_hover;
           transition: 0.5s ease-in-out;
         }
 
@@ -376,10 +378,10 @@ nav {
     @extend %external-link;
     &:link,
     &:visited {
-      color: $color_a;
+      color: $color_main;
     }
     &:hover {
-      color: $color_a_hover;
+      color: $color_main_hover;
     }
   }
 
@@ -393,7 +395,7 @@ nav {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    border: 2px solid rgba($color_a, 0.4);
+    border: 2px solid rgba($color_main, 0.4);
     display: block;
     transition: all 0.5s ease-in-out;
     opacity: 1;
@@ -572,10 +574,10 @@ nav {
     transition: 0.5s ease-in-out;
     &:link,
     &:visited {
-      color: $color_e;
+      color: $color_main;
     }
     &:hover {
-      color: $color_e_hover;
+      color: $color_main_hover;
       transition: 0.5s ease-in-out;
     }
   }
@@ -717,13 +719,13 @@ nav {
       font-size: 4rem;
       line-height: 1;
       width: 4rem;
-      color: $color_e;
+      color: $color_main;
       text-align: center;
       text-decoration: none;
       text-indent: 0;
 
       &:hover {
-        color: $color_e_hover;
+        color: $color_main_hover;
       }
     }
 
@@ -778,10 +780,10 @@ nav {
     transition: 0.5s ease-in-out;
     &:link,
     &:visited {
-      color: $color_f;
+      color: $color_main;
     }
     &:hover {
-      color: $color_f_hover;
+      color: $color_main_hover;
       transition: 0.5s ease-in-out;
     }
   }
@@ -808,7 +810,7 @@ nav {
     position: relative;
     margin-left: 32px;
     padding: 16px;
-    background: rgba($color_f, 0.2);
+    background: rgba($color_main, 0.2);
     border-radius: 4px;
 
     &:before {
@@ -818,7 +820,7 @@ nav {
       left: -32px;
       margin-top: -16px;
       border: 16px solid transparent;
-      border-right: 16px solid rgba($color_f, 0.2);
+      border-right: 16px solid rgba($color_main, 0.2);
     }
 
     & > h4 {
@@ -830,7 +832,7 @@ nav {
 
 /*footer*/
 footer {
-  background: $color_k;
+  background: $color_main;
   color: $color_base;
   text-align: center;
   padding: 4px;
