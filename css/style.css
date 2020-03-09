@@ -367,12 +367,17 @@ nav a {
 }
 
 /*about*/
+.about .section__ttl h1 {
+  border-left: 8px solid #cd362a;
+  padding-left: 8px;
+}
+
 .about__link:link, .about__link:visited {
-  color: #403017;
+  color: #cd362a;
 }
 
 .about__link:hover {
-  color: #251c0c;
+  color: #941c14;
 }
 
 .about__box--img {
@@ -385,7 +390,7 @@ nav a {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  border: 2px solid rgba(64, 48, 23, 0.4);
+  border: 2px solid rgba(205, 54, 42, 0.4);
   display: block;
   transition: all 0.5s ease-in-out;
   opacity: 1;
@@ -560,16 +565,21 @@ nav a {
 }
 
 /*works*/
+.works .section__ttl h1 {
+  border-left: 8px solid #769e58;
+  padding-left: 8px;
+}
+
 .works a {
   transition: 0.5s ease-in-out;
 }
 
 .works a:link, .works a:visited {
-  color: #403017;
+  color: #769e58;
 }
 
 .works a:hover {
-  color: #251c0c;
+  color: #45642c;
   transition: 0.5s ease-in-out;
 }
 
@@ -720,14 +730,14 @@ nav a {
   font-size: 4rem;
   line-height: 1;
   width: 4rem;
-  color: #403017;
+  color: #769e58;
   text-align: center;
   text-decoration: none;
   text-indent: 0;
 }
 
 .works__modal--close:hover {
-  color: #251c0c;
+  color: #45642c;
 }
 
 .works__modal--overlay {
@@ -769,16 +779,21 @@ nav a {
 }
 
 /*links*/
+.links .section__ttl h1 {
+  border-left: 8px solid #247bc1;
+  padding-left: 8px;
+}
+
 .links a {
   transition: 0.5s ease-in-out;
 }
 
 .links a:link, .links a:visited {
-  color: #403017;
+  color: #247bc1;
 }
 
 .links a:hover {
-  color: #251c0c;
+  color: #13568d;
   transition: 0.5s ease-in-out;
 }
 
@@ -825,7 +840,7 @@ nav a {
 
 /*footer*/
 footer {
-  background: #403017;
+  background: #f9a825;
   color: #ffffff;
   text-align: center;
   padding: 4px;

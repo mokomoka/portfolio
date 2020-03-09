@@ -47,6 +47,13 @@ body {
   }
 }
 
+@mixin titleAccent($color) {
+  h1 {
+    border-left: 8px solid $color;
+    padding-left: 8px;
+  }
+}
+
 $color_base: #ffffff;
 $color_base_hover: #dddddd;
 $color_a: #cd362a;
@@ -390,14 +397,18 @@ nav {
 
 /*about*/
 .about {
+  .section__ttl {
+    @include titleAccent($color_a);
+  }
+
   &__link {
     @extend %external-link;
     &:link,
     &:visited {
-      color: $color_main;
+      color: $color_a;
     }
     &:hover {
-      color: $color_main_hover;
+      color: $color_a_hover;
     }
   }
 
@@ -411,7 +422,7 @@ nav {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    border: 2px solid rgba($color_main, 0.4);
+    border: 2px solid rgba($color_a, 0.4);
     display: block;
     transition: all 0.5s ease-in-out;
     opacity: 1;
@@ -586,14 +597,18 @@ nav {
 
 /*works*/
 .works {
+  .section__ttl {
+    @include titleAccent($color_e);
+  }
+
   a {
     transition: 0.5s ease-in-out;
     &:link,
     &:visited {
-      color: $color_main;
+      color: $color_e;
     }
     &:hover {
-      color: $color_main_hover;
+      color: $color_e_hover;
       transition: 0.5s ease-in-out;
     }
   }
@@ -735,13 +750,13 @@ nav {
       font-size: 4rem;
       line-height: 1;
       width: 4rem;
-      color: $color_main;
+      color: $color_e;
       text-align: center;
       text-decoration: none;
       text-indent: 0;
 
       &:hover {
-        color: $color_main_hover;
+        color: $color_e_hover;
       }
     }
 
@@ -792,14 +807,18 @@ nav {
 
 /*links*/
 .links {
+  .section__ttl {
+    @include titleAccent($color_f);
+  }
+
   a {
     transition: 0.5s ease-in-out;
     &:link,
     &:visited {
-      color: $color_main;
+      color: $color_f;
     }
     &:hover {
-      color: $color_main_hover;
+      color: $color_f_hover;
       transition: 0.5s ease-in-out;
     }
   }
@@ -848,7 +867,7 @@ nav {
 
 /*footer*/
 footer {
-  background: $color_main;
+  background: $color_k;
   color: $color_base;
   text-align: center;
   padding: 4px;
