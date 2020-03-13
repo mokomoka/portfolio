@@ -56,13 +56,13 @@ body {
 
 $color_base: #ffffff;
 $color_base_hover: #dddddd;
-$color_a: #dc4444;
+$color_a: #e9546b;
 $color_a_hover: #b43030;
-$color_k: #dcc044;
+$color_k: #f6ad3c;
 $color_k_hover: #c2b30b;
-$color_f: #44b8dc;
+$color_f: #187fc4;
 $color_f_hover: #0495b6;
-$color_e: #56dc44;
+$color_e: #00ada9;
 $color_e_hover: #56801f;
 $color_text: #403017;
 $color_main: #403017;
@@ -845,7 +845,7 @@ nav {
     position: relative;
     margin-left: 32px;
     padding: 16px;
-    background: rgba($color_main, 0.2);
+    background: rgba($color_f, 0.2);
     border-radius: 4px;
 
     &:before {
@@ -855,7 +855,7 @@ nav {
       left: -32px;
       margin-top: -16px;
       border: 16px solid transparent;
-      border-right: 16px solid rgba($color_main, 0.2);
+      border-right: 16px solid rgba($color_f, 0.2);
     }
 
     & > h4 {
@@ -867,8 +867,8 @@ nav {
 
 /*footer*/
 footer {
-  background: $color_k;
-  color: $color_base;
+  background: rgba($color_main, 0.2);
+  color: $color_main;
   text-align: center;
   padding: 4px;
 }
