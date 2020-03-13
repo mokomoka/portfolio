@@ -64,8 +64,7 @@ nav {
   width: 100vw;
   position: fixed;
   z-index: 9;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  background-color: #f9a825;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 nav ul {
@@ -84,7 +83,7 @@ nav a {
   font-feature-settings: "liga" 0;
   letter-spacing: 2px;
   transition: 0.5s ease-out;
-  color: #413e1e;
+  color: #403017;
   font-weight: 600;
 }
 
@@ -115,7 +114,7 @@ nav a {
   right: 0;
   bottom: 0;
   border-radius: 3px;
-  background: #413e1e;
+  background: #403017;
   display: block;
   content: "";
   cursor: pointer;
@@ -153,7 +152,7 @@ nav a {
   left: 0;
   z-index: 1;
   width: 100%;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.8);
   transition: 0.5s ease-in-out;
   transform: translateY(-105%);
 }
@@ -164,8 +163,19 @@ nav a {
 }
 
 #nav__content .nav__li:hover {
-  background: #dddddd;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#nav__content .nav__li:hover:nth-child(2) {
+  background: #cf737a;
+}
+
+#nav__content .nav__li:hover:nth-child(3) {
+  background: #5aa572;
+}
+
+#nav__content .nav__li:hover:nth-child(4) {
+  background: #5d87b7;
 }
 
 #nav__content .nav__li:first-child {
@@ -186,7 +196,7 @@ nav a {
 }
 
 #nav__input:checked ~ #nav__label--open span {
-  background: #f9a825;
+  background: #ffffff;
 }
 
 #nav__input:checked ~ #nav__label--open span::before {
@@ -215,11 +225,22 @@ nav a {
   #nav__drawer #nav__content .nav__li {
     display: block;
     flex-grow: 1;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
   #nav__drawer #nav__content .nav__li:hover {
-    background: #e99612;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  #nav__drawer #nav__content .nav__li:hover:nth-child(1) {
+    background: #ded46e;
+  }
+  #nav__drawer #nav__content .nav__li:hover:nth-child(2) {
+    background: #cf737a;
+  }
+  #nav__drawer #nav__content .nav__li:hover:nth-child(3) {
+    background: #5aa572;
+  }
+  #nav__drawer #nav__content .nav__li:hover:nth-child(4) {
+    background: #5d87b7;
   }
   #nav__drawer #nav__content .nav__li:first-child {
     flex-grow: 2;
@@ -227,14 +248,19 @@ nav a {
   }
   #nav__drawer #nav__content .nav__li a {
     line-height: 60px;
-    color: #ffffff;
+    color: #403017;
     font-weight: 400;
+    transition: 0.2s ease-in-out;
+  }
+  #nav__drawer #nav__content .nav__li a:hover {
+    color: #1d1508;
+    transition: 0.2s ease-in-out;
   }
 }
 
 /*sections*/
 .section__inner {
-  color: #413e1e;
+  color: #403017;
 }
 
 .section__flexbox {
@@ -265,19 +291,19 @@ nav a {
 }
 
 .section__border--k {
-  border: 2px solid rgba(249, 168, 37, 0.4);
+  border: 2px solid rgba(222, 212, 110, 0.4);
 }
 
 .section__border--a {
-  border: 2px solid rgba(205, 54, 42, 0.4);
+  border: 2px solid rgba(207, 115, 122, 0.4);
 }
 
 .section__border--e {
-  border: 2px solid rgba(118, 158, 88, 0.4);
+  border: 2px solid rgba(90, 165, 114, 0.4);
 }
 
 .section__border--f {
-  border: 2px solid rgba(36, 123, 193, 0.4);
+  border: 2px solid rgba(93, 135, 183, 0.4);
 }
 
 /*main*/
@@ -329,35 +355,40 @@ nav a {
   20% {
     width: 100%;
     left: 0%;
-    background: rgba(249, 168, 37, 0.4);
+    background: rgba(222, 212, 110, 0.4);
   }
   30%,
   45% {
     width: 100%;
     left: 0%;
-    background: rgba(205, 54, 42, 0.4);
+    background: rgba(207, 115, 122, 0.4);
   }
   55%,
   70% {
     width: 100%;
     left: 0%;
-    background: rgba(118, 158, 88, 0.4);
+    background: rgba(90, 165, 114, 0.4);
   }
   80%,
   95% {
     width: 100%;
     left: 0%;
-    background: rgba(36, 123, 193, 0.4);
+    background: rgba(93, 135, 183, 0.4);
   }
 }
 
 /*about*/
+.about .section__ttl h1 {
+  border-left: 8px solid #cf737a;
+  padding-left: 8px;
+}
+
 .about__link:link, .about__link:visited {
-  color: #cd362a;
+  color: #cf737a;
 }
 
 .about__link:hover {
-  color: #941c14;
+  color: #7f2509;
 }
 
 .about__box--img {
@@ -370,7 +401,7 @@ nav a {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  border: 2px solid rgba(205, 54, 42, 0.4);
+  border: 2px solid rgba(207, 115, 122, 0.4);
   display: block;
   transition: all 0.5s ease-in-out;
   opacity: 1;
@@ -420,7 +451,7 @@ nav a {
 }
 
 .about__name {
-  border-bottom: #cd362a 2px solid;
+  border-bottom: #cf737a 2px solid;
   margin-bottom: 16px;
 }
 
@@ -441,7 +472,7 @@ nav a {
 }
 
 .about__table tr {
-  border-bottom: thin dashed #cd362a;
+  border-bottom: thin dashed #cf737a;
 }
 
 .about__table td:first-child {
@@ -455,7 +486,7 @@ nav a {
 .about__button--box {
   display: inline-block;
   border-radius: 8px;
-  border: #cd362a 2px solid;
+  border: #cf737a 2px solid;
   margin: 0 0 0 auto;
 }
 
@@ -475,7 +506,7 @@ nav a {
   position: absolute;
   z-index: -1;
   transition: all 0.3s ease;
-  background: #cd362a;
+  background: #cf737a;
 }
 
 .about__button--link::after {
@@ -486,7 +517,7 @@ nav a {
 }
 
 .about__button--link:link, .about__button--link:visited {
-  color: #413e1e;
+  color: #403017;
 }
 
 .about__button--link:hover {
@@ -545,16 +576,21 @@ nav a {
 }
 
 /*works*/
+.works .section__ttl h1 {
+  border-left: 8px solid #5aa572;
+  padding-left: 8px;
+}
+
 .works a {
   transition: 0.5s ease-in-out;
 }
 
 .works a:link, .works a:visited {
-  color: #769e58;
+  color: #5aa572;
 }
 
 .works a:hover {
-  color: #45642c;
+  color: #005d30;
   transition: 0.5s ease-in-out;
 }
 
@@ -705,14 +741,14 @@ nav a {
   font-size: 4rem;
   line-height: 1;
   width: 4rem;
-  color: #769e58;
+  color: #5aa572;
   text-align: center;
   text-decoration: none;
   text-indent: 0;
 }
 
 .works__modal--close:hover {
-  color: #45642c;
+  color: #005d30;
 }
 
 .works__modal--overlay {
@@ -754,16 +790,21 @@ nav a {
 }
 
 /*links*/
+.links .section__ttl h1 {
+  border-left: 8px solid #5d87b7;
+  padding-left: 8px;
+}
+
 .links a {
   transition: 0.5s ease-in-out;
 }
 
 .links a:link, .links a:visited {
-  color: #247bc1;
+  color: #5d87b7;
 }
 
 .links a:hover {
-  color: #13568d;
+  color: #00426d;
   transition: 0.5s ease-in-out;
 }
 
@@ -789,7 +830,7 @@ nav a {
   position: relative;
   margin-left: 32px;
   padding: 16px;
-  background: rgba(36, 123, 193, 0.2);
+  background: rgba(93, 135, 183, 0.2);
   border-radius: 4px;
 }
 
@@ -800,7 +841,7 @@ nav a {
   left: -32px;
   margin-top: -16px;
   border: 16px solid transparent;
-  border-right: 16px solid rgba(36, 123, 193, 0.2);
+  border-right: 16px solid rgba(93, 135, 183, 0.2);
 }
 
 .links__txt > h4 {
@@ -810,8 +851,8 @@ nav a {
 
 /*footer*/
 footer {
-  background: #f9a825;
-  color: #ffffff;
+  background: rgba(64, 48, 23, 0.2);
+  color: #403017;
   text-align: center;
   padding: 4px;
 }

@@ -47,17 +47,26 @@ body {
   }
 }
 
+@mixin titleAccent($color) {
+  h1 {
+    border-left: 8px solid $color;
+    padding-left: 8px;
+  }
+}
+
 $color_base: #ffffff;
 $color_base_hover: #dddddd;
-$color_a: #cd362a;
-$color_a_hover: #941c14;
-$color_k: #f9a825;
-$color_k_hover: #e99612;
-$color_f: #247bc1;
-$color_f_hover: #13568d;
-$color_e: #769e58;
-$color_e_hover: #45642c;
-$color_text: #413e1e;
+$color_a: #cf737a;
+$color_a_hover: #7f2509;
+$color_k: #ded46e;
+$color_k_hover: #8a8219;
+$color_f: #5d87b7;
+$color_f_hover: #00426d;
+$color_e: #5aa572;
+$color_e_hover: #005d30;
+$color_text: #403017;
+$color_main: #403017;
+$color_main_hover: #1d1508;
 
 .unshown {
   display: none;
@@ -76,8 +85,7 @@ nav {
   width: 100vw;
   position: fixed;
   z-index: 9;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  background-color: $color_k;
+  background: rgba($color_base, 0.8);
 
   ul {
     width: 100%;
@@ -95,7 +103,7 @@ nav {
     font-feature-settings: "liga" 0;
     letter-spacing: 2px;
     transition: 0.5s ease-out;
-    color: $color_text;
+    color: $color_main;
     font-weight: 600;
   }
 }
@@ -126,7 +134,7 @@ nav {
     right: 0;
     bottom: 0;
     border-radius: 3px;
-    background: $color_text;
+    background: $color_main;
     display: block;
     content: "";
     cursor: pointer;
@@ -164,7 +172,7 @@ nav {
   left: 0;
   z-index: 1;
   width: 100%;
-  background: $color_base;
+  background: rgba($color_base, 0.8);
   transition: 0.5s ease-in-out;
   transform: translateY(-105%);
 
@@ -173,8 +181,17 @@ nav {
     transition: 0.5s ease-in-out;
 
     &:hover {
-      background: $color_base_hover;
-      transition: 0.5s ease-in-out;
+      transition: 0.2s ease-in-out;
+
+      &:nth-child(2) {
+        background: $color_a;
+      }
+      &:nth-child(3) {
+        background: $color_e;
+      }
+      &:nth-child(4) {
+        background: $color_f;
+      }
     }
 
     &:first-child {
@@ -198,7 +215,7 @@ nav {
 
 #nav__input:checked ~ #nav__label--open {
   span {
-    background: $color_k;
+    background: $color_base;
 
     &::before {
       transform: rotate(-45deg) translateY(0px);
@@ -229,11 +246,23 @@ nav {
       .nav__li {
         display: block;
         flex-grow: 1;
-        transition: 0.5s ease-in-out;
+        transition: 0.2s ease-in-out;
 
         &:hover {
-          background: $color_k_hover;
-          transition: 0.5s ease-in-out;
+          transition: 0.2s ease-in-out;
+
+          &:nth-child(1) {
+            background: $color_k;
+          }
+          &:nth-child(2) {
+            background: $color_a;
+          }
+          &:nth-child(3) {
+            background: $color_e;
+          }
+          &:nth-child(4) {
+            background: $color_f;
+          }
         }
 
         &:first-child {
@@ -243,8 +272,13 @@ nav {
 
         a {
           line-height: 60px;
-          color: $color_base;
+          color: $color_main;
           font-weight: 400;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: $color_main_hover;
+            transition: 0.2s ease-in-out;
+          }
         }
       }
     }
@@ -372,6 +406,10 @@ nav {
 
 /*about*/
 .about {
+  .section__ttl {
+    @include titleAccent($color_a);
+  }
+
   &__link {
     @extend %external-link;
     &:link,
@@ -568,6 +606,10 @@ nav {
 
 /*works*/
 .works {
+  .section__ttl {
+    @include titleAccent($color_e);
+  }
+
   a {
     transition: 0.5s ease-in-out;
     &:link,
@@ -774,6 +816,10 @@ nav {
 
 /*links*/
 .links {
+  .section__ttl {
+    @include titleAccent($color_f);
+  }
+
   a {
     transition: 0.5s ease-in-out;
     &:link,
@@ -830,8 +876,8 @@ nav {
 
 /*footer*/
 footer {
-  background: $color_k;
-  color: $color_base;
+  background: rgba($color_main, 0.2);
+  color: $color_main;
   text-align: center;
   padding: 4px;
 }
