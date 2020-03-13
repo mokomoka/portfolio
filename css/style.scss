@@ -181,8 +181,17 @@ nav {
     transition: 0.5s ease-in-out;
 
     &:hover {
-      background: $color_base_hover;
-      transition: 0.5s ease-in-out;
+      transition: 0.2s ease-in-out;
+
+      &:nth-child(2) {
+        background: $color_a;
+      }
+      &:nth-child(3) {
+        background: $color_e;
+      }
+      &:nth-child(4) {
+        background: $color_f;
+      }
     }
 
     &:first-child {

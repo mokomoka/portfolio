@@ -163,8 +163,19 @@ nav a {
 }
 
 #nav__content .nav__li:hover {
-  background: #dddddd;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#nav__content .nav__li:hover:nth-child(2) {
+  background: #cf737a;
+}
+
+#nav__content .nav__li:hover:nth-child(3) {
+  background: #5aa572;
+}
+
+#nav__content .nav__li:hover:nth-child(4) {
+  background: #5d87b7;
 }
 
 #nav__content .nav__li:first-child {
