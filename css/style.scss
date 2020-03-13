@@ -56,17 +56,17 @@ body {
 
 $color_base: #ffffff;
 $color_base_hover: #dddddd;
-$color_a: #e9546b;
-$color_a_hover: #b43030;
-$color_k: #f6ad3c;
-$color_k_hover: #c2b30b;
-$color_f: #187fc4;
-$color_f_hover: #0495b6;
-$color_e: #00ada9;
-$color_e_hover: #56801f;
+$color_a: #cf737a;
+$color_a_hover: #7f2509;
+$color_k: #ded46e;
+$color_k_hover: #8a8219;
+$color_f: #5d87b7;
+$color_f_hover: #00426d;
+$color_e: #5aa572;
+$color_e_hover: #005d30;
 $color_text: #403017;
 $color_main: #403017;
-$color_main_hover: #251c0c;
+$color_main_hover: #1d1508;
 
 .unshown {
   display: none;
@@ -267,7 +267,7 @@ nav {
           font-weight: 400;
           transition: 0.2s ease-in-out;
           &:hover {
-            color: $color_base;
+            color: $color_main_hover;
             transition: 0.2s ease-in-out;
           }
         }

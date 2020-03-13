@@ -220,16 +220,16 @@ nav a {
     transition: 0.2s ease-in-out;
   }
   #nav__drawer #nav__content .nav__li:hover:nth-child(1) {
-    background: #f6ad3c;
+    background: #ded46e;
   }
   #nav__drawer #nav__content .nav__li:hover:nth-child(2) {
-    background: #e9546b;
+    background: #cf737a;
   }
   #nav__drawer #nav__content .nav__li:hover:nth-child(3) {
-    background: #00ada9;
+    background: #5aa572;
   }
   #nav__drawer #nav__content .nav__li:hover:nth-child(4) {
-    background: #187fc4;
+    background: #5d87b7;
   }
   #nav__drawer #nav__content .nav__li:first-child {
     flex-grow: 2;
@@ -242,7 +242,7 @@ nav a {
     transition: 0.2s ease-in-out;
   }
   #nav__drawer #nav__content .nav__li a:hover {
-    color: #ffffff;
+    color: #1d1508;
     transition: 0.2s ease-in-out;
   }
 }
@@ -280,19 +280,19 @@ nav a {
 }
 
 .section__border--k {
-  border: 2px solid rgba(246, 173, 60, 0.4);
+  border: 2px solid rgba(222, 212, 110, 0.4);
 }
 
 .section__border--a {
-  border: 2px solid rgba(233, 84, 107, 0.4);
+  border: 2px solid rgba(207, 115, 122, 0.4);
 }
 
 .section__border--e {
-  border: 2px solid rgba(0, 173, 169, 0.4);
+  border: 2px solid rgba(90, 165, 114, 0.4);
 }
 
 .section__border--f {
-  border: 2px solid rgba(24, 127, 196, 0.4);
+  border: 2px solid rgba(93, 135, 183, 0.4);
 }
 
 /*main*/
@@ -344,40 +344,40 @@ nav a {
   20% {
     width: 100%;
     left: 0%;
-    background: rgba(246, 173, 60, 0.4);
+    background: rgba(222, 212, 110, 0.4);
   }
   30%,
   45% {
     width: 100%;
     left: 0%;
-    background: rgba(233, 84, 107, 0.4);
+    background: rgba(207, 115, 122, 0.4);
   }
   55%,
   70% {
     width: 100%;
     left: 0%;
-    background: rgba(0, 173, 169, 0.4);
+    background: rgba(90, 165, 114, 0.4);
   }
   80%,
   95% {
     width: 100%;
     left: 0%;
-    background: rgba(24, 127, 196, 0.4);
+    background: rgba(93, 135, 183, 0.4);
   }
 }
 
 /*about*/
 .about .section__ttl h1 {
-  border-left: 8px solid #e9546b;
+  border-left: 8px solid #cf737a;
   padding-left: 8px;
 }
 
 .about__link:link, .about__link:visited {
-  color: #e9546b;
+  color: #cf737a;
 }
 
 .about__link:hover {
-  color: #b43030;
+  color: #7f2509;
 }
 
 .about__box--img {
@@ -390,7 +390,7 @@ nav a {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  border: 2px solid rgba(233, 84, 107, 0.4);
+  border: 2px solid rgba(207, 115, 122, 0.4);
   display: block;
   transition: all 0.5s ease-in-out;
   opacity: 1;
@@ -440,7 +440,7 @@ nav a {
 }
 
 .about__name {
-  border-bottom: #e9546b 2px solid;
+  border-bottom: #cf737a 2px solid;
   margin-bottom: 16px;
 }
 
@@ -461,7 +461,7 @@ nav a {
 }
 
 .about__table tr {
-  border-bottom: thin dashed #e9546b;
+  border-bottom: thin dashed #cf737a;
 }
 
 .about__table td:first-child {
@@ -475,7 +475,7 @@ nav a {
 .about__button--box {
   display: inline-block;
   border-radius: 8px;
-  border: #e9546b 2px solid;
+  border: #cf737a 2px solid;
   margin: 0 0 0 auto;
 }
 
@@ -495,7 +495,7 @@ nav a {
   position: absolute;
   z-index: -1;
   transition: all 0.3s ease;
-  background: #e9546b;
+  background: #cf737a;
 }
 
 .about__button--link::after {
@@ -566,7 +566,7 @@ nav a {
 
 /*works*/
 .works .section__ttl h1 {
-  border-left: 8px solid #00ada9;
+  border-left: 8px solid #5aa572;
   padding-left: 8px;
 }
 
@@ -575,11 +575,11 @@ nav a {
 }
 
 .works a:link, .works a:visited {
-  color: #00ada9;
+  color: #5aa572;
 }
 
 .works a:hover {
-  color: #56801f;
+  color: #005d30;
   transition: 0.5s ease-in-out;
 }
 
@@ -730,14 +730,14 @@ nav a {
   font-size: 4rem;
   line-height: 1;
   width: 4rem;
-  color: #00ada9;
+  color: #5aa572;
   text-align: center;
   text-decoration: none;
   text-indent: 0;
 }
 
 .works__modal--close:hover {
-  color: #56801f;
+  color: #005d30;
 }
 
 .works__modal--overlay {
@@ -780,7 +780,7 @@ nav a {
 
 /*links*/
 .links .section__ttl h1 {
-  border-left: 8px solid #187fc4;
+  border-left: 8px solid #5d87b7;
   padding-left: 8px;
 }
 
@@ -789,11 +789,11 @@ nav a {
 }
 
 .links a:link, .links a:visited {
-  color: #187fc4;
+  color: #5d87b7;
 }
 
 .links a:hover {
-  color: #0495b6;
+  color: #00426d;
   transition: 0.5s ease-in-out;
 }
 
@@ -819,7 +819,7 @@ nav a {
   position: relative;
   margin-left: 32px;
   padding: 16px;
-  background: rgba(24, 127, 196, 0.2);
+  background: rgba(93, 135, 183, 0.2);
   border-radius: 4px;
 }
 
@@ -830,7 +830,7 @@ nav a {
   left: -32px;
   margin-top: -16px;
   border: 16px solid transparent;
-  border-right: 16px solid rgba(24, 127, 196, 0.2);
+  border-right: 16px solid rgba(93, 135, 183, 0.2);
 }
 
 .links__txt > h4 {
