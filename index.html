@@ -18,9 +18,25 @@
     />
     <link href="css/ress.css" rel="stylesheet" type="text/css" />
     <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      window.onload = function() {
+        setTimeout("show()", 4000);
+      }
+      function show(){
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('contents').style.display = 'block';
+      }
+    </script>
   </head>
 
   <body>
+    <div id="loading" class="loading">
+      <div class="loading__wrapper">
+        <h1>Now loading...</h1>
+        <div></div>
+      </div>
+    </div>
+    <div id="contents">
     <nav id="nav__drawer">
       <input id="nav__input" type="checkbox" class="unshown" />
       <label id="nav__label--open" for="nav__input"><span></span></label>
@@ -528,5 +544,6 @@
     <footer>
       <small>&copy;&nbsp;&nbsp;2018 - 2020&nbsp;&nbsp;Tomoka Hayashi</small>
     </footer>
+    </div>
   </body>
 </html>
