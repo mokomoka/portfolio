@@ -421,6 +421,7 @@ nav {
       font-size: 3.2rem;
     }
     & > h2 {
+      margin-top: 8px;
       font-size: 1.6rem;
     }
 
@@ -465,7 +466,6 @@ nav {
     position: absolute;
     background: inherit;
     filter: brightness(140%) blur(8px) contrast(80%);
-    transition: filter 1.2s ease;
     top: -8px;
     left: -8px;
     right: -8px;
@@ -574,7 +574,7 @@ nav {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    border: 2px solid rgba($color_a, 0.4);
+    border: 4px solid $color_a;
     display: block;
     transition: all 0.5s ease-in-out;
     opacity: 1;
@@ -640,6 +640,7 @@ nav {
     margin: 32px auto;
     border-collapse: collapse;
     tr {
+      border-top: thin dashed $color_a;
       border-bottom: thin dashed $color_a;
     }
     td {
