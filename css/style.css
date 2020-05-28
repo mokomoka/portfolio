@@ -915,6 +915,8 @@ nav a {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #5aa572;
 }
 
 .works__modal--body > img,
