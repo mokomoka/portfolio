@@ -855,13 +855,14 @@ nav {
       &:not(:target) {
         opacity: 0;
         visibility: hidden;
+        transition: all 0.3s;
       }
 
       &:target {
         z-index: 9;
         opacity: 1;
         visibility: visible;
-        transition: opacity 0.3s, visibility 0.3s;
+        transition: all 0.3s;
       }
 
       &::after {
@@ -889,9 +890,11 @@ nav {
       vertical-align: middle;
       overflow-y: auto;
 
-      @media (min-width: $breakpoint) {
-        width: 60%;
-        left: 20%;
+      @media (min-width: 1200px) {
+        // ウィンドウ幅が1200pxのとき、モーダルウィンドウの幅が$max_widthでウィンドウに対してちょうど80%になり、
+        // 左右の余白が10%ずつ（120px）とれる
+        width: $max_width;
+        left: calc((100% - #{$max_width}) / 2);
       }
     }
 
@@ -927,6 +930,8 @@ nav {
       text-align: center;
       font-size: 2rem;
       margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px dashed $color_e;
     }
 
     &--body {
