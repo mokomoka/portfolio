@@ -919,9 +919,15 @@ nav a {
   border-bottom: 1px dashed #5aa572;
 }
 
+.works__modal--body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .works__modal--body > img,
 .works__modal--body > video {
-  width: 100%;
+  width: 90%;
   margin-top: 32px;
 }
 
@@ -931,7 +937,9 @@ nav a {
 }
 
 .works__modal--caption {
+  width: 90%;
   font-size: 1.4rem;
+  margin-top: 8px;
   margin-bottom: 16px;
   padding-left: 2em;
   text-indent: -2em;
