@@ -935,9 +935,13 @@ nav {
     }
 
     &--body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
       & > img,
       & > video {
-        width: 100%;
+        width: 90%;
         margin-top: 32px;
       }
     }
@@ -948,7 +952,9 @@ nav {
     }
 
     &--caption {
+      width: 90%;
       font-size: 1.4rem;
+      margin-top: 8px;
       margin-bottom: 16px;
       padding-left: 2em;
       text-indent: -2em;
